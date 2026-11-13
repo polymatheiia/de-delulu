@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Checks the always-on rule text: present, small, names the skill, carries no phone numbers.
+set -u
+root="$(cd "$(dirname "$0")/../.." && pwd)"
+fail=0
+check() { if "${@:2}"; then echo "ok   $1"; else echo "FAIL $1"; fail=1; fi; }
+
+core="$root/core/core.md"; strict="$root/core/strict.md"
+check "core.md exists and is non-empty"   test -s "$core"
+check "strict.md exists and is non-empty" test -s "$strict"
+size_ok() { [ "$(cat "$core" "$strict" 2>/dev/null | wc -m)" -lt 4000 ] && [ -s "$core" ]; }
+check "core + strict under 4000 characters" size_ok
+names_skill() { grep -q 'de-delulu' "$core" 2>/dev/null; }
+check "core.md names the de-delulu skill" names_skill
+no_numbers() { [ -s "$core" ] && [ -s "$strict" ] && ! grep -Eq '[0-9]{3,}' "$core" "$strict"; }
+check "no run of 3+ digits (no phone numbers)" no_numbers
+exit $fail
