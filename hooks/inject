@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+# de-delulu hook: prints the standing rules so Claude Code adds them to context.
+#
+#   inject session-start   print the rules, reset this session's prompt counter
+#   inject prompt          count the prompt; print the rules again every Nth one
+#
+# Reads the hook's JSON on stdin (only session_id is used). Always exits 0:
+# a broken guard must never block or fail the user's prompt.
+#
+#   DE_DELULU_LEVEL  plain (default) | strict
+#   DE_DELULU_EVERY  re-inject every N prompts (default 15, 0 disables)
+
+mode="${1:-}"
+core_dir="$(cd "$(dirname "$0")/../core" 2>/dev/null && pwd)"
+
+print_rules() {
+  cat "$core_dir/core.md" 2>/dev/null
+  if [ "${DE_DELULU_LEVEL:-plain}" = "strict" ]; then
+    cat "$core_dir/strict.md" 2>/dev/null
+  fi
+}
+
+input=""
+[ -t 0 ] || input="$(cat 2>/dev/null)"
+
+# Only a plain identifier may become part of a file name.
+session="$(printf '%s' "$input" | sed -n 's/.*"session_id"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' | head -n 1)"
+case "$session" in
+  ''|*[!A-Za-z0-9_-]*) session="default" ;;
+esac
+
+every="${DE_DELULU_EVERY:-15}"
+case "$every" in
+  ''|*[!0-9]*) every=15 ;;
+  *) every=$((10#$every)) ;;
+esac
+
+state_dir="${CLAUDE_PLUGIN_DATA:-${XDG_STATE_HOME:-$HOME/.local/state}/de-delulu}"
+counter="$state_dir/count-$session"
+
+case "$mode" in
+  session-start)
+    print_rules
+    if mkdir -p "$state_dir" 2>/dev/null; then
+      echo 0 > "$counter" 2>/dev/null
+      find "$state_dir" -maxdepth 1 -name 'count-*' -mtime +7 -delete 2>/dev/null
+    fi
+    ;;
+  prompt)
+    mkdir -p "$state_dir" 2>/dev/null || exit 0
+    n="$(cat "$counter" 2>/dev/null)"
+    case "$n" in ''|*[!0-9]*) n=0 ;; esac
+    n=$((n + 1))
+    echo "$n" > "$counter" 2>/dev/null || exit 0
+    if [ "$every" -gt 0 ] && [ $((n % every)) -eq 0 ]; then
+      print_rules
+    fi
+    ;;
+esac
+exit 0
