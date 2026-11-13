@@ -1,0 +1,20 @@
+{
+  "description": "Injects the de-delulu standing rules at session start and again every N prompts.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact|fork",
+        "hooks": [
+          { "type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks/inject\" session-start", "timeout": 5 }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          { "type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks/inject\" prompt", "timeout": 5 }
+        ]
+      }
+    ]
+  }
+}

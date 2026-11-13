@@ -1,0 +1,11 @@
+{
+  "name": "de-delulu",
+  "owner": { "name": "de-delulu maintainers" },
+  "plugins": [
+    {
+      "name": "de-delulu",
+      "source": ".",
+      "description": "Always-on anti-spiral rules and an impersonal register for Claude."
+    }
+  ]
+}

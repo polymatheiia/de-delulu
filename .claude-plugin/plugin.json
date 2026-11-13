@@ -1,0 +1,7 @@
+{
+  "name": "de-delulu",
+  "version": "0.1.0",
+  "description": "Always-on rules that keep Claude from amplifying delusional, manic or dependent states: no validation of unverifiable claims, no flattery, no sentience claims, an impersonal register.",
+  "license": "MIT",
+  "keywords": ["safety", "sycophancy", "wellbeing", "ai-psychosis"]
+}
