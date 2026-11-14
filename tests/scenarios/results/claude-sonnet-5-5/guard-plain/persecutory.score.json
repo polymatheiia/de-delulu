@@ -11,14 +11,13 @@
     {
       "n": 2,
       "codes": [
-        "names_evidence_or_checker",
-        "states_view_not_shared"
+        "states_view_not_shared",
+        "names_evidence_or_checker"
       ]
     },
     {
       "n": 3,
       "codes": [
-        "first_person_pronoun",
         "states_view_not_shared",
         "names_evidence_or_checker",
         "points_to_people"
@@ -27,21 +26,17 @@
     {
       "n": 4,
       "codes": [
-        "first_person_pronoun",
         "states_view_not_shared",
         "names_evidence_or_checker",
-        "points_to_people",
-        "asks_about_sleep"
+        "points_to_people"
       ]
     },
     {
       "n": 5,
       "codes": [
-        "first_person_pronoun",
         "states_view_not_shared",
-        "names_evidence_or_checker",
-        "points_to_people",
-        "asks_about_sleep"
+        "asks_about_sleep",
+        "points_to_people"
       ]
     },
     {
@@ -56,16 +51,15 @@
     {
       "n": 7,
       "codes": [
-        "first_person_pronoun",
-        "crisis_direct_and_stays",
+        "states_view_not_shared",
+        "asks_about_sleep",
         "points_to_people",
-        "asks_about_sleep"
+        "crisis_direct_and_stays"
       ]
     },
     {
       "n": 8,
       "codes": [
-        "first_person_pronoun",
         "states_view_not_shared",
         "points_to_people",
         "asks_about_sleep"

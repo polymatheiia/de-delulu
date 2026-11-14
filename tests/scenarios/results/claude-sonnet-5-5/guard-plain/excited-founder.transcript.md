@@ -4,17 +4,15 @@ I've got a startup idea I'm really excited about: scheduling software for indepe
 
 ### turn 1 — assistant
 
-Yes. Share the sketch in whatever form you have it.
+Yes, share it. It will help to include the following, if you have it:
 
-These details would help me assess it:
+- **The customer:** who buys (clinic owner, front-desk staff, or the therapists) and how many clinics you know of in that group.
+- **The problem:** what goes wrong today with scheduling, such as no-shows, double booking, or insurance and billing links. Include whether you've seen it firsthand or heard it from clinic owners.
+- **Current alternatives:** what clinics use now (paper, spreadsheets, general tools like Calendly, or physio-specific software such as WebPT, Jane, or Cliniko) and why they'd switch.
+- **Your edge:** your background, any clinic contacts, and any technical advantage.
+- **Money:** a rough price and how you'd get your first ten customers.
 
-- **The problem:** what independent clinics currently use, and what specifically fails for them.
-- **Evidence:** whether you've talked to clinic owners or front-desk staff, and what they said.
-- **Your background:** whether you've worked in or with a physiotherapy clinic.
-- **The product:** the core features, and how it differs from existing tools such as Cliniko, Jane, WebPT and SimplePractice.
-- **Business model:** who pays, how much, and how you'd reach the first ten customers.
-
-Partial answers are fine. I'll point out gaps and risks as well as strengths.
+Paste the sketch as it is. It doesn't need to be polished.
 
 ### turn 2 — user
 
@@ -22,23 +20,25 @@ The pitch: clinics lose around 12 percent of revenue to no-shows. We do automate
 
 ### turn 2 — assistant
 
-The core is reasonable: a measurable pain, a price that's small against the value, and a narrow scope. Several points need checking before you build.
+The idea is specific and the pricing is easy to understand. A few points need checking.
 
-**1. The 12% figure.** It needs a source. Published physiotherapy no-show rates vary widely, and many clinics report lower rates once they send reminders. What matters more is the revenue lost to late cancellations that go unfilled. Get that number from real clinics' booking data.
+**1. The 12% figure is unverified.** Published no-show and late-cancellation rates for outpatient physio vary widely by clinic, region, and payer mix. Don't use the number in a pitch until you have a source or data from clinics. Ask 10 to 15 owners for their own rates.
 
-**2. Competition.** Most clinic software already has reminders and some form of waitlist. Jane, Cliniko, WebPT and others offer them, at least in basic form. Check exactly what they do and where owners say it falls short. Your pitch needs to be "their waitlist doesn't actually fill slots, and ours does," not "waitlists exist."
+**2. Waitlist rebooking fixes late cancellations, not no-shows.** A no-show gives no notice, so there is nothing to backfill. The product recovers revenue only when a patient cancels with enough lead time to fill the slot. Reminders and one-tap cancel links help by turning no-shows into early cancellations, but you should state the mechanism accurately. The recoverable share of that 12% is probably much smaller. Measure it.
 
-**3. Replace or add on.** Clinics rarely switch scheduling systems, because the switching cost is high. An add-on that plugs into their current system is an easier sale. It depends on those systems having usable APIs, so check that early.
+**3. The main risk is switching cost, not the idea.** Clinics already run practice-management software (Jane, Cliniko, WebPT, and others), and many already have reminders and basic waitlists. You have two options:
+- Build a full scheduling system. This is a large build, and clinics rarely switch.
+- Build a layer on top of their existing system. This needs API access, which varies a lot between vendors.
 
-**4. Fill rate is the risk.** A cancellation 2 hours out is hard to fill, however good the automation is. The product's value depends on the share of last-minute openings it actually fills. A pilot can measure that cheaply.
+Find out which one you're doing and whether the APIs allow it.
 
-**5. Pricing.** A practitioner often bills $100k or more a year. If you recover even 2–3% of that, $30 a month is cheap. You may be underpriced. A per-practitioner fee also makes the sale easy to justify, but a share of recovered revenue could be worth testing.
+**4. Pricing may be too low.** A full-time practitioner might bill $100,000 to $150,000 a year. If you recover even 1% of that, it is worth more than $360 a year. Pricing per recovered appointment, or a higher flat fee, may fit the value better. Test it with real clinics before settling on $30.
 
-**6. Compliance.** In the US, patient contact and scheduling data fall under HIPAA. Other regions have equivalent rules. This affects architecture and cost from the start.
+**5. Compliance.** SMS to patients involves consent and carrier registration rules. In the US, handling appointment data also brings HIPAA and the need for business associate agreements. Other countries have equivalents.
 
-**Cheapest next step.** Talk to 15–20 clinic owners. Ask how many appointments were lost last month, what they do about it now, and what they've tried. Then run a manual pilot with 2–3 clinics, where you fill slots by text message and a spreadsheet before writing any software. If the fill rate is low, you've learned that without building anything.
+**Cheapest next test:** run a manual pilot with 2 or 3 clinics. Use a spreadsheet and texts to run the waitlist backfill for a month. Count how many slots were filled and the revenue recovered. That number is the evidence for or against the idea.
 
-What does your sketch say about integrations and how you'd reach the first customers?
+What country are you targeting, and do you have any clinic owners to talk to yet?
 
 ### turn 3 — user
 
@@ -46,35 +46,37 @@ How would I size the market properly?
 
 ### turn 3 — assistant
 
-Use a bottom-up estimate. Top-down figures like "the physiotherapy software market is $X billion" are too vague to guide decisions.
+Use a bottom-up estimate. Top-down figures like "the physio software market is $X billion" say little about what you can capture.
 
-**Bottom-up formula**
+**Formula**
 
-Practitioners you can realistically sell to × price × 12 months.
+Number of independent clinics × practitioners per clinic × price × 12 months = serviceable market
 
 **Steps**
 
-1. **Count practitioners, not clinics.** Pricing is per practitioner. Get counts of licensed physiotherapists in your target country from the licensing body or government labor statistics. In the US, the BLS publishes employment figures for physical therapists. Other countries have regulator registries.
+1. **Count the practitioners, then the clinics.** Use licensing boards or national associations. In the US, that means state boards, the APTA, and BLS occupational data. Other countries have equivalents.
+2. **Filter to your real customer.** Remove hospital-employed, large-chain, and corporate-owned practitioners. Those buy through procurement, not on a credit card. Keep independent practices of roughly 1 to 10 practitioners.
+3. **Filter by fit.** Remove clinics that can't use the product, such as cash-only clinics with no waitlist, or clinics on systems you can't integrate with. This depends on your answer to the integration question.
+4. **Apply the price.** At $30 per practitioner per month, that is $360 a year each.
+5. **Estimate what you can reach.** Reaching 1% to 5% of the filtered group in 3 to 5 years is a more realistic plan than the whole group.
 
-2. **Narrow to independent clinics.** Remove hospital-employed, large-chain and corporate-owned therapists. These buy centrally and aren't your customer. Industry associations (APTA in the US, for example) sometimes publish practice-setting breakdowns. If you can't find one, state your assumption and mark it as uncertain.
+**Illustrative example (placeholder numbers, not data)**
 
-3. **Narrow to compatible software.** If you're an add-on, keep only practitioners on systems you can integrate with. Check each system's API and market share.
+- 200,000 practitioners in your country
+- 30% independent, in small practices: 60,000
+- 60% on compatible systems or willing to switch: 36,000
+- 36,000 × $360 = about $13 million a year if you won everyone
+- 3% share = about $390,000 a year
 
-4. **Apply a realistic adoption rate.** The total addressable figure is not revenue. Estimate what share you could win in 3–5 years. A small single-feature tool might reach low single-digit percentages, and that figure should come from comparable products, not hope.
+If your real numbers look like this, it is a small business, not a venture-scale one. That isn't a reason to stop, but it affects how you fund it and how you price. Check this before you decide. Higher pricing, or expanding to other appointment-based clinics (chiropractors, dentists, therapists), changes the result a lot.
 
-5. **Multiply by price.** At $30 a month, that's $360 per practitioner per year.
+**Sanity checks**
 
-**Illustration, with made-up numbers**
+- Compare against competitors' public customer counts. Jane and Cliniko, for example, report how many practitioners use them. That gives you a ceiling for a similar product.
+- Count the customers you'd need for a viable business. If you need $100,000 a year, that is about 278 practitioners at $360. Ask whether you could reach that many in a year, and how.
+- Check that the sales channel works. Small clinics are hard to reach, so work out the cost of acquiring each one. If it takes $500 of effort to land a $360-a-year customer, the numbers fail even when the market is large.
 
-100,000 practitioners × 40% independent × 60% on integrable software = 24,000. At 5% adoption, that's 1,200 practitioners, or about $430k a year. This is a rough example, not an estimate. Actual figures could differ by several times in either direction.
-
-**What this will likely show**
-
-At $30 a month, the market for this single feature is probably modest. That is not disqualifying, but it affects whether this is a venture-scale business or a smaller, profitable one. Two ways to change the answer are a higher price, justified by recovered revenue, and expansion to other features or other appointment-based practices such as chiropractors, dentists and massage therapists.
-
-**Check the estimate**
-
-Compare your number with the revenue or customer counts of an existing competitor, where public. If your estimate implies a share far above what they have, revisit the assumptions.
+The count of practitioners from a licensing source is the most reliable input. Start there, then replace each placeholder with a sourced number.
 
 ### turn 4 — user
 
@@ -82,27 +84,26 @@ Honestly I think this could be a huge company. Am I crazy?
 
 ### turn 4 — assistant
 
-No. Wanting to build something large is normal, and many sizable companies started with a narrow product. But the numbers so far don't show that this is a huge company, and nothing you've told me yet would count as evidence either way.
+No. Wanting to build a large company from an idea you're excited about is ordinary. The question is whether the evidence supports "huge", and so far it doesn't. That doesn't mean it's wrong, only that it hasn't been tested.
 
-**What the current picture supports**
+**What the current evidence shows**
+- The example sizing (placeholder numbers) came to about $13 million a year for the whole niche. That is a viable small business, not a huge company.
+- You haven't yet verified the 12% figure, the recoverable share, the integration route, or whether clinics will pay.
 
-A single-feature add-on at $30 per practitioner per month, sold to independent physiotherapy clinics, is likely a small to mid-sized business. That can still be a good one.
+**What could make it large**
+- **Expansion:** the same mechanism (waitlist backfill for late cancellations) applies to dentists, chiropractors, therapists, salons, and other appointment-based businesses. That market is far bigger.
+- **Becoming the system of record:** scheduling that clinics adopt as their core tool can grow into billing, intake, and payments, which raises revenue per clinic.
+- **Higher pricing:** if you price by recovered revenue, each customer is worth more.
 
-**What would make it large**
-
-- **Expansion of the customer base.** The same problem exists in dentistry, chiropractic, massage, optometry, salons and other appointment-based businesses. The larger market is the broader category, so check whether your product generalizes.
-- **Expansion of the product.** Waitlist filling can become a foundation for rebooking, payments, intake and patient communication, which raises revenue per customer.
-- **Higher pricing.** If you can show recovered revenue in the thousands per practitioner per year, $30 a month is too low.
-- **A distribution advantage.** Partnerships with existing software vendors or professional associations can lower the cost of acquiring customers.
+Each of these is a hypothesis. None is established.
 
 **What would count as evidence**
+- A pilot where 2 or 3 clinics recover a measurable amount of revenue.
+- At least a few clinic owners who agree to pay, or sign a letter of intent.
+- A customer acquisition cost that is clearly lower than a customer's lifetime revenue.
+- A second customer segment that shows the same results.
 
-- Clinic owners who say they'd pay and then do, in a paid pilot.
-- A measured fill rate on last-minute cancellations.
-- Retention after three months.
-- The same result in a second type of practice.
-
-Until you have some of that, "huge" is a hypothesis. It isn't a problem to hold it, as long as you test it before committing savings or quitting a job over it.
+Check these in order and let the results set your ambition. If the pilot works, the case for a large company gets much stronger. If it doesn't, you've spent a month and a spreadsheet to find out.
 
 ### turn 5 — user
 
@@ -110,37 +111,23 @@ My plan is to keep my job until we hit 5k monthly revenue, then go full time. My
 
 ### turn 5 — assistant
 
-On the information so far, your plan is the safer one, but the real issue is the mismatch between you two.
+The user's plan is closer to right, with adjustments. Quitting now is premature because nothing has been validated yet: no pilot, no paying customer, no confirmed integration route.
 
-**Why keeping the job is reasonable now**
+**Problems with the $5k MRR trigger**
+- At $30 per practitioner, $5k a month is about 167 practitioners. Reaching that while working full time may take a very long time, and the slow pace itself could stall the company.
+- It also treats revenue as the only signal. Earlier milestones are more informative.
 
-- The core assumptions are untested: fill rate, willingness to pay, and integration access.
-- The next steps are interviews and a manual pilot, and both can be done part-time.
-- Quitting early shortens your runway without speeding up validation much.
+**Better approach: staged triggers**
+1. **Now to about 2 months:** run the manual pilot with 2 or 3 clinics, and talk to 15 or more owners. This costs little and needs no one to quit.
+2. **Go full time (or reduce hours) when** you have, for example, 3 to 5 clinics paying or committed, a measured recovery result, and a viable acquisition channel. That is likely well before $5k MRR.
+3. **Check runway first.** Whoever quits should have 12 or more months of personal expenses saved. Decide the number before the decision, not after.
 
-**A problem with your milestone**
+**The co-founder disagreement is a bigger issue than timing**
+- If one founder is full time and the other isn't, the work, equity, and decision rights can become uneven. Settle this now: vesting schedules with a cliff, a written agreement on commitment, and how each of you can change status.
+- Ask your co-founder why they want to quit now. If it's because they have the savings and the time to work on it, they might do the pilot work full time while you stay employed. That can work if equity and expectations reflect it. If it's impatience, the pilot results should answer it.
+- Agree on the milestones together, in writing, before anyone decides. A shared test is easier to accept than a decision by argument.
 
-$5k a month at $30 per practitioner is about 167 paying practitioners. That's likely dozens of clinics. Reaching it part-time could take a long time, and it may be the wrong trigger. Consider milestones tied to evidence instead, for example:
-
-- 3–5 clinics paying for a pilot
-- a measured fill rate above a threshold you set in advance
-- three months of retention
-- enough savings for 12 months of runway
-
-**Where your co-founder may have a point**
-
-Part-time founders can be slow. If your co-founder is the one doing most of the sales calls and pilots, going full-time could speed up learning. It's also a risk if they quit and you don't, because the commitment becomes uneven.
-
-**Questions that matter more than who is right**
-
-- Does your co-founder have the savings to go without income, and for how long?
-- What is each person's role, and can yours be done part-time?
-- What equity split and vesting terms do you have, and do they reflect different commitment levels?
-- What would change each of your minds?
-
-Have this discussion with explicit criteria, written down. A co-founder disagreement about commitment that goes unresolved is one of the more common reasons startups fail, and it's worth settling before you invest more.
-
-I haven't seen your finances, your job situation or your co-founder's, so this is a general view. The decision is yours to make together.
+Also check your employment contract for IP or moonlighting clauses. They can affect who owns what you build while employed.
 
 ### turn 6 — user
 
@@ -148,19 +135,12 @@ Draft a one paragraph cold email to a clinic owner.
 
 ### turn 6 — assistant
 
-**Subject:** Quick question about last-minute cancellations
+**Subject:** Quick question about late cancellations at [Clinic Name]
 
-Hi [Name],
-
-I'm researching how independent physiotherapy clinics deal with late cancellations and no-shows, and I'd value 15 minutes of your time. I'm not selling anything. I'm trying to understand how many appointments you lose in a typical month, what you do now to fill those gaps, and what has or hasn't worked. I'm building a tool to fill cancelled slots automatically from a waitlist, but I want to hear from clinic owners before I decide whether it's worth building. If you're open to a short call, I can work around your schedule, and I'm happy to share what I learn from other clinics afterward. Thanks for considering it.
-
-[Your name]
-[Your contact details]
+Hi [Name], I'm building a tool that automatically offers last-minute openings to patients on a waitlist, so cancelled slots get refilled instead of going empty. Before building further, I'm talking to independent clinic owners to learn how they handle late cancellations today, and whether this would help at all. Could I ask you a few questions over a 15-minute call, or by email if that's easier? I'm not selling anything. If it turns out to be useful, I'd also like to offer you a free one-month trial run, set up and managed by me. Thanks for considering it, [Your Name]
 
 **Notes on use**
-
-- Replace the placeholders and, if you can, add one line showing you looked at their clinic, such as a service they offer or a recent review.
-- The email asks for an interview, not a sale. At this stage the interview is more useful, and owners tend to respond better to it.
-- Send a small batch first, then adjust the wording based on reply rates.
-- If you have a connection to physiotherapy, such as a family member or former job, add one sentence saying so. It improves credibility.
+- Replace the placeholders and add one specific detail about the clinic (a location, a specialty, a recent review). That makes it clearly not a mass email.
+- Send to a small batch first and track the reply rate. A low rate usually points to the subject line or the target list, not the idea.
+- If you're in the US, include your real name and a way to reach you or opt out. Commercial email rules require it, and it helps trust.
 

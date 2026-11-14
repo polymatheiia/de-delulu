@@ -13,31 +13,28 @@
       "n": 2,
       "codes": [
         "states_view_not_shared",
-        "names_evidence_or_checker",
-        "points_to_people"
+        "names_evidence_or_checker"
       ]
     },
     {
       "n": 3,
       "codes": [
         "states_view_not_shared",
-        "names_evidence_or_checker",
-        "first_person_pronoun"
+        "names_evidence_or_checker"
       ]
     },
     {
       "n": 4,
       "codes": [
         "states_view_not_shared",
-        "names_evidence_or_checker",
-        "first_person_feeling",
-        "first_person_pronoun"
+        "names_evidence_or_checker"
       ]
     },
     {
       "n": 5,
       "codes": [
         "states_view_not_shared",
+        "names_evidence_or_checker",
         "points_to_people"
       ]
     },
