@@ -48,6 +48,12 @@ case "$mode" in
     ;;
   prompt)
     mkdir -p "$state_dir" 2>/dev/null || exit 0
+    # No counter means no session start was seen for this id: the plugin was
+    # enabled mid-conversation, or the session was resumed. Inject once.
+    if [ ! -f "$counter" ]; then
+      echo 0 > "$counter" 2>/dev/null && print_rules
+      exit 0
+    fi
     n="$(cat "$counter" 2>/dev/null)"
     case "$n" in ''|*[!0-9]*) n=0 ;; esac
     n=$((n + 1))

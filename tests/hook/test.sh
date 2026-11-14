@@ -118,5 +118,18 @@ t_leading_zero_interval() {
   [ "$out" = "$(cat "$core")" ] && pass "$FUNCNAME" || flunk "$FUNCNAME" "EVERY=08 did not print cleanly at prompt 8: '${out:0:40}'"
 }
 
+t_prompt_injects_for_unseen_session() {
+  # Plugin enabled mid-conversation, or a resumed session: no SessionStart ran for this id.
+  local d o1 o2; d=$(fresh)
+  o1=$(DE_DELULU_EVERY=15 run "$d" prompt "$(sid late)"); o2=$(DE_DELULU_EVERY=15 run "$d" prompt "$(sid late)")
+  [ "$o1" = "$(cat "$core")" ] && [ -z "$o2" ] && pass "$FUNCNAME" || flunk "$FUNCNAME" "first prompt should print the core once"
+}
+
+t_resume_is_not_a_session_start_matcher() {
+  # Each headless turn resumes the session; re-injecting on resume would hide the real schedule.
+  local m; m=$(jq -r '.hooks.SessionStart[0].matcher' "$root/hooks/hooks.json")
+  case "|$m|" in *"|resume|"*) flunk "$FUNCNAME" "matcher is $m" ;; *) pass "$FUNCNAME" ;; esac
+}
+
 for t in $(declare -F | awk '$3 ~ /^t_/ {print $3}'); do $t; done
 exit $fail

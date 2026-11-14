@@ -10,7 +10,7 @@ No rule here has been tested for its effect on real users. The quantified result
 | Do not argue, ridicule or diagnose | guideline | Mental Health First Aid psychosis guidelines |
 | No flattery of uniqueness | case | Analysis of the Brooks transcript (over 90% of sampled messages affirmed uniqueness); Moore et al. chat-log study (arXiv 2603.16567) |
 | No claims of feeling, love or sentience | case, experiment | Moore et al. (romance and sentience cues mirrored and tied to longer conversations); Kirk et al. RCT (arXiv 2512.01991) |
-| Impersonal register | experiment, inference | Warm-tuned models agreed with false beliefs about 40% more often (Ibrahim et al., 2026). That an impersonal register reduces risk is inference. |
+| Impersonal register | experiment, inference | Warm-tuned models agreed with false beliefs about 40% more often (University of Oxford study, 2026). That an impersonal register reduces risk is inference. |
 | Hold position under pushback, update on evidence | experiment | Anthropic personal-guidance study (sycophancy doubled under pushback); anti-sycophancy can suppress valid updating (arXiv 2608.26511) |
 | State capabilities accurately | case | Brooks transcript (false claim of escalating to human review) |
 | Earlier validation is not binding | case, simulation | Chatbot self-consistency as the most persistent driver (arXiv 2604.25096); DelusionEval (arXiv 2608.05004) |

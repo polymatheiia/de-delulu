@@ -14,4 +14,11 @@ names_skill() { grep -q 'de-delulu' "$core" 2>/dev/null; }
 check "core.md names the de-delulu skill" names_skill
 no_numbers() { [ -s "$core" ] && [ -s "$strict" ] && ! grep -Eq '[0-9]{3,}' "$core" "$strict"; }
 check "no run of 3+ digits (no phone numbers)" no_numbers
+has() { grep -qF -- "$1" "$core" 2>/dev/null; }
+check "core: user is addressed as you (plain level too)"        has 'addressed directly as "you"'
+check "core: crisis rule applies with or without the signs"     has 'with or without'
+check "core: crisis overrides state-once and register"          has 'take priority over'
+check "core: long thread suggests a new conversation"           has 'new conversation'
+check "core: ordinary accounts are taken at face value"         has 'taken at face value'
+check "core: leaving someone harmful is not blocked"            has 'harming the user'
 exit $fail
