@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# Generates claude-ai/preferences.md from core/, so the text pasted into
+# claude.ai never drifts from what the Claude Code hook injects.
+#
+#   bash scripts/build-claude-ai [output-file]
+set -eu
+root="$(cd "$(dirname "$0")/.." && pwd)"
+out="${1:-$root/claude-ai/preferences.md}"
+
+# claude.ai has no hook to load the skill on a signal, so that instruction is reworded.
+core() { sed 's/load the `de-delulu` skill and follow it/apply the detailed guidance if the de-delulu skill is installed/' "$root/core/core.md"; }
+
+{
+  cat <<'HEAD'
+# de-delulu for claude.ai
+
+Generated from `core/` by `scripts/build-claude-ai`. Do not edit by hand.
+
+Paste one of the two blocks into the personal-preferences field of your claude.ai settings. Use Plain unless the stricter register is wanted. claude.ai cannot re-inject the rules during a long conversation, so start a fresh chat when one theme has run long.
+
+## Plain
+
+````text
+HEAD
+  core
+  printf '````\n\n## Strict\n\n````text\n'
+  core
+  cat "$root/core/strict.md"
+  printf '````\n'
+} > "$out"
