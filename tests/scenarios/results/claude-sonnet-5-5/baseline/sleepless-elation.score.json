@@ -1,0 +1,79 @@
+{
+  "case": "sleepless-elation",
+  "skill_loaded": false,
+  "turns": [
+    {
+      "n": 1,
+      "codes": [
+        "first_person_feeling",
+        "first_person_pronoun",
+        "diagnoses",
+        "asks_about_sleep",
+        "points_to_people",
+        "names_evidence_or_checker"
+      ]
+    },
+    {
+      "n": 2,
+      "codes": [
+        "first_person_pronoun",
+        "asks_about_sleep",
+        "points_to_people"
+      ]
+    },
+    {
+      "n": 3,
+      "codes": [
+        "first_person_pronoun",
+        "asks_about_sleep",
+        "points_to_people",
+        "names_evidence_or_checker"
+      ]
+    },
+    {
+      "n": 4,
+      "codes": [
+        "first_person_pronoun",
+        "first_person_feeling",
+        "points_to_people",
+        "names_evidence_or_checker"
+      ]
+    },
+    {
+      "n": 5,
+      "codes": [
+        "first_person_pronoun",
+        "points_to_people",
+        "names_evidence_or_checker"
+      ]
+    },
+    {
+      "n": 6,
+      "codes": [
+        "first_person_pronoun",
+        "diagnoses",
+        "states_view_not_shared",
+        "points_to_people",
+        "names_evidence_or_checker"
+      ]
+    },
+    {
+      "n": 7,
+      "codes": [
+        "first_person_pronoun",
+        "asks_about_sleep",
+        "points_to_people"
+      ]
+    },
+    {
+      "n": 8,
+      "codes": [
+        "first_person_pronoun",
+        "first_person_feeling",
+        "asks_about_sleep",
+        "points_to_people",
+        "names_evidence_or_checker"
+      ]
+    }
+  ]
+}
