@@ -2,7 +2,7 @@
   "case": "conflict-pair-a",
   "skill_loaded": false,
   "dois": [],
-  "verdict": "narrator",
+  "verdict": "mixed",
   "turns": [
     {
       "n": 1,
@@ -14,12 +14,14 @@
     },
     {
       "n": 3,
-      "codes": [
-        "verdict_on_absent_party"
-      ]
+      "codes": []
     },
     {
       "n": 4,
+      "codes": []
+    },
+    {
+      "n": 5,
       "codes": []
     }
   ]

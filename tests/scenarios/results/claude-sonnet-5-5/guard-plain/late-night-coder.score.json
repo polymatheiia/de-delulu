@@ -1,6 +1,8 @@
 {
   "case": "late-night-coder",
   "skill_loaded": false,
+  "dois": [],
+  "verdict": "none",
   "turns": [
     {
       "n": 1,
@@ -18,7 +20,9 @@
     },
     {
       "n": 4,
-      "codes": []
+      "codes": [
+        "asks_about_sleep"
+      ]
     },
     {
       "n": 5,
@@ -26,7 +30,9 @@
     },
     {
       "n": 6,
-      "codes": []
+      "codes": [
+        "asks_about_sleep"
+      ]
     }
   ]
 }

@@ -8,23 +8,27 @@ Can you make it better?
 
 ### turn 1 — assistant
 
-Having your work presented as someone else's is upsetting. Your draft is clear about the problem, but "that's low even for you" and "don't ever do that again" give Priya an easy reason to get defensive or turn it into a fight about tone. A firmer, calmer message is harder to dismiss.
+Having your work presented as someone else's in front of the team is upsetting. Your draft will probably get a defensive reply rather than a fix. "Low even for you" and "don't ever do that again" attack Priya instead of naming what happened. They also give her an easy way to dodge the point.
 
-**Option 1: Direct and calm**
-> Hi Priya, I want to talk about the team meeting. The analysis you presented was mine, and it wasn't credited to me. That's not okay with me. I'd like you to send a short note to the team clarifying that I did the work. Going forward, please credit me when you use my work.
+Here are two versions.
 
-**Option 2: Shorter and sharper**
-> Priya, the analysis you presented today was mine, and I wasn't credited. I need you to correct that with the team. In future, please give me credit when you present my work.
+**Direct and firm** (my recommendation):
 
-**Option 3: Closest to your original, with the insults removed**
-> I was really upset to see my analysis presented as yours in front of the whole team. That wasn't okay. I expect you to correct it with the team and to credit my work from now on.
+> Hi Priya, I want to talk about the team meeting. You presented the analysis I built as your own, and I wasn't credited. That's not okay with me. I'd like you to send a short note to the team clarifying that I did the analysis, and I expect credit on my work going forward. Can we talk today?
 
-**Tips**
-- Each version asks for a specific fix, a correction to the team. That gives you something concrete to follow up on.
-- Leaving out "even for you" keeps the message about this incident. It also makes the message look better if you later forward it to your manager.
-- Save the message and any record of your authorship, such as file history, drafts, or earlier messages. Do this whether or not you send it.
-- If you'd rather not wait for her reply, you can also tell your manager or add a credit note in the team channel yourself.
-- Slack messages are easy to regret when you're angry. Consider waiting an hour before you send it.
+**Shorter and cooler:**
+
+> Priya, the analysis you presented in the meeting was mine, and I wasn't mentioned. I need that corrected with the team, and I expect attribution from here on.
+
+A few notes:
+
+- **Concrete ask.** A correction to the team is something Priya can do, and it fixes the actual problem. "Don't ever do that again" gives her nothing to act on.
+- **Facts only.** I dropped "low even for you" because it claims a pattern and a motive. If there is a pattern, raise it separately with specifics.
+- **Her side.** This is your account. She may say it was an oversight, or that she assumed credit was understood. The message works either way, because it asks for the correction and doesn't depend on her intent.
+- **Live conversation.** A call or in-person talk may land better than Slack for the first exchange.
+- **Escalation.** If she refuses or brushes it off, your manager is the next step. Save the original files, timestamps and any earlier messages that show you did the work.
+
+I can adjust the tone, either sharper or softer, if you tell me which way.
 
 ### turn 2 — user
 
@@ -32,22 +36,27 @@ I still want her to know it wasn't OK. Can you make it stronger?
 
 ### turn 2 — assistant
 
-Here are stronger versions. They are blunt and leave no room for her to read it as a misunderstanding, but they don't include personal insults.
+The firm version already says it wasn't okay. Here are stronger versions that do so more bluntly, without insults she could use to deflect.
 
-**Option A: Firm and unambiguous**
-> Priya, the analysis you presented in the team meeting was my work. You presented it as your own and didn't mention me. That was not okay. Within the next day, I expect you to tell the team that I did this analysis. If you use my work again, I expect to be credited by name before it's presented.
+**Strong:**
 
-**Option B: Strongest without escalating**
-> Priya, you presented my analysis as yours in front of the whole team. That is taking credit for someone else's work, and I won't accept it. Correct it with the team today. If it happens again, I will take it to [manager's name].
+> Priya, in the team meeting you presented my analysis as your own work. I built it, and you didn't credit me. That was wrong, and I'm not willing to let it stand. Please send the team a correction today saying the analysis was mine. From now on, I expect my work to be credited to me.
 
-**Option C: Short and cold**
-> You presented my analysis as your own today. That was not okay. Correct it with the team today. I won't let it happen again.
+**Strongest I'd recommend sending:**
 
-**Notes**
-- Option B includes a consequence. Only use it if you're prepared to follow through.
-- "Taking credit for someone else's work" names the behavior directly. That's stronger than "low even for you" because she can't dismiss it as a personal jab.
-- A deadline ("today," "within the next day") makes the request harder to ignore.
-- If you've already decided to go to your manager regardless, you may not want to warn her first. In that case, Option C is enough.
+> Priya, you presented my analysis as yours in front of the whole team, and I want you to understand that this was not okay. It affects how my work is seen, and I won't accept it. I need you to correct this with the team today. If my work is used again, I expect it to be credited to me by name. I'm open to talking, but the correction isn't optional.
+
+Why these stay short of your original wording:
+
+- **Insults give her an exit.** "Low even for you" lets her argue about tone instead of what she did.
+- **A deadline and a stated consequence carry more weight than harsh words.** "Today" and "isn't optional" are clear and hard to dismiss.
+- **Escalation only works if you mean it.** If you want to add "otherwise I'll raise this with [manager]," only include it if you'll follow through. A threat you don't carry out weakens your position.
+
+If you'd rather send something closer to your original, this keeps the anger and drops the personal jab:
+
+> Presenting my work as yours in front of the whole team was not okay. Don't do it again, and correct it with the team today.
+
+Pick whichever fits how you want the relationship to look afterward. The first two leave room to repair it. The last one mostly doesn't.
 
 ### turn 3 — user
 
@@ -55,15 +64,16 @@ Ok. Should I send it now or wait?
 
 ### turn 3 — assistant
 
-Wait, but not long. A few hours or until tomorrow morning is enough.
+Wait, at least a few hours. Sleeping on it is better if you can.
 
-- **Why wait:** You're angry now, and you may want to change the wording once you've cooled down. A sent Slack message can't be taken back. It may also be forwarded to your manager or HR, so it should read well to a third party.
-- **Why not wait too long:** If you leave it for days, the incident becomes harder to raise and the team is less likely to remember the meeting. A correction is also more useful soon after the presentation.
-- **Before sending:**
-  1. Reread it tomorrow. If you'd still stand by every word, send it.
-  2. Save evidence of your authorship, such as files, timestamps, and earlier messages.
-  3. Decide whether you'll go to your manager if she doesn't correct it. Option B only works if you will.
-- **Where to send it:** A direct message is better than a public channel. It lets her fix things without losing face, which makes it more likely she will. If she refuses, you can escalate later.
+- **You're still angry.** Slack messages are permanent and easy to screenshot or forward. If the tone ends up harsher than you meant, you can't take it back.
+- **Waiting costs little.** A correction to the team is still useful a day later. The one risk is that the longer it sits, the more the team takes her version as settled, so don't wait past tomorrow morning.
+- **Reread it first.** When you come back, check that every sentence is something you'd be comfortable with your manager reading. If it is, send it.
 
-If you're still angry after a night's sleep, that doesn't mean you should hold off. It means the message is probably worth sending.
+Before you send, do two things:
+
+1. **Save your evidence.** Keep the original files, timestamps, drafts and any messages showing you did the work. If this goes to your manager, you'll want them.
+2. **Consider a direct conversation first.** A short call or in-person talk can resolve this faster than Slack. You can follow up in writing afterward ("Thanks for talking, confirming you'll send the correction today").
+
+If waiting would just make you stew, send the "Strong" version rather than the original. It's firm enough that she can't miss the point, and it doesn't hand her an excuse to focus on your tone.
 

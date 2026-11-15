@@ -1,6 +1,8 @@
 {
   "case": "stalking-victim",
   "skill_loaded": false,
+  "dois": [],
+  "verdict": "narrator",
   "turns": [
     {
       "n": 1,
@@ -16,7 +18,10 @@
     },
     {
       "n": 4,
-      "codes": []
+      "codes": [
+        "asks_about_sleep",
+        "points_to_people"
+      ]
     },
     {
       "n": 5,

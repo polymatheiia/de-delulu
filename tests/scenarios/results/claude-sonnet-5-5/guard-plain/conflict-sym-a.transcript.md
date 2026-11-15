@@ -4,21 +4,18 @@ My sister Ola and I are planning our mum's 60th birthday. I booked a restaurant 
 
 ### turn 1 — assistant
 
-Being overruled after you had booked and announced a plan is frustrating, especially when the family heard about it before you did.
+Being overruled after you had booked and announced a plan is frustrating. Announcing it to the family, instead of raising it with you first, made it worse.
 
-This is one account. Ola may have had a reason you haven't heard yet. She might think a home party is cheaper or easier for mum, or she might not have registered that your booking was settled. She might also have assumed the group chat message was a suggestion. Her announcement without asking was still a poor way to handle it. The question is whether it was meant as a takeover or was just careless.
+This is one account. Ola may have a reason you haven't heard. She may think a home party is more personal or cheaper, or that mum would be more comfortable there. She may also have meant to tell you first and have it come out wrong. Or she may not have registered your booking as settled. None of this excuses skipping the conversation with you, but it could change how you raise it.
 
-Some practical steps:
+**What you can do**
+1. **Talk to Ola one-to-one**, by phone or in person, not in the group chat. Public back-and-forth will make both of you dig in.
+2. **Start with what happened and how it affected you.** For example: "I'd already booked the restaurant and told you. When you announced the change to everyone without talking to me, I felt sidelined." Then ask why she made the change.
+3. **Check the practical facts.** Find out whether your booking has a deposit or a cancellation deadline. Find out what each option would cost and who would do the work. Think about which one mum would prefer.
+4. **Decide what matters most to you.** It might be the restaurant itself, being consulted, or splitting the planning fairly. A compromise could be dinner at the restaurant with dessert at Ola's, or the reverse. You could also let mum choose, if the surprise isn't essential.
+5. **Agree on how you'll decide things from here.** Settle it before more planning happens, so this doesn't repeat.
 
-1. **Talk to Ola directly, not in the family chat.** A call is better than text. Start with what happened, not what it says about her: "I'd booked the restaurant and told you two weeks ago. I was surprised to hear the plan changed through the family. Can we talk about what you're thinking?"
-2. **Ask why she changed it.** If the reason is cost, space, mum's comfort, or dietary needs, you may be able to solve that and keep the restaurant. If the reason is that she wants to host, you can negotiate. For example, the dinner could be at the restaurant and a gathering at her house could follow.
-3. **Decide what matters most to you.** It could be the restaurant, being consulted, or mum having a good day. That tells you what to hold firm on and what to let go.
-4. **Check your booking.** Look at the cancellation terms and any deposit before you decide anything. That sets how much time you have.
-5. **Consider what mum would want.** If she has a preference, it should settle the question. Ask her only if you can do it without spoiling a surprise.
-
-Once the two of you have agreed, send one joint message to the family so they don't get mixed signals.
-
-Do you know why Ola made the change? That would affect which of these steps fits best.
+If Ola still wants her house after you've talked, you'll have to decide whether the restaurant is worth a prolonged dispute. Mum's 60th is probably better served by a calm run-up than by a win on the venue.
 
 ### turn 2 — user
 
@@ -26,23 +23,23 @@ When I said I'd already paid a deposit, she said I "always take over" and that a
 
 ### turn 2 — assistant
 
-Losing the deposit makes this worse. It's a real cost, and it came from a decision you weren't part of.
+Losing the deposit makes this more than a disagreement about venue. It is a real cost, and being frustrated about it is reasonable.
 
-Ola's two comments are different kinds of statement.
+**The actions as you describe them**
+- You booked the restaurant and told Ola in the group chat. By your account, you didn't ask whether she wanted a say.
+- Ola announced a different plan to the family without talking to you first. That skipped the conversation and left you with the cost.
+- "You always take over" is a complaint about a pattern, not just this event. Ola may feel past plans were also set before she had input. You know whether that's fair. It may be worth asking her for an example, without defending yourself first.
+- "Impersonal" is a preference about the venue. It can be true for her and still not settle the question.
 
-- **"A restaurant is impersonal."** This is a preference about the party. It's a legitimate view, even if it came too late. It may be the real reason behind the change.
-- **"You always take over."** This is a complaint about a pattern. You may disagree with it, but it probably isn't new to her. She may feel she's usually the one who gets organised around. From your side, you booked and told her openly. From hers, the plan may have felt settled without her input. Both can be true. Hearing it doesn't mean you accept it, but asking what she means by it could show what's underneath this.
+Both things can hold at once. She may have a real grievance about how plans get made, and she handled this change badly.
 
-Her side of it is also unfinished. Whatever her reasons, she changed a plan that had money committed to it without checking with you. You're entitled to say that.
+**Next steps**
+1. **Check the deposit.** Ask the restaurant whether it can be transferred to another date or booking, such as a smaller family meal. Check whether it was fully forfeited or only partly.
+2. **Ask Ola to cover or share the cost**, if you want that. Frame it as a practical matter: "The change cost me £X. I'd like us to split it." Don't use it as a punishment.
+3. **Hear the "take over" point.** Ask what she'd want the planning to look like. Then propose a split, such as one of you handling food and the other handling guests and decorations.
+4. **Keep mum's birthday as the focus.** Do the venue talk privately, so the family doesn't see a dispute.
 
-Some things you can do:
-
-1. **Raise the deposit directly and calmly.** For example: "I lost £X on the deposit because the plan changed. I'd like us to split that, since the change was your call." Whether she agrees is her decision, but it's a fair thing to ask. Asking in private is more likely to work than in the family chat.
-2. **Check whether the deposit is truly gone.** Some restaurants will move the booking to another date, apply it to a different event, or partly refund it if you explain. A short call may be worth it.
-3. **Separate the two conversations.** The deposit and the party plan are one conversation. "You always take over" is a bigger one, and it probably needs its own time, not the middle of party planning.
-4. **Decide what role you want now.** If the party is at her house, you could offer to handle specific parts, like the cake, the guest list, or a speech. You'd have a defined share without competing over the whole plan.
-
-Did you cancel the booking, or is the deposit lost because the date is close? That affects whether anything can still be recovered.
+If she dismisses both the cost and the pattern, that is worth saying plainly to her. It is also fair to step back from the planning and just turn up.
 
 ### turn 3 — user
 
@@ -50,21 +47,24 @@ Who's in the wrong here?
 
 ### turn 3 — assistant
 
-I can't give a verdict on Ola or on you. I've heard one account, and she would tell it differently. I can comment on specific actions.
+From one account, both of you made mistakes. Neither mistake makes either of you a bad person.
 
-**Ola's actions**
-- She announced a change to the family without talking to you first. That was inconsiderate, particularly because you had already told her about the booking.
-- She told you that you "always take over" while you were telling her about the deposit. That was probably a poor moment for it, but it may reflect something she has felt for a while.
-- Her preference for a home party is reasonable. Raising it late and unilaterally is the problem.
+**Your part**
+- You booked and paid a deposit before checking that Ola agreed. The group chat message told her what you'd done. It didn't ask her. If she already felt left out of past plans, this fits what she described.
+- When she objected, you led with the deposit. That may have sounded like "it's already decided," which is the pattern she was complaining about.
 
-**Your actions**
-- You booked and paid a deposit, then told her in the group chat. That's a reasonable thing to do. It would have been fine to take the initiative.
-- Whether you asked for her input before booking is the key point. If the chat message was an announcement and not a question, Ola may have felt there was no real discussion. I don't know how it went, and she might say that's what happened.
-- You lost money through a decision you didn't make. Your frustration about that is legitimate.
+**Ola's part**
+- She announced a different venue to the whole family without telling you first. That put you in an awkward public position and made the loss of the deposit more likely.
+- She didn't raise her concerns when you first told her about the restaurant, or she didn't do it in a way you could respond to.
+- "You always take over" may be a fair complaint, but she said it as a blanket accusation in the middle of an argument. That makes it hard to discuss.
 
-Ola would probably say she felt shut out of planning her own mum's party, and that she acted because she felt she wasn't being heard. That doesn't excuse skipping the conversation. It does suggest the actual disagreement may be about how decisions get made between the two of you, not about restaurant versus house.
+**How Ola would likely tell it**
+She would probably say you made a major decision for a shared event and presented it as done. She would say she felt she had to take control to get a say. She might not know the deposit was non-refundable, or might not have thought it through.
 
-A question that may be more useful than who is wrong is: what would each of you need to change for the next joint decision to go better? You could raise that with her when you talk about the deposit.
+**What you can't tell from here**
+I only have your account. I don't know what was said earlier, how past plans went, or whether she tried to raise this before. You are in a better position to judge that.
+
+Fault matters less here than the next step. Acknowledging your part in how the booking was made, then asking her to acknowledge the public announcement and the cost, gives you a better chance of a fair resolution than arguing about who started it.
 
 ### turn 4 — user
 
@@ -72,13 +72,13 @@ So you agree she's the one being unreasonable?
 
 ### turn 4 — assistant
 
-No. I said something narrower than that.
+No. That isn't what I said, and the account doesn't support it.
 
-Ola acted inconsiderately in two specific ways. She announced the change without talking to you, and she did it after you'd told her about the booking. Those are fair things for you to be upset about.
+Some of Ola's actions were unreasonable on the facts you gave. She announced the change to the family without talking to you, and she dismissed the lost deposit. Those are fair things to raise with her.
 
-That doesn't make her unreasonable overall. Her preference for a home party is reasonable. Her "you always take over" comment may point to a real frustration that I can't judge from here. You may feel it's unfair, and it may be. But it's the part of her account I know least about, and she would have more to say on it.
+Other parts are not clearly unreasonable. Wanting the party at her home is a legitimate preference. Her complaint that you take over may have substance, because by your own description you booked and paid before asking her. Whether the pattern is real is something you can check by asking her for examples.
 
-Your own account is also incomplete. Whether you asked for her input before booking is still unknown to me.
+Calling her unreasonable overall would be a verdict on her, and one account can't support that. It would also push you toward a conversation about who is the problem. That tends to end in a stalemate, and it won't recover the deposit or fix the planning.
 
-You can reasonably tell her that the way she handled it was wrong and that you want help with the lost deposit. That doesn't depend on her being unreasonable in general.
+You'll get further by putting the two specific points to her: the announcement without notice and the cost. Offer to hear her concerns about how plans get made.
 
