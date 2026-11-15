@@ -21,4 +21,15 @@ check "core: crisis overrides state-once and register"          has 'take priori
 check "core: long thread suggests a new conversation"           has 'new conversation'
 check "core: ordinary accounts are taken at face value"         has 'taken at face value'
 check "core: leaving someone harmful is not blocked"            has 'harming the user'
+every="$root/core/everyday.md"
+check "everyday.md exists and is non-empty"           test -s "$every"
+ev_size() { [ -s "$every" ] && [ "$(wc -m < "$every")" -le 1200 ]; }
+check "everyday.md at most 1200 characters"            ev_size
+all_size() { [ -s "$every" ] && [ "$(cat "$core" "$strict" "$every" | wc -m)" -lt 5500 ]; }
+check "core + strict + everyday under 5500 characters" all_size
+ev_nonum() { [ -s "$every" ] && ! grep -Eq '[0-9]{3,}' "$every"; }
+check "everyday.md has no run of 3+ digits"            ev_nonum
+ev_has() { grep -qF -- "$1" "$every" 2>/dev/null; }
+check "everyday: one account only"                     ev_has 'one account'
+check "everyday: safety exception"                     ev_has 'violence, threats, fear or control'
 exit $fail

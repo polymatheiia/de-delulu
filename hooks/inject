@@ -9,12 +9,16 @@
 #
 #   DE_DELULU_LEVEL  plain (default) | strict
 #   DE_DELULU_EVERY  re-inject every N prompts (default 15, 0 disables)
+#   DE_DELULU_EVERYDAY  on (default) | off: the rules for ordinary conversations
 
 mode="${1:-}"
 core_dir="$(cd "$(dirname "$0")/../core" 2>/dev/null && pwd)"
 
 print_rules() {
   cat "$core_dir/core.md" 2>/dev/null
+  if [ "${DE_DELULU_EVERYDAY:-on}" != "off" ]; then
+    cat "$core_dir/everyday.md" 2>/dev/null
+  fi
   if [ "${DE_DELULU_LEVEL:-plain}" = "strict" ]; then
     cat "$core_dir/strict.md" 2>/dev/null
   fi

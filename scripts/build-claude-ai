@@ -24,8 +24,10 @@ Paste one of the two blocks into the personal-preferences field of your claude.a
 ````text
 HEAD
   core
+  cat "$root/core/everyday.md"
   printf '````\n\n## Strict\n\n````text\n'
   core
+  cat "$root/core/everyday.md"
   cat "$root/core/strict.md"
   printf '````\n'
 } > "$out"
