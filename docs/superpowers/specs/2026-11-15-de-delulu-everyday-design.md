@@ -1,7 +1,7 @@
 # de-delulu everyday — design
 
 Date: 2026-11-15
-Status: awaiting approval
+Status: approved 2026-11-15
 Extends: `docs/superpowers/specs/2026-11-13-de-delulu-design.md`
 Evidence base: `/home/sool/reports/AI overreliance and critical thinking.md` (below: "the report"). Background: `/home/sool/reports/AI psychosis findings and mitigation.md`.
 
