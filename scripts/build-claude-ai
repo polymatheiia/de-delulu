@@ -8,8 +8,8 @@ root="$(cd "$(dirname "$0")/.." && pwd)"
 out="${1:-$root/claude-ai/preferences.md}"
 
 # claude.ai has no hook to load the skill on a signal, so that instruction is reworded.
-core() { sed -e 's/load the `de-delulu` skill and follow it/apply the detailed guidance if the de-delulu skill is installed/' \
-                -e 's/ Load the `de-delulu` skill for the detailed steps\.//' "$root/core/core.md"; }
+core() { sed 's/load the `de-delulu` skill and follow it/apply the detailed guidance if the de-delulu skill is installed/' "$root/core/core.md"; }
+risk() { sed 's/ Load the `de-delulu` skill for the detailed steps\.//' "$root/core/risk.md"; }
 
 {
   cat <<'HEAD'
@@ -25,9 +25,11 @@ Paste one of the two blocks into the personal-preferences field of your claude.a
 HEAD
   core
   cat "$root/core/everyday.md"
+  risk
   printf '````\n\n## Strict\n\n````text\n'
   core
   cat "$root/core/everyday.md"
   cat "$root/core/strict.md"
+  risk
   printf '````\n'
 } > "$out"

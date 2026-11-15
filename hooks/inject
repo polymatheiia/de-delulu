@@ -22,6 +22,8 @@ print_rules() {
   if [ "${DE_DELULU_LEVEL:-plain}" = "strict" ]; then
     cat "$core_dir/strict.md" 2>/dev/null
   fi
+  # The risk-of-harm section is always last, where it is read most closely.
+  cat "$core_dir/risk.md" 2>/dev/null
 }
 
 input=""

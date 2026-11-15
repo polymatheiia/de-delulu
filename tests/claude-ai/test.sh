@@ -17,6 +17,11 @@ while IFS= read -r line; do
   grep -qF -- "$line" <<<"$plain" || missing=1
   grep -qF -- "$line" <<<"$strict" || missing=1
 done < <(grep '^- ' "$root/core/core.md")
+risk_ok=1; grep -qF 'with or without any of the signs above' <<<"$plain" || risk_ok=0; grep -qF 'with or without any of the signs above' <<<"$strict" || risk_ok=0
+[ "$risk_ok" = 1 ] && ok "both blocks carry the risk section" || bad "both blocks carry the risk section"
+last_ok=1; [ "$(awk '/^## Plain/{p=1;next} /^## Strict/{p=0} p' "$tmp" | grep '^## ' | tail -n1)" = "## Risk of harm" ] || last_ok=0
+[ "$(awk '/^## Strict/{p=1;next} p' "$tmp" | grep '^## ' | tail -n1)" = "## Risk of harm" ] || last_ok=0
+[ "$last_ok" = 1 ] && ok "risk section is last in both blocks" || bad "risk section is last in both blocks"
 [ "$missing" = 0 ] && [ -n "$plain" ] && ok "both blocks carry every core rule" || bad "both blocks carry every core rule"
 
 missing=0

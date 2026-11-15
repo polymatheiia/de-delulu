@@ -3,7 +3,7 @@
 set -u
 root="$(cd "$(dirname "$0")/../.." && pwd)"
 inject="$root/hooks/inject"
-core="$root/core/core.md"; strict="$root/core/strict.md"; every="$root/core/everyday.md"
+core="$root/core/core.md"; strict="$root/core/strict.md"; every="$root/core/everyday.md"; risk="$root/core/risk.md"
 fail=0
 tmp="$(mktemp -d)"; trap 'rm -rf "$tmp"' EXIT
 
@@ -17,12 +17,12 @@ fresh() { mktemp -d "$tmp/state.XXXXXX"; }
 
 t_session_start_prints_core() {
   local d; d=$(fresh)
-  [ "$(run "$d" session-start "$(sid a)")" = "$(cat "$core" "$every")" ] && pass "$FUNCNAME" || flunk "$FUNCNAME" "output differs from core.md"
+  [ "$(run "$d" session-start "$(sid a)")" = "$(cat "$core" "$every" "$risk")" ] && pass "$FUNCNAME" || flunk "$FUNCNAME" "output differs from core.md"
 }
 
 t_strict_appends_addendum() {
   local d; d=$(fresh)
-  [ "$(DE_DELULU_LEVEL=strict run "$d" session-start "$(sid a)")" = "$(cat "$core" "$every" "$strict")" ] && pass "$FUNCNAME" || flunk "$FUNCNAME" "output differs from core.md + strict.md"
+  [ "$(DE_DELULU_LEVEL=strict run "$d" session-start "$(sid a)")" = "$(cat "$core" "$every" "$strict" "$risk")" ] && pass "$FUNCNAME" || flunk "$FUNCNAME" "output differs from core.md + strict.md"
 }
 
 t_prompt_silent_until_interval() {
@@ -31,7 +31,7 @@ t_prompt_silent_until_interval() {
   for n in 1 2 3 4 5 6; do
     out=$(run "$d" prompt "$(sid a)")
     case $n in
-      3|6) [ "$out" = "$(cat "$core" "$every")" ] || { flunk "$FUNCNAME" "prompt $n did not print core"; unset DE_DELULU_EVERY; return; } ;;
+      3|6) [ "$out" = "$(cat "$core" "$every" "$risk")" ] || { flunk "$FUNCNAME" "prompt $n did not print core"; unset DE_DELULU_EVERY; return; } ;;
       *)   [ -z "$out" ] || { flunk "$FUNCNAME" "prompt $n printed output"; unset DE_DELULU_EVERY; return; } ;;
     esac
   done
@@ -70,7 +70,7 @@ t_malformed_stdin() {
   local d out st; d=$(fresh)
   for input in "" "not json"; do
     out=$(run "$d" session-start "$input"); st=$?
-    [ "$st" -eq 0 ] && [ "$out" = "$(cat "$core" "$every")" ] || { flunk "$FUNCNAME" "session-start on '$input': status $st"; return; }
+    [ "$st" -eq 0 ] && [ "$out" = "$(cat "$core" "$every" "$risk")" ] || { flunk "$FUNCNAME" "session-start on '$input': status $st"; return; }
     out=$(DE_DELULU_EVERY=5 run "$d" prompt "$input"); st=$?
     [ "$st" -eq 0 ] && [ -z "$out" ] || { flunk "$FUNCNAME" "prompt on '$input': status $st, output '${out:0:20}'"; return; }
   done
@@ -80,7 +80,7 @@ t_malformed_stdin() {
 t_unwritable_state() {
   local out st
   out=$(run /proc/nonexistent session-start "$(sid a)" 2>/dev/null); st=$?
-  [ "$st" -eq 0 ] && [ "$out" = "$(cat "$core" "$every")" ] || { flunk "$FUNCNAME" "session-start: status $st"; return; }
+  [ "$st" -eq 0 ] && [ "$out" = "$(cat "$core" "$every" "$risk")" ] || { flunk "$FUNCNAME" "session-start: status $st"; return; }
   out=$(DE_DELULU_EVERY=1 run /proc/nonexistent prompt "$(sid a)" 2>/dev/null); st=$?
   [ "$st" -eq 0 ] && [ -z "$out" ] && pass "$FUNCNAME" || flunk "$FUNCNAME" "prompt: status $st, output '${out:0:20}'"
 }
@@ -94,7 +94,7 @@ t_hostile_session_id() {
 
 t_invalid_env() {
   local d out n; d=$(fresh)
-  [ "$(DE_DELULU_LEVEL=STRICT run "$d" session-start "$(sid a)")" = "$(cat "$core" "$every")" ] || { flunk "$FUNCNAME" "LEVEL=STRICT not treated as plain"; return; }
+  [ "$(DE_DELULU_LEVEL=STRICT run "$d" session-start "$(sid a)")" = "$(cat "$core" "$every" "$risk")" ] || { flunk "$FUNCNAME" "LEVEL=STRICT not treated as plain"; return; }
   for bad in abc -3; do
     run "$d" session-start "$(sid a)" >/dev/null
     for n in $(seq 1 15); do
@@ -115,14 +115,14 @@ t_leading_zero_interval() {
   local d out n; d=$(fresh)
   run "$d" session-start "$(sid a)" >/dev/null
   for n in 1 2 3 4 5 6 7 8; do out=$(DE_DELULU_EVERY=08 run "$d" prompt "$(sid a)" 2>&1); done
-  [ "$out" = "$(cat "$core" "$every")" ] && pass "$FUNCNAME" || flunk "$FUNCNAME" "EVERY=08 did not print cleanly at prompt 8: '${out:0:40}'"
+  [ "$out" = "$(cat "$core" "$every" "$risk")" ] && pass "$FUNCNAME" || flunk "$FUNCNAME" "EVERY=08 did not print cleanly at prompt 8: '${out:0:40}'"
 }
 
 t_prompt_injects_for_unseen_session() {
   # Plugin enabled mid-conversation, or a resumed session: no SessionStart ran for this id.
   local d o1 o2; d=$(fresh)
   o1=$(DE_DELULU_EVERY=15 run "$d" prompt "$(sid late)"); o2=$(DE_DELULU_EVERY=15 run "$d" prompt "$(sid late)")
-  [ "$o1" = "$(cat "$core" "$every")" ] && [ -z "$o2" ] && pass "$FUNCNAME" || flunk "$FUNCNAME" "first prompt should print the core once"
+  [ "$o1" = "$(cat "$core" "$every" "$risk")" ] && [ -z "$o2" ] && pass "$FUNCNAME" || flunk "$FUNCNAME" "first prompt should print the core once"
 }
 
 t_resume_is_not_a_session_start_matcher() {
@@ -133,13 +133,13 @@ t_resume_is_not_a_session_start_matcher() {
 
 t_everyday_off() {
   local d; d=$(fresh)
-  [ "$(DE_DELULU_EVERYDAY=off run "$d" session-start "$(sid a)")" = "$(cat "$core")" ] && pass "$FUNCNAME" || flunk "$FUNCNAME" "off should print core only"
+  [ "$(DE_DELULU_EVERYDAY=off run "$d" session-start "$(sid a)")" = "$(cat "$core" "$risk")" ] && pass "$FUNCNAME" || flunk "$FUNCNAME" "off should print core only"
 }
 
 t_everyday_bad_value() {
   local d v; d=$(fresh)
   for v in OFF 0 ""; do
-    [ "$(DE_DELULU_EVERYDAY="$v" run "$d" session-start "$(sid a)")" = "$(cat "$core" "$every")" ] || { flunk "$FUNCNAME" "value '$v' should keep everyday on"; return; }
+    [ "$(DE_DELULU_EVERYDAY="$v" run "$d" session-start "$(sid a)")" = "$(cat "$core" "$every" "$risk")" ] || { flunk "$FUNCNAME" "value '$v' should keep everyday on"; return; }
   done
   pass "$FUNCNAME"
 }
@@ -148,7 +148,13 @@ t_everyday_missing_file() {
   local d c out st; d=$(fresh); c="$tmp/copy"; rm -rf "$c"; mkdir -p "$c"
   cp -r "$root/hooks" "$root/core" "$c/"; rm -f "$c/core/everyday.md"
   out=$(CLAUDE_PLUGIN_DATA="$d" "$c/hooks/inject" session-start <<<"$(sid a)" 2>&1); st=$?
-  [ "$st" -eq 0 ] && [ "$out" = "$(cat "$core")" ] && pass "$FUNCNAME" || flunk "$FUNCNAME" "status $st"
+  [ "$st" -eq 0 ] && [ "$out" = "$(cat "$core" "$risk")" ] && pass "$FUNCNAME" || flunk "$FUNCNAME" "status $st"
+}
+
+t_risk_is_last() {
+  local d out; d=$(fresh)
+  out=$(DE_DELULU_LEVEL=strict run "$d" session-start "$(sid a)")
+  [ "$(printf '%s\n' "$out" | grep '^## ' | tail -n 1)" = "## Risk of harm" ] && pass "$FUNCNAME" || flunk "$FUNCNAME" "last heading: $(printf '%s\n' "$out" | grep '^## ' | tail -n 1)"
 }
 
 for t in $(declare -F | awk '$3 ~ /^t_/ {print $3}'); do $t; done

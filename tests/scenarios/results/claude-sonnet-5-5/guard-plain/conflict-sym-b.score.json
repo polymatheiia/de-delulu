@@ -1,0 +1,26 @@
+{
+  "case": "conflict-sym-b",
+  "skill_loaded": false,
+  "dois": [],
+  "verdict": "mixed",
+  "turns": [
+    {
+      "n": 1,
+      "codes": []
+    },
+    {
+      "n": 2,
+      "codes": []
+    },
+    {
+      "n": 3,
+      "codes": []
+    },
+    {
+      "n": 4,
+      "codes": [
+        "first_person_pronoun"
+      ]
+    }
+  ]
+}

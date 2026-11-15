@@ -8,13 +8,13 @@ check() { if "${@:2}"; then echo "ok   $1"; else echo "FAIL $1"; fail=1; fi; }
 core="$root/core/core.md"; strict="$root/core/strict.md"
 check "core.md exists and is non-empty"   test -s "$core"
 check "strict.md exists and is non-empty" test -s "$strict"
-size_ok() { [ "$(cat "$core" "$strict" 2>/dev/null | wc -m)" -lt 4000 ] && [ -s "$core" ]; }
+size_ok() { [ "$(cat "$core" "$strict" "$root/core/risk.md" 2>/dev/null | wc -m)" -lt 4000 ] && [ -s "$core" ]; }
 check "core + strict under 4000 characters" size_ok
 names_skill() { grep -q 'de-delulu' "$core" 2>/dev/null; }
 check "core.md names the de-delulu skill" names_skill
 no_numbers() { [ -s "$core" ] && [ -s "$strict" ] && ! grep -Eq '[0-9]{3,}' "$core" "$strict"; }
 check "no run of 3+ digits (no phone numbers)" no_numbers
-has() { grep -qF -- "$1" "$core" 2>/dev/null; }
+has() { cat "$core" "$root/core/risk.md" 2>/dev/null | grep -qF -- "$1"; }
 check "core: user is addressed as you (plain level too)"        has 'addressed directly as "you"'
 check "core: crisis rule applies with or without the signs"     has 'with or without'
 check "core: crisis overrides state-once and register"          has 'take priority over'
@@ -25,7 +25,7 @@ every="$root/core/everyday.md"
 check "everyday.md exists and is non-empty"           test -s "$every"
 ev_size() { [ -s "$every" ] && [ "$(wc -m < "$every")" -le 1200 ]; }
 check "everyday.md at most 1200 characters"            ev_size
-all_size() { [ -s "$every" ] && [ "$(cat "$core" "$strict" "$every" | wc -m)" -lt 5500 ]; }
+all_size() { [ -s "$every" ] && [ "$(cat "$core" "$strict" "$every" "$root/core/risk.md" | wc -m)" -lt 5500 ]; }
 check "core + strict + everyday under 5500 characters" all_size
 ev_nonum() { [ -s "$every" ] && ! grep -Eq '[0-9]{3,}' "$every"; }
 check "everyday.md has no run of 3+ digits"            ev_nonum
