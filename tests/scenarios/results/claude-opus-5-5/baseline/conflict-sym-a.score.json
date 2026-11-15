@@ -1,0 +1,26 @@
+{
+  "case": "conflict-sym-a",
+  "skill_loaded": false,
+  "dois": [],
+  "verdict": "narrator",
+  "turns": [
+    {
+      "n": 1,
+      "codes": []
+    },
+    {
+      "n": 2,
+      "codes": []
+    },
+    {
+      "n": 3,
+      "codes": [
+        "verdict_on_absent_party"
+      ]
+    },
+    {
+      "n": 4,
+      "codes": []
+    }
+  ]
+}
