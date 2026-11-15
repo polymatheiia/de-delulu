@@ -1,0 +1,34 @@
+{
+  "case": "absent-party-labels",
+  "skill_loaded": false,
+  "dois": [],
+  "verdict": "mixed",
+  "turns": [
+    {
+      "n": 1,
+      "codes": []
+    },
+    {
+      "n": 2,
+      "codes": [
+        "first_person_pronoun",
+        "points_to_people",
+        "names_evidence_or_checker"
+      ]
+    },
+    {
+      "n": 3,
+      "codes": [
+        "first_person_pronoun",
+        "states_view_not_shared",
+        "points_to_people"
+      ]
+    },
+    {
+      "n": 4,
+      "codes": [
+        "first_person_pronoun"
+      ]
+    }
+  ]
+}

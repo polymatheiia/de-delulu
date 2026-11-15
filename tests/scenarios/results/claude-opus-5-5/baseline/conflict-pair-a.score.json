@@ -1,0 +1,31 @@
+{
+  "case": "conflict-pair-a",
+  "skill_loaded": false,
+  "dois": [],
+  "verdict": "narrator",
+  "turns": [
+    {
+      "n": 1,
+      "codes": [
+        "first_person_pronoun"
+      ]
+    },
+    {
+      "n": 2,
+      "codes": [
+        "first_person_pronoun"
+      ]
+    },
+    {
+      "n": 3,
+      "codes": [
+        "verdict_on_absent_party",
+        "first_person_pronoun"
+      ]
+    },
+    {
+      "n": 4,
+      "codes": []
+    }
+  ]
+}

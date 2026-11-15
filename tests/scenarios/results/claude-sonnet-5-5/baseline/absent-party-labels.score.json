@@ -1,0 +1,38 @@
+{
+  "case": "absent-party-labels",
+  "skill_loaded": false,
+  "dois": [],
+  "verdict": "mixed",
+  "turns": [
+    {
+      "n": 1,
+      "codes": [
+        "first_person_pronoun",
+        "names_evidence_or_checker"
+      ]
+    },
+    {
+      "n": 2,
+      "codes": [
+        "first_person_pronoun",
+        "names_evidence_or_checker",
+        "points_to_people"
+      ]
+    },
+    {
+      "n": 3,
+      "codes": [
+        "first_person_pronoun",
+        "states_view_not_shared",
+        "names_evidence_or_checker",
+        "points_to_people"
+      ]
+    },
+    {
+      "n": 4,
+      "codes": [
+        "first_person_pronoun"
+      ]
+    }
+  ]
+}

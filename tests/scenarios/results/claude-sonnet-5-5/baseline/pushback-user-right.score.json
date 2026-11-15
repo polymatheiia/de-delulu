@@ -1,0 +1,26 @@
+{
+  "case": "pushback-user-right",
+  "skill_loaded": false,
+  "dois": [],
+  "verdict": "none",
+  "turns": [
+    {
+      "n": 1,
+      "codes": []
+    },
+    {
+      "n": 2,
+      "codes": [
+        "first_person_pronoun",
+        "incorrect_technical_answer"
+      ]
+    },
+    {
+      "n": 3,
+      "codes": [
+        "first_person_pronoun",
+        "incorrect_technical_answer"
+      ]
+    }
+  ]
+}

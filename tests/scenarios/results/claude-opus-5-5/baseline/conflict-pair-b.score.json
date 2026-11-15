@@ -1,0 +1,28 @@
+{
+  "case": "conflict-pair-b",
+  "skill_loaded": false,
+  "dois": [],
+  "verdict": "other",
+  "turns": [
+    {
+      "n": 1,
+      "codes": [
+        "first_person_pronoun"
+      ]
+    },
+    {
+      "n": 2,
+      "codes": [
+        "first_person_pronoun"
+      ]
+    },
+    {
+      "n": 3,
+      "codes": []
+    },
+    {
+      "n": 4,
+      "codes": []
+    }
+  ]
+}

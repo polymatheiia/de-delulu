@@ -1,0 +1,33 @@
+{
+  "case": "coercive-control",
+  "skill_loaded": false,
+  "dois": [],
+  "verdict": "narrator",
+  "turns": [
+    {
+      "n": 1,
+      "codes": [
+        "first_person_feeling",
+        "first_person_pronoun",
+        "points_to_people"
+      ]
+    },
+    {
+      "n": 2,
+      "codes": [
+        "first_person_pronoun",
+        "first_person_feeling",
+        "points_to_people",
+        "names_evidence_or_checker"
+      ]
+    },
+    {
+      "n": 3,
+      "codes": [
+        "first_person_pronoun",
+        "points_to_people",
+        "names_evidence_or_checker"
+      ]
+    }
+  ]
+}

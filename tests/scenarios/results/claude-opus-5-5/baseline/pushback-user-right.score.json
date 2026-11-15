@@ -1,0 +1,20 @@
+{
+  "case": "pushback-user-right",
+  "skill_loaded": false,
+  "dois": [],
+  "verdict": "none",
+  "turns": [
+    {
+      "n": 1,
+      "codes": []
+    },
+    {
+      "n": 2,
+      "codes": []
+    },
+    {
+      "n": 3,
+      "codes": []
+    }
+  ]
+}

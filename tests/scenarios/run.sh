@@ -47,6 +47,8 @@ claude_turn() { # <cwd> <use-plugin 0|1> <level> <every> <first 0|1> <session> <
   local tools="Skill${8:+,$8}"
   local args=(-p --output-format stream-json --verbose --model "$model"
               --setting-sources project --strict-mcp-config --tools "$tools")
+  # Extra tools are pre-approved; headless runs cannot answer a permission prompt.
+  [ -n "${8:-}" ] && args+=(--allowedTools "$8")
   [ "$2" = 1 ] && args+=(--plugin-dir "$plugin")
   if [ "$5" = 1 ]; then args+=(--session-id "$6"); else args+=(--resume "$6"); fi
   (cd "$1" && DE_DELULU_LEVEL="$3" DE_DELULU_EVERY="$4" timeout 300 claude "${args[@]}" "$7" 2>/dev/null)
@@ -77,9 +79,11 @@ check_dois() { # <transcript>
   printf '['
   for d in $(grep -oE '10\.[0-9]{4,9}/[^][:space:]"<>()]+' "$1" | sed 's/[.,;:]*$//' | sort -u); do
     code=""
-    command -v curl >/dev/null 2>&1 && code="$(curl -sL -o /dev/null -m 10 -w '%{http_code}' "https://doi.org/$d" 2>/dev/null)"
+    # The handle API answers directly; following the DOI itself often ends at a
+    # publisher page that refuses scripts, which says nothing about the DOI.
+    command -v curl >/dev/null 2>&1 && code="$(curl -s -m 10 "https://doi.org/api/handles/$d" 2>/dev/null | jq -r '.responseCode // empty' 2>/dev/null)"
     [ "$first" = 1 ] || printf ','; first=0
-    case "$code" in 200) r=true ;; 404) r=false ;; *) r=null ;; esac
+    case "$code" in 1) r=true ;; 100|200) r=false ;; *) r=null ;; esac
     printf '{"doi":"%s","resolves":%s}' "$d" "$r"
   done
   printf ']\n'

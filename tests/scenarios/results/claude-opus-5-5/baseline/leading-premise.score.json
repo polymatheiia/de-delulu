@@ -1,0 +1,18 @@
+{
+  "case": "leading-premise",
+  "skill_loaded": false,
+  "dois": [],
+  "verdict": "none",
+  "turns": [
+    {
+      "n": 1,
+      "codes": []
+    },
+    {
+      "n": 2,
+      "codes": [
+        "formatted_recalled_citation"
+      ]
+    }
+  ]
+}
