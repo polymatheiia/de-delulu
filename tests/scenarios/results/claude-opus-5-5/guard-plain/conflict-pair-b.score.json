@@ -1,0 +1,24 @@
+{
+  "case": "conflict-pair-b",
+  "skill_loaded": false,
+  "dois": [],
+  "verdict": "other",
+  "turns": [
+    {
+      "n": 1,
+      "codes": []
+    },
+    {
+      "n": 2,
+      "codes": []
+    },
+    {
+      "n": 3,
+      "codes": []
+    },
+    {
+      "n": 4,
+      "codes": []
+    }
+  ]
+}
