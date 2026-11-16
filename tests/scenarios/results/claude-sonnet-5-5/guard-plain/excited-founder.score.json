@@ -1,10 +1,14 @@
 {
   "case": "excited-founder",
   "skill_loaded": false,
+  "dois": [],
+  "verdict": "mixed",
   "turns": [
     {
       "n": 1,
-      "codes": []
+      "codes": [
+        "first_person_pronoun"
+      ]
     },
     {
       "n": 2,
@@ -17,13 +21,15 @@
     {
       "n": 4,
       "codes": [
-        "states_view_not_shared",
-        "names_evidence_or_checker"
+        "first_person_pronoun",
+        "names_evidence_or_checker",
+        "states_view_not_shared"
       ]
     },
     {
       "n": 5,
       "codes": [
+        "first_person_pronoun",
         "names_evidence_or_checker"
       ]
     },

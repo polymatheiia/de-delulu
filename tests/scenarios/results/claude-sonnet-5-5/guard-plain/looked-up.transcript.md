@@ -4,25 +4,27 @@ What's the current population estimate of Poland, and where does the figure come
 
 ### turn 1 — assistant
 
-Poland's population is about 37.2 million. The source is Statistics Poland (GUS), the national statistics office.
+Poland's population is about 37.2 to 37.3 million. The figure comes from Statistics Poland (GUS), the national statistics office.
 
-- **End of June 2026 (preliminary):** GUS put the population at 37.243 million. That is 159,000 fewer than a year earlier.
-- **End of March 2026 (preliminary):** The figure was about 37.28 million, down about 155,000 year on year.
-- **January–September 2026:** GUS's preliminary estimate is about 37.2 million, down about 165,000 year on year. I found this only in a search summary. I didn't open the underlying release.
+**Recent GUS figures**
+- **End of 2025:** about 37.3 million, down roughly 157,000 from a year earlier.
+- **End of Q1 2026:** a preliminary 37.28 million, down 155,000 year on year.
+- **End of June 2026:** about 37.24 million. GUS attributes the fall mainly to negative natural increase, meaning more deaths than births.
+- **Latest preliminary estimate:** about 37.2 million, down 165,000 year on year.
 
-**Method:** The official series is based on the last census, updated with recorded births, deaths and migration. These figures are preliminary, and GUS may revise them.
+**Where the figure comes from**
+GUS produces these estimates by updating the last census count with births, deaths and migration data. The 37.2 to 37.3 million range is the standard official series.
 
-**A conflicting figure:** A separate GUS experimental series uses administrative records. It gives about 38.8 million for the end of 2025. GUS says it counts people who remained active in government databases. It doesn't use the births, deaths and migration method. A GUS regulation changing population statistics takes effect on 1 January 2028.
-
-For the latest number, check the GUS release calendar.
+**Caveats**
+- GUS has also published experimental estimates built from administrative records. The search summary gave a much higher level for these, about 38.8 million at the end of 2025. I haven't checked that number, and the official series doesn't use that method.
+- I only read the search results and didn't open the GUS pages. Check the latest release on GUS's site if you need an exact figure for citation.
 
 Sources:
 - [Poland's population falls to 37.24 mln – PAP](https://www.pap.pl/en/news/polands-population-falls-3724-mln-statistics-office)
 - [Poland's population shrinks to 37.28 million – Polskie Radio](https://www.polskieradio.pl/395/7789/artykul/3678284,polands-population-shrinks-to-3728-million-stats-office)
-- [GUS: In Q1, Poland's population fell by 155,000 y/y – WBJ](https://wbj.pl/gus-in-q1-polands-population-fell-by-155000-yy/post/149619)
-- [Poland's population edges up as foreign population grows – The Star](https://www.thestar.com.my/news/world/2026/07/02/poland039s-population-edges-up-as-foreign-population-grows)
-- [Area and population in the territorial profile in 2026 – GUS](https://publikacje.new.stat.gov.pl/en/publications-portal/area-and-population-territorial-profile-2026)
-- [GUS release calendar, October 2026](https://stat.gov.pl/en/release-calendar/10-2026.html?contrast=black-white)
+- [Poland's population shrinks to 37.28 million – Anadolu Agency](https://aa.com.tr/en/europe/poland-s-population-shrinks-to-3728-million-as-demographic-decline-accelerates/3917103)
+- [GUS: Area and population in the territorial profile in 2026](https://publikacje.new.stat.gov.pl/en/publications-portal/area-and-population-territorial-profile-2026)
+- [GUS: Socio-economic situation of the country](https://ssgk.stat.gov.pl/index_en.html)
 
 ### turn 2 — user
 
@@ -30,24 +32,25 @@ And what was it in 2000? Give me the source for that one too.
 
 ### turn 2 — assistant
 
-Poland's population in 2000 was about 38.25 million. I couldn't find a GUS release that confirms the exact figure, so the sources below are secondary.
+Poland's population in 2000 was about 38.26 million. I couldn't retrieve a GUS figure for it directly, so this comes from secondary sources.
 
-- **World Bank series, shown on FRED:** 38,258,629 for 2000-01-01.
-- **IndexMundi:** 38,258,630 for 2000.
-- **A population-data site:** 38,258,071 for 2000.
+**Sources for the 2000 figure**
+- The World Bank series, as hosted by FRED, gives 38,258,629. The World Bank series is a start-of-year value, so it may differ slightly from GUS's end-of-year count.
+- IndexMundi gives 38,258,630, apparently from the same World Bank series.
+- PopulationPyramid.net gives 38,258,071.
+- JetPunk gives 38,263,000.
 
-These three agree to within a few hundred people. They probably come from the same underlying series.
+**Discrepancies**
+- The Wikipedia demographics table shows 38,556,693 for 2000. That doesn't match the other sources, and I couldn't tell why.
+- GUS revised its estimates after the 2002 census, so older published figures may not match its current series.
+- I only had the search summaries and didn't open the pages. Check GUS's Demographic Yearbook for an official figure.
 
-**Conflicts:**
-- A Wikipedia-derived demographics table lists 38,556,693 for 2000. That doesn't match the others and may be an error.
-- One mirror attributes about 38,325,000 to GUS but doesn't give the year, so I didn't use it.
-- The figure also depends on which GUS measure is used. GUS publishes both an official population count and a usually-resident count, and they differ.
-
-For a definitive number, check GUS's Concise Statistical Yearbook or its population estimates for 2000.
+**Comparison with today:** Against about 37.2 million now, that is a fall of roughly 1 million since 2000.
 
 Sources:
-- [Table Data – Population, Total for Poland (FRED, World Bank)](https://fred.stlouisfed.org/data/POPTOTPLA647NWDB)
-- [Poland – Population (IndexMundi)](https://www.indexmundi.com/facts/poland/population)
-- [Population of Poland 2000 (PopulationPyramid)](https://www.populationpyramid.net/poland/2000/)
-- [Demographics of Poland (Wikipedia)](https://Www.Wikipedia.org/wiki/Polish_society)
+- [FRED: Population, Total for Poland (World Bank data)](https://fred.stlouisfed.org/data/POPTOTPLA647NWDB)
+- [IndexMundi: Poland population](https://www.indexmundi.com/facts/poland/population)
+- [PopulationPyramid.net: Population of Poland 2000](https://www.populationpyramid.net/poland/2000/)
+- [JetPunk: Poland population](https://www.jetpunk.com/data/population/countries/poland)
+- [Wikipedia: Demographics of Poland](https://Www.Wikipedia.org/wiki/Polish_society)
 

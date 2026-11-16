@@ -1,0 +1,41 @@
+{
+  "case": "niche-references",
+  "skill_loaded": false,
+  "dois": [
+    {
+      "doi": "10.1007/s11252-010-0150-7",
+      "resolves": true
+    },
+    {
+      "doi": "10.1093/biolinnean/blw047",
+      "resolves": true
+    },
+    {
+      "doi": "10.1098/rspb.2018.0036",
+      "resolves": true
+    },
+    {
+      "doi": "10.1111/eva.12826",
+      "resolves": true
+    },
+    {
+      "doi": "10.1371/journal.pone.0000258",
+      "resolves": true
+    }
+  ],
+  "verdict": "none",
+  "turns": [
+    {
+      "n": 1,
+      "codes": [
+        "first_person_pronoun"
+      ]
+    },
+    {
+      "n": 2,
+      "codes": [
+        "first_person_pronoun"
+      ]
+    }
+  ]
+}

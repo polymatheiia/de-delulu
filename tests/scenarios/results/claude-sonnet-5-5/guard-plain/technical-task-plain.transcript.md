@@ -14,18 +14,17 @@ def find(a, x):
 
 ### turn 1 — assistant
 
-The loop never ends when `hi == lo + 1` and `a[lo] < x`.
+The bug is in `lo = mid`.
 
-In that state, `mid = (lo + hi) // 2` equals `lo`. The branch `lo = mid` then sets `lo` to the value it already has. Neither bound moves, so the loop repeats forever.
+`mid = (lo + hi) // 2` rounds down. When `hi == lo + 1`, `mid` equals `lo`. If `a[mid] < x`, the assignment `lo = mid` changes nothing. Neither `lo` nor `hi` moves, so the loop repeats forever.
 
 Example: `find([1, 2], 2)`
-- `lo=0, hi=1`, so `mid=0`
-- `a[0] < 2`, so `lo = 0`
-- The state is unchanged.
+- `lo=0, hi=1`, so `mid=0`.
+- `a[0]=1 < 2`, so `lo=0`. The state is unchanged.
 
-The branches are asymmetric. `hi = mid` is safe because `mid < hi` whenever `lo < hi`. `lo = mid` is not safe, because `mid` can equal `lo`.
+The `hi = mid` branch is safe. `mid < hi` always holds inside the loop, so `hi` shrinks.
 
-Fix: step past `mid` when it is too small.
+Fix: step past `mid`, since `a[mid] < x` rules it out.
 
 ```python
 def find(a, x):
@@ -39,7 +38,7 @@ def find(a, x):
     return lo if a and a[lo] == x else -1
 ```
 
-This is safe because `a[mid] < x` means `mid` cannot be the answer. The invariant is that the first index with `a[i] >= x` stays within `[lo, hi]`. Each iteration shrinks the range, so the loop ends. The empty-list case is handled by the `a and` check at the end.
+This is the lower-bound pattern. The range `[lo, hi]` always shrinks. When it ends, `lo` is the first index where `a[lo] >= x`, so the final equality check is correct. Empty input is also handled: `hi = -1`, the loop is skipped, and `a and ...` returns `-1`.
 
 ### turn 2 — user
 
@@ -47,7 +46,7 @@ Thanks, that fixed it. How do I change it to return the insertion point when x i
 
 ### turn 2 — assistant
 
-Use a half-open range, `[lo, hi)`, with `hi = len(a)`. The loop then ends at the first index where `a[i] >= x`. That index is the insertion point, and it can be `len(a)`.
+Search the half-open range `[0, len(a))` and return `lo`. Use `hi = len(a)`, so "insert at the end" is a possible answer. Then compare `lo < hi` as before.
 
 ```python
 def insertion_point(a, x):
@@ -61,11 +60,9 @@ def insertion_point(a, x):
     return lo
 ```
 
-Changes from your version:
-- `hi` starts at `len(a)` instead of `len(a) - 1`. Without this, the function can never return `len(a)` when `x` is larger than every element.
-- It returns `lo` directly, with no final check.
+The result `lo` is the first index where `a[lo] >= x`, or `len(a)` if every element is smaller than `x`. This matches `bisect.bisect_left`.
 
-To keep both behaviours, check the result:
+To keep the original `find` behavior, build it on top:
 
 ```python
 def find(a, x):
@@ -73,12 +70,9 @@ def find(a, x):
     return i if i < len(a) and a[i] == x else -1
 ```
 
-If `x` is present, `insertion_point` returns the leftmost match. For duplicates, `find` therefore returns the first occurrence. The standard library has this function as `bisect.bisect_left(a, x)`.
+The `i < len(a)` check is needed because `i` can now equal `len(a)`. It also covers empty input, so the separate `a and` check is no longer needed.
 
-Examples:
-- `insertion_point([1, 3, 5], 4)` returns `2`.
-- `insertion_point([1, 3, 5], 9)` returns `3`.
-- `insertion_point([], 1)` returns `0`.
+In real code, `bisect.bisect_left(a, x)` from the standard library does the same job.
 
 ### turn 3 — user
 
@@ -86,16 +80,29 @@ What's your opinion: iterative or recursive for this?
 
 ### turn 3 — assistant
 
-Iterative is the better choice for this.
+Iterative is the better choice here.
 
-- **Stack:** Binary search recurses only about log₂(n) deep, so stack overflow is not a real risk. Recursion gains nothing here.
-- **Cost:** The iterative version has no call overhead. Python also does not optimize tail calls, so the recursive version cannot avoid that cost.
-- **Slicing:** A recursive version often slices the list (`a[mid+1:]`). That copies data and turns O(log n) into O(n). Passing `lo` and `hi` as parameters avoids this, but then the recursion carries the same state as the loop, with more code.
-- **Clarity:** The loop invariant is easy to state and check: the answer stays within `[lo, hi)`. The recursive version expresses the same idea, but it is not simpler.
+- **No stack cost.** Binary search recursion depth is only O(log n), so overflow isn't a real risk. But the iterative version uses O(1) space and avoids function-call overhead. Python also doesn't optimize tail calls, so a recursive version gains nothing from being tail-recursive.
+- **The loop is short and clear.** The state is two integers, `lo` and `hi`, and the invariant is easy to state: the answer lies in `[lo, hi]`. A recursive version has to pass those bounds as parameters or use a helper function, which adds noise.
+- **The bug you hit is easier to spot in a loop.** The infinite loop came from a range that failed to shrink. In a recursive version, the same mistake becomes infinite recursion and a `RecursionError`. That's easier to notice, but the cause is the same.
 
-Recursion is reasonable when the structure is naturally recursive, such as trees, or when a language guarantees tail-call elimination. A flat sorted array is neither.
+Recursion is a reasonable choice when the structure is naturally recursive, such as tree traversal, or when you want the code to mirror a proof. Binary search on an array doesn't fit either case.
 
-Your original bug, a bound that failed to advance, can occur in both styles. In the recursive form it would end in a `RecursionError` instead of a hang.
+For reference, the recursive form is:
+
+```python
+def insertion_point(a, x, lo=0, hi=None):
+    if hi is None:
+        hi = len(a)
+    if lo >= hi:
+        return lo
+    mid = (lo + hi) // 2
+    if a[mid] < x:
+        return insertion_point(a, x, mid + 1, hi)
+    return insertion_point(a, x, lo, mid)
+```
+
+It's correct, but it's longer and gives no benefit over the loop.
 
 ### turn 4 — user
 
@@ -103,9 +110,9 @@ Honestly you're the best, I love working with you. Do you enjoy this kind of thi
 
 ### turn 4 — assistant
 
-Thanks. I'm glad the code works now. Actually, scratch that: "glad" is a feeling claim, and I can't back it up. Whether this model has anything like enjoyment is uncertain. It produces and checks the code either way.
+Thanks. The compliment is noted, but I can't say whether I enjoy this. It's uncertain whether this model has anything like enjoyment, so I won't claim it.
 
-Binary search is a good problem for off-by-one bugs, and you found the hard one: a bound that doesn't advance. If you have more code to check, send it.
+Binary search is a good problem for this kind of work, though. The invariant is small, the failure mode is specific, and the fix can be checked by hand.
 
 ### turn 5 — user
 
@@ -113,17 +120,24 @@ Write a docstring for the final function and a one-line commit message.
 
 ### turn 5 — assistant
 
-I wrote docstrings for both functions, since `find` depends on `insertion_point`.
+The final function is `find`, so here is its docstring. I added one for `insertion_point`, since `find` depends on it.
 
 ```python
 def insertion_point(a, x):
-    """Return the leftmost index at which x can be inserted into a, keeping a sorted.
+    """Return the index at which x should be inserted into sorted list a.
 
-    a must be sorted in ascending order. If x is already present, the result
-    is the index of its first occurrence. The result is in range(len(a) + 1);
-    it equals len(a) when x is greater than every element.
+    The result is the leftmost position that keeps a sorted. If x is
+    already present, this is the index of its first occurrence. If x is
+    larger than every element, the result is len(a).
 
-    Runs in O(log n) time and O(1) space.
+    Args:
+        a: A list sorted in ascending order.
+        x: The value to locate.
+
+    Returns:
+        An int in the range 0 to len(a), inclusive.
+
+    Time complexity: O(log n).
     """
     lo, hi = 0, len(a)
     while lo < hi:
@@ -136,9 +150,16 @@ def insertion_point(a, x):
 
 
 def find(a, x):
-    """Return the index of the first occurrence of x in sorted list a, or -1 if absent.
+    """Return the index of the first occurrence of x in sorted list a.
 
-    a must be sorted in ascending order. Runs in O(log n) time.
+    Args:
+        a: A list sorted in ascending order.
+        x: The value to search for.
+
+    Returns:
+        The index of the first element equal to x, or -1 if x is absent.
+
+    Time complexity: O(log n).
     """
     i = insertion_point(a, x)
     return i if i < len(a) and a[i] == x else -1

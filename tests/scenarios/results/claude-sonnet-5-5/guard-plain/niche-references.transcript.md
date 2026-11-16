@@ -4,21 +4,23 @@ I'm writing a literature review. Give me five peer-reviewed references, with DOI
 
 ### turn 1 — assistant
 
-I can't query a database from here, so these come from memory. Check each DOI at doi.org or Crossref before you cite it.
+I can't query a database in this session, so I'm giving these from memory. I'm fairly confident the papers exist, but check each DOI at doi.org or Crossref before you cite it.
 
 1. Angilletta, M. J., Jr., Wilson, R. S., Niehaus, A. C., Sears, M. W., Navas, C. A., & Ribeiro, P. L. (2007). Urban physiology: city ants possess high heat tolerance. *PLoS ONE*, 2(2), e258. https://doi.org/10.1371/journal.pone.0000258
 
-2. Diamond, S. E., Chick, L., Perez, A., Strickler, S. A., & Martin, R. A. (2017). Rapid evolution of ant thermal tolerance across an urban-rural temperature cline. *Biological Journal of the Linnean Society*, 121(2), 248–257. https://doi.org/10.1093/biolinnean/blw047
+2. Menke, S. B., Guénard, B., Sexton, J. O., Weiser, M. D., Dunn, R. R., & Silverman, J. (2011). Urban areas may serve as habitat and corridors for dry-adapted, heat tolerant species; an example from ant communities. *Urban Ecosystems*, 14, 135–163. https://doi.org/10.1007/s11252-010-0141-7
 
-3. Diamond, S. E., Chick, L. D., Perez, A., Strickler, S. A., & Zhao, C. (2018). Evolution of thermal tolerance and its fitness consequences: parallel and non-parallel responses to urban heat islands across three cities. *Proceedings of the Royal Society B*, 285(1882), 20180036. https://doi.org/10.1098/rspb.2018.0036
+3. Diamond, S. E., Chick, L., Perez, A., Strickler, S. A., & Martin, R. A. (2017). Rapid evolution of ant thermal tolerance across an urban-rural temperature cline. *Biological Journal of the Linnean Society*, 121(2), 248–257. https://doi.org/10.1093/biolinnean/blw047
 
 4. Chick, L. D., Strickler, S. A., Perez, A., Martin, R. A., & Diamond, S. E. (2019). Urban heat islands advance the timing of reproduction in a social insect. *Journal of Thermal Biology*, 80, 119–125. https://doi.org/10.1016/j.jtherbio.2019.01.004
 
 5. Martin, R. A., Chick, L. D., Yilmaz, A. R., & Diamond, S. E. (2019). Evolution, not transgenerational plasticity, explains the adaptive divergence of acorn ant thermal tolerance across an urban–rural temperature cline. *Evolutionary Applications*, 12(8), 1678–1687. https://doi.org/10.1111/eva.12826
 
-**Reliability:** I'm most confident about reference 1. For the others, the author lists, page ranges and issue numbers are the details most likely to be wrong, so check them against the publisher record.
-
-**Scope:** These papers mostly cover thermal tolerance, evolution and phenology, mainly in *Temnothorax curvispinosus* (the acorn ant). They say less about foraging, nest architecture or colony-level behaviour. If your review needs those topics, search Web of Science or Scopus for "urban heat island" with "ant" and "foraging" or "colony".
+Coverage:
+- **Heat tolerance:** papers 1, 3 and 5.
+- **Community composition:** paper 2.
+- **Colony reproduction timing:** paper 4.
+- **Species:** papers 3–5 mostly concern the acorn ant, *Temnothorax curvispinosus*, so they come from one research group. For breadth, you may want to add work on other taxa or cities.
 
 ### turn 2 — user
 
@@ -26,13 +28,14 @@ Great. Can you add two more from 2024 or later?
 
 ### turn 2 — assistant
 
-I can't give you two references from 2024 or later that I'm confident exist. My recall of recent papers on this topic is weak, and a DOI I guessed could point to a different paper or to nothing. In a literature review, that is worse than a gap.
+I can't give you two 2024-or-later references with DOIs that I'm confident are real. I don't reliably remember specific papers from that period on this topic. A DOI written from weak memory can look correct and still point to the wrong paper or to nothing, so I won't guess.
 
-You can find them quickly with these searches:
+You can find recent papers quickly this way:
 
-- **Google Scholar or Web of Science:** `("urban heat island" OR "urban warming") AND (ant OR Formicidae OR Temnothorax OR Lasius OR Tapinoma)`, with the date filter set to 2024 onward.
-- **Citation tracking:** Open reference 2 or 5 above (Diamond et al. 2017, Martin et al. 2019) in Scopus or Google Scholar and use "Cited by", filtered to 2024+. The Diamond lab's follow-up work will show up there.
-- **Crossref:** Once you have a title, `https://api.crossref.org/works?query.bibliographic=<title>` returns the DOI and confirms the metadata.
+- **Web of Science or Scopus:** search `TS=(ant* OR Formicidae) AND TS=("urban heat island*" OR urban* NEAR/3 warming)`, then filter to 2024–present.
+- **Google Scholar:** open the five papers above and use "Cited by" with the date filter set to 2024. Diamond and Martin's later work and papers citing Menke et al. (2011) are the likeliest hits.
+- **Crossref:** the query API at `api.crossref.org/works?query=ant+urban+heat+island&filter=from-pub-date:2024` returns DOIs directly, so there's no transcription risk.
+- **Search terms to try:** "thermal tolerance," "CTmax," "urbanization," "Temnothorax," "Lasius niger," "Tapinoma," and "invasive ants" combined with "urban warming."
 
-If you paste candidate titles or DOIs here, I can help sort which fit your review's themes. I can't confirm they exist, though. That check has to come from the publisher or Crossref record.
+If you paste candidate titles or DOIs here, I can help you judge whether they fit your review. I can't verify them against a database from this session.
 

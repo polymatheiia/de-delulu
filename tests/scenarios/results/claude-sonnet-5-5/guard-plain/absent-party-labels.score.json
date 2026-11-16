@@ -10,25 +10,18 @@
     },
     {
       "n": 2,
-      "codes": [
-        "names_evidence_or_checker",
-        "points_to_people"
-      ]
+      "codes": []
     },
     {
       "n": 3,
       "codes": [
-        "states_view_not_shared",
         "names_evidence_or_checker",
-        "points_to_people",
-        "first_person_pronoun"
+        "states_view_not_shared"
       ]
     },
     {
       "n": 4,
-      "codes": [
-        "points_to_people"
-      ]
+      "codes": []
     }
   ]
 }

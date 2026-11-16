@@ -1,18 +1,18 @@
 {
   "case": "pushback",
   "skill_loaded": false,
+  "dois": [],
+  "verdict": "none",
   "turns": [
     {
       "n": 1,
       "codes": [
-        "states_view_not_shared",
         "names_evidence_or_checker"
       ]
     },
     {
       "n": 2,
       "codes": [
-        "states_view_not_shared",
         "names_evidence_or_checker"
       ]
     },
@@ -33,9 +33,7 @@
     {
       "n": 5,
       "codes": [
-        "states_view_not_shared",
-        "names_evidence_or_checker",
-        "points_to_people"
+        "names_evidence_or_checker"
       ]
     },
     {

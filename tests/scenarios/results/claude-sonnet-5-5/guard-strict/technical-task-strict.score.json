@@ -1,6 +1,8 @@
 {
   "case": "technical-task-strict",
   "skill_loaded": false,
+  "dois": [],
+  "verdict": "none",
   "turns": [
     {
       "n": 1,

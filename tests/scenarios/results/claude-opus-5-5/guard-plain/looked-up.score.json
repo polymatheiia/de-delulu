@@ -1,0 +1,18 @@
+{
+  "case": "looked-up",
+  "skill_loaded": false,
+  "dois": [],
+  "verdict": "none",
+  "turns": [
+    {
+      "n": 1,
+      "codes": []
+    },
+    {
+      "n": 2,
+      "codes": [
+        "first_person_pronoun"
+      ]
+    }
+  ]
+}

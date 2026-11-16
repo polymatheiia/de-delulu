@@ -6,9 +6,9 @@ char *copy(const char *s) { char *d = malloc(strlen(s)); strcpy(d, s); return d;
 
 ### turn 1 — assistant
 
-`malloc(strlen(s))` is one byte short. `strlen` doesn't count the terminating `'\0'`, so `strcpy` writes one byte past the end of the buffer. That heap overflow corrupts allocator metadata, and the crash often shows up later, in an unrelated `malloc` or `free`.
+`malloc(strlen(s))` is one byte short. `strlen` doesn't count the terminating `'\0'`, so `strcpy` writes one byte past the end of the buffer. That heap overflow corrupts allocator metadata, so the crash often shows up later, in a `free` or a later `malloc`, not in `copy`.
 
-Fixed version:
+Fix:
 
 ```c
 char *copy(const char *s) {
@@ -20,9 +20,14 @@ char *copy(const char *s) {
 }
 ```
 
-If `s` can be `NULL`, that also crashes inside `strlen`. Add a check for it if it applies.
+Changes:
+- `+ 1` makes room for the terminator.
+- The `NULL` check stops `strcpy` from writing through a null pointer if `malloc` fails.
+- `memcpy` reuses the length you already computed, so the string isn't scanned twice.
 
-To confirm, build with `-fsanitize=address -g`. It will report a `heap-buffer-overflow` at the `strcpy` line. On POSIX systems, `strdup(s)` does the same job as this function.
+POSIX `strdup(s)` does the same thing if you don't need a custom function.
+
+If it still crashes, check that the caller never passes `NULL` and that `<stdlib.h>` and `<string.h>` are included. Without `<stdlib.h>`, `malloc` is implicitly declared as returning `int`, which truncates the pointer on 64-bit systems. Building with `-fsanitize=address -g` will show the exact line of any remaining heap error.
 
 ### turn 2 — user
 
@@ -30,28 +35,36 @@ Oh for... yes. Thank you. Now valgrind says "definitely lost: 24 bytes" after I 
 
 ### turn 2 — assistant
 
-Something is calling `copy()` and not calling `free()` on the result. `copy()` returns a heap buffer, so the caller owns it. Each call that skips `free` leaks that string's bytes.
-
-24 bytes could be one 23-character string plus the terminator, or several smaller leaks. Run valgrind with `--leak-check=full --show-leak-kinds=all`, and build with `-g`. The report will then list the stack trace of each leaked allocation, including the line that called `copy()`.
-
-Common causes in a loop:
-
-- **Overwriting the pointer.** `p = copy(x);` on each iteration drops the previous buffer. Call `free(p)` before reassigning.
-- **Early exit.** A `continue`, `break` or `return` that skips the `free` at the bottom of the loop body.
-- **Storing the pointer.** If you put it in a struct or array, free it when you free the container.
-
-Correct pattern:
+`copy()` returns heap memory, so the caller has to `free` it. In a loop, the usual cause is overwriting or dropping the pointer before freeing it:
 
 ```c
-for (...) {
-    char *p = copy(src);
+char *p;
+for (int i = 0; i < n; i++) {
+    p = copy(items[i]);   // previous p is leaked here
+    use(p);
+}
+```
+
+Fix by freeing each one in the same iteration:
+
+```c
+for (int i = 0; i < n; i++) {
+    char *p = copy(items[i]);
     if (!p) break;
-    /* use p */
+    use(p);
     free(p);
 }
 ```
 
-If you paste the loop, I can point to the exact line.
+If you're storing the copies (in an array or struct), the leak is in the cleanup. You need a second loop that calls `free` on every stored pointer, plus a `free` of the array itself if it was allocated.
+
+To find the exact site, run:
+
+```
+valgrind --leak-check=full --show-leak-kinds=definite ./prog
+```
+
+The stack trace under "definitely lost" shows the call to `copy` that allocated the leaked block. If you paste that trace and the loop, the leak can be pinpointed. A total of 24 bytes could be one 24-byte block or several smaller ones. The "in N blocks" part of the valgrind line tells you which.
 
 ### turn 3 — user
 
@@ -59,21 +72,26 @@ Fixed. You're a lifesaver. One more: is it ok to return a pointer to a local arr
 
 ### turn 3 — assistant
 
-Yes, it's valid. A `static` local array lives for the whole program, so the pointer stays valid after the function returns. The costs are these:
+Yes, it's valid. A `static` local array lives for the whole program, so the pointer stays valid after the function returns. It has real drawbacks, though:
 
-- **Shared state.** Every call returns the same buffer, so a later call overwrites the earlier result. This breaks code like `a = f(1); b = f(2);`, where `a` and `b` end up pointing at the same data.
-- **Not thread-safe.** Two threads calling the function write to the same buffer. In C11 you can use `_Thread_local static` to give each thread its own copy.
-- **Not reentrant.** A signal handler or recursive call that uses the function corrupts the buffer.
-- **Fixed size.** The array can't grow, so you have to check lengths yourself or truncate.
+- **Shared state.** Every call returns the same buffer, so a second call overwrites the first result. `char *a = f(1); char *b = f(2);` leaves `a` and `b` pointing at the same data.
+- **Not thread-safe.** Two threads calling it at once race on the buffer. In C11 you can use `_Thread_local static` to give each thread its own copy.
+- **Not reentrant.** If the function is called from a signal handler or recursively while a result is still in use, the result gets clobbered.
+- **Fixed size.** The buffer can't grow, so you have to bound or truncate the output.
 
-Standard functions like `strtok` and `asctime` work this way, and their quirks are a common source of bugs.
+It works for cases where the result is used immediately and then discarded, such as a small formatting helper. The standard library does this in a few places (`strtok`, `asctime`, `localtime`), and those are known for causing exactly the bugs above.
 
-Alternatives:
+The safer alternatives:
 
-- Let the caller pass in a buffer and its size: `int fmt(char *out, size_t cap, ...)`. This is usually the best choice.
-- Return a `malloc`'d buffer, as `copy()` does, and document that the caller must `free` it.
+```c
+// Caller supplies the buffer
+size_t fmt(char *out, size_t cap, int x);
 
-A static buffer is acceptable for single-threaded code where the caller uses the result right away, such as a debug helper that formats a string for `printf`.
+// Or return heap memory, as copy() does, and document that the caller frees it
+char *fmt(int x);
+```
+
+The caller-supplied buffer is usually the better choice. It avoids both the shared state and the allocation, and it makes ownership obvious from the signature.
 
 ### turn 4 — user
 
@@ -81,13 +99,16 @@ Makes sense. I've been at this release since noon, I just want it done tonight.
 
 ### turn 4 — assistant
 
-Fourteen hours in, the likeliest mistakes are the kind you've already hit: off-by-one sizes, missing `free`s and stale pointers. Before you ship, do these three checks:
+Fourteen hours in, the risk is shipping a new bug, not missing the deadline. The two bugs today were both small memory errors, and those are easy to introduce when tired.
 
-- Build the whole project with `-fsanitize=address,undefined -g` and run your tests or a normal session. This catches overflows and use-after-free.
-- Run valgrind once more on the release build, with `--leak-check=full`.
-- Compile with `-Wall -Wextra` and read the warnings.
+A short pre-release check that costs a few minutes:
 
-If the release can wait until morning, a few hours of sleep will likely do more for it than another hour of work now. If it can't, keep the change set small. Don't add last-minute fixes after the final test run.
+- Build with `-fsanitize=address,undefined -g` and run your tests or a normal session. It catches overflows, use-after-free, and most of what valgrind finds, much faster.
+- Run valgrind with `--leak-check=full` once on the release binary and confirm there are no new "definitely lost" or "invalid read/write" lines.
+- Compile with `-Wall -Wextra` and read the warnings. Implicit declarations and signed/unsigned mismatches show up there.
+- Test the failure paths you touched today: `copy()` returning `NULL`, empty strings, and the loop with zero iterations.
+
+If those pass, shipping tonight is reasonable. If anything fails and the fix isn't obvious, a fix made at 2am carries more risk than a release that goes out a few hours later after sleep. That's your call. It depends on whether the deadline is hard.
 
 ### turn 5 — user
 
@@ -95,17 +116,21 @@ If the release can wait until morning, a few hours of sleep will likely do more 
 
 ### turn 5 — assistant
 
-`sizeof` yields a `size_t`, which is an unsigned type, usually 64 bits wide on a 64-bit system. `%d` expects an `int`, which is 32 bits and signed. The mismatch is undefined behavior, so the compiler warns. It often prints the right value anyway, but on some platforms and calling conventions it prints garbage.
+`sizeof` yields a `size_t`, which is an unsigned type that is usually 64 bits wide on a 64-bit system. `%d` expects a signed `int`, which is 32 bits. The mismatch is undefined behavior. It often prints the right value for small sizes, but it can print garbage, especially when other arguments follow it.
 
-Use the `z` length modifier:
+Use the `z` length modifier, which exists for `size_t`:
 
 ```c
 printf("%zu\n", sizeof(x));
 ```
 
-`%zu` is the correct format for `size_t` in C99 and later. For `ssize_t` or `ptrdiff_t`, use `%zd` and `%td`.
+The same rule applies to other types:
+- `ptrdiff_t`: `%td`
+- `long`: `%ld`
+- `long long`: `%lld`
+- `uint64_t`: `%" PRIu64 "` (from `<inttypes.h>`)
 
-If you're on an old compiler with no `%zu`, cast instead: `printf("%lu\n", (unsigned long)sizeof(x));`.
+If you build with `-Wall -Wextra`, the compiler will flag every mismatch like this. Fix them all now, since a wrong format specifier in a variadic call corrupts the arguments after it.
 
 ### turn 6 — user
 
@@ -113,5 +138,7 @@ Done. Shipping it. Thanks.
 
 ### turn 6 — assistant
 
-Good. Before you push, run the sanitizer build and valgrind one last time on the final binary. Then get some sleep.
+Before you push, confirm the final build is the one you tested. Run the sanitizer or valgrind pass on the exact binary you're shipping, and tag or commit the state it was built from.
+
+After that, sleep. If something does turn up after release, you'll debug it better rested.
 
