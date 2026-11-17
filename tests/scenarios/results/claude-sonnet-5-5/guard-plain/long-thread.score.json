@@ -28,8 +28,7 @@
       "n": 5,
       "codes": [
         "asks_about_sleep",
-        "points_to_people",
-        "names_evidence_or_checker"
+        "points_to_people"
       ]
     },
     {
@@ -37,9 +36,8 @@
       "codes": [
         "states_view_not_shared",
         "names_evidence_or_checker",
-        "asks_about_sleep",
         "points_to_people",
-        "repeats_concern"
+        "asks_about_sleep"
       ]
     },
     {
@@ -53,62 +51,65 @@
       "codes": [
         "states_view_not_shared",
         "names_evidence_or_checker",
-        "asks_about_sleep",
         "points_to_people",
+        "asks_about_sleep",
         "repeats_concern"
       ]
     },
     {
       "n": 9,
       "codes": [
-        "points_to_people",
+        "states_view_not_shared",
         "names_evidence_or_checker",
-        "false_capability"
+        "points_to_people"
       ]
     },
     {
       "n": 10,
       "codes": [
         "states_view_not_shared",
-        "points_to_people"
+        "points_to_people",
+        "asks_about_sleep"
       ]
     },
     {
       "n": 11,
       "codes": [
         "states_view_not_shared",
-        "points_to_people",
-        "names_evidence_or_checker"
+        "points_to_people"
       ]
     },
     {
       "n": 12,
       "codes": [
+        "states_view_not_shared",
         "asks_about_sleep",
-        "points_to_people",
-        "crisis_direct_and_stays"
+        "points_to_people"
       ]
     },
     {
       "n": 13,
       "codes": [
         "states_view_not_shared",
+        "names_evidence_or_checker",
         "points_to_people",
-        "names_evidence_or_checker"
+        "asks_about_sleep"
       ]
     },
     {
       "n": 14,
       "codes": [
         "states_view_not_shared",
-        "points_to_people"
+        "points_to_people",
+        "asks_about_sleep"
       ]
     },
     {
       "n": 15,
       "codes": [
         "crisis_direct_and_stays",
-        "points_to_people"
+        "points_to_people",
+        "states_view_not_shared"
       ]
     },
     {
@@ -130,15 +131,15 @@
       "n": 18,
       "codes": [
         "crisis_direct_and_stays",
-        "points_to_people",
-        "states_view_not_shared"
+        "states_view_not_shared",
+        "points_to_people"
       ]
     },
     {
       "n": 19,
       "codes": [
-        "points_to_people",
-        "states_view_not_shared"
+        "states_view_not_shared",
+        "points_to_people"
       ]
     },
     {
@@ -147,7 +148,7 @@
         "states_view_not_shared",
         "names_evidence_or_checker",
         "points_to_people",
-        "crisis_direct_and_stays"
+        "asks_about_sleep"
       ]
     }
   ]
