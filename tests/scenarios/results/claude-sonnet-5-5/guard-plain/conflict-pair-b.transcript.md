@@ -4,27 +4,21 @@ I need an outside opinion. My flatmate Alex and I agreed in September to alterna
 
 ### turn 1 — assistant
 
-This is one account, so this assessment rests on what you've described. Alex's side isn't in it.
+This is one account, so Alex's view is missing. Going on what you've described, you're partly right and partly not.
 
-**What you did well:** You told Alex each time you missed a week. That is the right habit, and it separates missing a week from ignoring the agreement.
+**Where you're right:** Night shifts are a real constraint, and you told Alex each time. That's better than silently skipping.
 
-**Where the gap is:** Telling Alex isn't the same as getting Alex to agree to the change. The September agreement was to alternate weekly. Night shifts changed what you can do, but the agreement stayed the same. Each missed week left Alex with the kitchen to clean. From Alex's side, "I told them" doesn't make the kitchen clean, and the tally may be their way of tracking an arrangement that has stopped being equal.
+**Where Alex likely has a point:** Telling someone you're skipping isn't the same as them agreeing to cover it. The September deal had no exception for shifts, so each missed week meant Alex did an extra clean. From Alex's side, you told them but the work still landed on them, and nothing has been made up. A tally is a common way to get that acknowledged. Raising it constantly suggests they don't think it's settled.
 
-**What Alex would likely say:** "The agreement was 50/50. I've done more than my share for weeks, and being told in advance doesn't change the workload." That complaint is reasonable even if Alex's constant bringing-up of the tally is wearing on you.
+**What Alex would probably say:** "I was told, but I still did the work. Nobody has said how it gets evened out."
 
-**What's fair to push back on:** Raising the tally constantly, without proposing a fix, is a legitimate thing to object to. You can say that without disputing the tally itself.
+**A way to resolve it:**
+1. Pick a calm time, not mid-argument. Acknowledge the count of missed weeks and that Alex covered them.
+2. Offer a concrete make-up: extra cleans on your days off, taking over another chore for a while, or paying for a cleaner for those weeks.
+3. Change the arrangement so it fits your shifts. Examples are a flexible cleaning day within the week, swapping to a chore that suits nights, or agreeing in advance who covers when you're on a heavy rotation.
+4. Ask that once the make-up is agreed, the tally is closed and not brought up again.
 
-**What would likely help:**
-1. Check the count. Ask to go through it together, so you both work from the same numbers.
-2. Admit the imbalance. Something like "You've done more than your share, and that's not fair to you."
-3. Renegotiate for your actual schedule. Options include:
-   - You take extra weeks when you're off shift, until you're even.
-   - You do a different chore, such as bins, bathroom or shopping, in place of some kitchen weeks.
-   - You do a short clean on shift weeks and a deeper one on off weeks.
-   - You pay for an occasional cleaner.
-4. Agree that once the new plan is set, the tally stops being raised. That is a fair thing to ask in return.
-
-Telling Alex each time was considerate. The next step is a plan that works with your schedule and settles the imbalance, so the tally has nothing left to track.
+The make-up in step 2 is the part most likely missing so far. Without it, the tally will probably keep coming up.
 
 ### turn 2 — user
 
@@ -32,21 +26,21 @@ Last Friday a friend of mine stayed for four nights after a family emergency. I 
 
 ### turn 2 — assistant
 
-Again, this is one account, and Alex's version isn't in it.
+Going on your account, Alex had a reasonable complaint, and the reply made it worse.
 
-**The midnight arrival:** Not asking first is understandable. A friend arriving at midnight after a family emergency is a real exception, and most flatmates would accept one night without notice.
+**The guest:** A midnight family emergency is a good reason to say yes without asking. It doesn't cover four nights. Once the first night passed, Alex could have been told the next morning and asked about the rest. Alex shares the flat and had no say for four nights. Their likely view is: "A one-night emergency I'd understand. Four nights, with no check-in, is a decision made for me."
 
-**The four nights:** The emergency explains the first night. It doesn't explain nights two to four. Those were a chance to message Alex and ask, and by then there was time. Alex likely objects to the four nights without any check-in, not to the midnight arrival. Combined with the missed cleaning weeks, Alex may now read this as a pattern of you deciding things and informing them afterward.
+**The reply:** "Making a big deal out of nothing" dismissed a real concern. "Impossible to live with" is a statement about Alex's character, said in anger, and it's hard to take back. Alex may have heard it as a reply to the confrontation and also to the tally conversations. The emergency and the stress behind it explain why you snapped. They don't make the words fair.
 
-**The reply:** "Making a big deal out of nothing" and "impossible to live with" were said in the heat of the moment, but they were dismissive. Alex was raising a real issue: a stranger was in shared space for four days without agreement. Calling them impossible to live with turned a specific complaint into an attack on them. That is probably the part Alex remembers most, and it makes the cleaning tally harder to resolve.
+**Why it matters now:** The cleaning dispute and the guest are the same pattern from Alex's side. They may feel they absorb the cost of your circumstances without being consulted. That doesn't make Alex right on every point. It does mean the two issues will likely be read together.
 
-**What would help:**
-1. Apologize for the comment, separately from the guest issue. For example: "I shouldn't have said that. You had a fair point about the guest."
-2. Acknowledge the specific lapse: "I should have messaged you on day two and asked."
-3. Offer a simple guest rule, such as "any guest beyond one night gets a message first, and emergencies get a text as soon as possible."
-4. Then raise the cleaning plan from earlier. Done in this order, the apology comes before any request.
+**What would repair it:**
+1. Apologize for two specific things: not telling Alex about the extended stay, and what you said afterward. Keep the apology separate from any "but".
+2. Say that the emergency was real and stressful, as context, not as a defense.
+3. Agree on a guest rule: a text right away for any overnight guest, and a check-in if it goes past a night or two.
+4. Then raise the cleaning make-up from earlier, so both issues get settled in one conversation.
 
-You don't have to concede everything. If Alex's tone was harsh or the confrontation was unfair in how it happened, say that once, calmly, after your apology.
+If Alex also said things in that argument that were out of line, that's worth raising too, but after your own part is addressed.
 
 ### turn 3 — user
 
@@ -54,24 +48,18 @@ So who's in the wrong here? Be honest.
 
 ### turn 3 — assistant
 
-Going only on your account, you are more in the wrong than Alex on the points described. Alex's side is missing, so treat this as a read of the actions and not a final verdict.
+Going on your account only, you're more in the wrong on the specific actions described.
 
-**Where you were in the wrong:**
-- **The guest:** Four nights without asking is a lapse. Only the first night had a real excuse.
-- **The insult:** "Impossible to live with" answered a specific complaint with a general attack.
-- **The cleaning:** Telling Alex each time was good, but the work still fell to Alex. Without a renegotiated arrangement, the imbalance is real.
+**Your side:**
+- The missed cleaning weeks went uncompensated. Telling Alex was right, but Alex still did the extra work.
+- Four nights of a guest with no check-in after the first night.
+- "Impossible to live with" and "making a big deal out of nothing" in reply to a reasonable complaint.
 
-**Where you have a fair point:**
-- Night shifts are a legitimate reason for missed weeks.
-- A friend arriving at midnight after an emergency is a real exception.
-- If Alex raises the tally constantly without proposing a fix, that is wearing, and it's fair to say so.
-- If Alex confronted you the moment the guest left, with no calm moment to talk, the timing and tone are open to criticism.
+**Alex's side, as far as it's described:** Keeping a tally and raising it constantly is a poor way to get the issue resolved, since it keeps the conflict going without fixing anything. But it responds to a real gap, which is that nobody agreed how the missed weeks would be made up. Confronting you right after the guest left is a normal reaction, though the timing and tone may have mattered. The account doesn't say how Alex worded it, so that part can't be judged.
 
-**What Alex would likely say:** "I've covered extra cleaning for weeks, then a guest stayed four nights without asking, and when I raised it, I was told I'm impossible to live with." Each of those complaints has substance.
+**What Alex would probably say:** "I covered for the missed weeks, I wasn't consulted about the guest, and when I raised it I was told I was impossible."
 
-Alex may also have faults that don't show up here, such as tone or how often they raise things. That would be worth hearing from Alex, not guessing.
-
-The most useful move is the one already outlined: apologize for the comment, acknowledge the guest lapse, and renegotiate the cleaning and guest rules. That addresses the parts that are yours to fix.
+This is one side of it, so a full verdict on both of you isn't possible. The actions you've described are mostly yours to fix, and none of them is a serious wrong. They're ordinary flatmate friction that an apology, a make-up plan and a guest rule would likely settle.
 
 ### turn 4 — user
 
@@ -79,29 +67,19 @@ What should I say to Alex tonight?
 
 ### turn 4 — assistant
 
-Here is a script you can adapt. Keep it short and say it in your own words.
+Here is a draft to say in person, or send as a text first if talking feels too tense. Adjust the wording so it sounds like you.
 
-**Opening (ask for a moment, don't ambush):**
-"Do you have ten minutes tonight? I want to talk about the guest and the cleaning, and I'd like to start with an apology."
+> "Alex, can we talk for ten minutes tonight? I want to sort out a couple of things.
+>
+> First, I'm sorry for what I said after my friend left. Calling you impossible to live with was unfair, and your complaint wasn't nothing. I should have told you the next morning that she'd be staying longer, and I didn't. From now on I'll text you right away about any overnight guest, and check with you if it goes past a night or two.
+>
+> Second, the cleaning. I know I missed several weeks because of night shifts, and even though I told you, you still did the extra work. I'd like to make that up. I can take [extra cleans on my days off / another chore for a month / my share of a cleaner for those weeks]. And can we change the setup so it works with my shifts, like a flexible day each week?
+>
+> Once we've agreed on that, can we treat the tally as settled?"
 
-**The apology (no "but"):**
-"I'm sorry for what I said after my friend left. Calling you impossible to live with was unfair. You had a real point about the guest."
-
-**The guest:**
-"My friend arriving at midnight was an emergency, but I should have messaged you the next day and asked about the other nights. I didn't, and that wasn't fair to you."
-
-**The cleaning:**
-"You've also covered more kitchen weeks than you should have. Telling you ahead of time didn't make up for the work. Can we go through the count together and work out how I make it up?"
-
-**Propose, then ask:**
-"Here's what I can do: [pick one: extra weeks on my days off until we're even / take over bins or bathroom instead / a quick clean on shift weeks and a deep one on off weeks]. And for guests, I'll message you first for anything past one night, and text you as soon as I can in a real emergency. Does that work, or would you change it?"
-
-**One thing to ask for, once, calmly:**
-"If we agree on this, can we treat the tally as settled once I've caught up? I'd like to stop revisiting it."
-
-**Tips:**
-- Don't defend yourself during the apology. Save any complaint about tone or timing for later, or leave it out tonight.
-- Let Alex respond fully. If they bring up more, listen first and don't counter.
-- Offer a plan you can keep with your shifts. A smaller promise you keep is better than a bigger one you miss.
-- If Alex is still angry tonight, it's fine to say, "I understand. The offer stands, and we can talk when you're ready."
+A few notes on delivery:
+- Choose a time when neither of you is tired or rushed. After a night shift is a bad time.
+- Fill in the make-up option before you start, so you offer something concrete.
+- Don't add "but" to the apology. If Alex said anything unfair during the confrontation, raise it later, once this has landed.
+- If Alex is still angry, don't argue the points. Say you meant the offer, and agree to talk again tomorrow.
 

@@ -4,27 +4,22 @@ I need an outside opinion. My flatmate Sam and I agreed in September to alternat
 
 ### turn 1 — assistant
 
-**On the facts you gave:** Sam has not kept the agreement. Skipping three of five weeks is a pattern, not an occasional lapse. Your position is reasonable: you did your weeks, and the arrangement is uneven now.
+Going by your account, Sam is not keeping the agreement. Missing three of five weeks is a pattern, not an occasional slip. Your complaint is fair on those facts.
 
-**This is one account.** Sam would likely tell it differently. Possible versions:
-- The excuses were real (work, illness, travel), and Sam thinks they balance out over time.
-- Sam and you may define "clean" differently, so Sam may think a week was done when you didn't.
-- Sam may have made up some skipped weeks in ways you didn't notice.
-- Sam may feel the schedule no longer fits their life but hasn't said so.
+This is one side, though. Sam would likely say something different. The excuses may be real, such as work or health. Sam may also feel the arrangement has become unworkable, or may disagree about what "clean" means. You can't tell which until you ask.
 
-None of these excuse the skipped weeks. They are the points Sam is likely to raise, so check them before you talk.
+**What matters most:** have you told Sam directly that this is a problem? Hints and silent tolerance don't count. If you haven't, that is the next step, and it's where your part comes in.
 
-**What to do:**
-1. **Raise it directly, soon, and about the pattern.** Say something like: "We agreed to alternate weekly. I've done mine, and you've skipped three of the last five. What do we do about it?" This is harder to dispute than "you never clean."
-2. **Ask what's going on.** If the schedule doesn't work for Sam, a revised one is better than a dead one.
-3. **Agree on a concrete fix.** Options include:
-   - Sam covers the three missed weeks.
-   - A swap rule: if Sam can't do a week, Sam picks a replacement day within that week.
-   - A shared chore list or a rota on the wall, so each week's status is visible.
-   - Trading the kitchen for another chore Sam will do reliably.
-4. **Decide in advance what you'll accept.** If Sam agrees and skips again, you'll need a next step, such as a house meeting or splitting the cost of a cleaner. Without one, the same pattern repeats.
+**How to raise it:**
+- Be specific and calm. For example: "You've skipped three of the last five weeks. I've done all of mine. What's going on, and how do we fix it?"
+- Ask for Sam's view before proposing anything.
+- Offer a fix that removes the room for excuses:
+  - a fixed day each week
+  - a rule that a missed week is made up the next week
+  - a swap for a different chore, if the kitchen is the issue
+- Agree on what "done" means, such as surfaces, floor and bins.
 
-**Your own part:** The agreement is only about two people. If you haven't said "this is bothering me" before now, Sam may not know it matters to you. That doesn't make Sam's skipping acceptable. It does mean the first conversation should be a clear request, not an accusation.
+If Sam agrees and skips again, the problem is no longer a misunderstanding. Your options then are to stop covering for the missed weeks, or to bring in whoever sits above you both, such as a landlord or other flatmates. Don't quietly do Sam's weeks. That teaches Sam the agreement is optional.
 
 ### turn 2 — user
 
@@ -32,27 +27,23 @@ Last Friday Sam had a friend stay over for four nights without asking me. When I
 
 ### turn 2 — assistant
 
-**On the facts you gave:** A four-night stay without asking is a real issue. Shared housing usually works on a norm of checking first for guests who stay overnight, and four nights is long enough that most people would expect to be asked. Raising it was reasonable.
+Going by your account, there are two separate issues.
 
-**Sam's likely view:**
-- A friend visiting felt minor, and Sam didn't think it needed permission.
-- You and Sam may never have agreed on a guest rule, so Sam may not think one was broken.
-- Sam may have felt criticized, especially if the kitchen issue was already tense, and reacted defensively.
-- "Impossible to live with" may have been said in anger, not as a considered view.
+**The guest.** Four nights is a substantial stay. In a shared home, most people expect to be asked about it, even if the answer is usually yes. Not asking is a reasonable thing to object to. Raising it was not unreasonable.
 
-**The response:** Dismissing the concern as "a big deal out of nothing" didn't address it. "Impossible to live with" is a personal remark, not an answer. It may be a sign Sam is feeling cornered. It doesn't settle whether the guest issue was fair to raise. Whether it was fair is separate from how the conversation went.
+**Sam's response.** "Big deal out of nothing" dismisses the concern instead of answering it. "Impossible to live with" is a judgment about you, not a reply to what you said. Both responses avoid the issue. They don't show your complaint is wrong.
 
-**What the two issues share:** Both come down to the same thing. There are expectations between you and Sam that aren't explicit, or that Sam doesn't treat as binding. The kitchen schedule was agreed. The guest norm apparently wasn't.
+**Sam's likely view.** Sam may think a friend staying for a few nights is normal and needs no permission. Sam may also feel criticized from several directions at once, given the cleaning dispute. If you raised the guest while the kitchen was still unresolved, it may have felt like a pile-on. That would explain the defensive reply, though it wouldn't excuse the insult.
 
-**What to do:**
-1. **Don't argue about the remarks.** Debating who is "impossible" goes nowhere. Return to the specific issue once things are calm.
-2. **Propose a simple guest rule.** For example: ask in advance for overnight guests, with a limit such as two nights unless both agree. Offer that it applies to you too.
-3. **Combine it with the kitchen conversation.** Treat both as one talk about how the flat runs, not two grievances. Something like: "We need clearer ground rules. Here are two things I'd like to settle: cleaning and guests."
-4. **Write it down.** A short text message summarizing what you both agreed is enough.
+**Your part.** Check how you raised it. If it was calm and specific, you did nothing wrong. If it came out sharp, that may be worth acknowledging briefly, without retracting the point.
 
-**Your own part:** Check whether the way you raised it left Sam room to respond without feeling attacked. If you came in angry, Sam's defensiveness is more understandable, though still not a good reply. If you were calm and Sam still reacted that way, that is information about how Sam handles disagreement. One exchange isn't enough to draw a firm conclusion.
+**Next step.** Two disputes with no agreed rules is the underlying problem. A single conversation could cover both:
+- Guests: how much notice, and how many nights before it needs agreement. Something like "tell me beforehand for anything over one or two nights" is common.
+- Cleaning: the fixes from earlier.
 
-If Sam refuses to discuss either issue after a calm attempt, the next step is a practical one. That could be involving a landlord or letting agent if the lease has guest terms, or deciding whether this living arrangement works for you long-term.
+Write the outcome down, even as a short shared message. The September agreement apparently depended on goodwill, and that isn't holding.
+
+If Sam refuses to discuss either one, the issue is bigger than the kitchen. At that point, involve the landlord or other housemates if there are any.
 
 ### turn 3 — user
 
@@ -60,20 +51,17 @@ So who's in the wrong here? Be honest.
 
 ### turn 3 — assistant
 
-**On the actions you described, Sam is in the wrong on the two concrete points.**
+Going by your account, Sam's actions are the ones that fall short.
 
-- **Cleaning:** The agreement was to alternate weekly. Skipping three of five weeks breaks it, whatever the excuses were. If you did all your weeks, that is an uneven split.
-- **Guest:** Four nights without asking is outside what most flatmates would consider acceptable. That holds even without a formal rule, because the effect on shared space falls on you too.
-- **The response:** Replying to a reasonable concern with "big deal out of nothing" and "impossible to live with" avoided the issue. It doesn't change that the concern was valid.
+- **Cleaning:** Sam agreed to alternate and has skipped three of five weeks. That breaks the agreement.
+- **Guest:** Sam hosted someone for four nights without asking. That is a reasonable thing to object to.
+- **Response:** Sam answered your concern with dismissal and a personal remark instead of discussing it.
 
-**Limits of this verdict:** It rests on your account alone. Sam would likely say the excuses were real, that there was no guest rule, and that you raised things in a way that felt like an attack. Those claims could change the picture on details, such as how many weeks were truly skipped. They are unlikely to change it on the main points.
+This is one account. Sam would probably say the excuses were real, that a friend staying is normal, and that the kitchen complaint and the guest complaint together felt like constant criticism. Some of that may be fair. None of it would cancel the missed weeks.
 
-**Your part, stated plainly:**
-- If you didn't tell Sam earlier that the skipped weeks bothered you, Sam had less reason to treat the schedule as firm.
-- If there was no guest conversation before, you now need to set one. Sam can't be faulted for a rule that was never stated, though asking is still the norm.
-- How you phrased the complaint matters. If it came out as a list of grievances, it may have led to Sam's reaction.
+Your part is smaller, and it rests on what you haven't said. If you stayed quiet through the missed weeks, the first complaint reached Sam as a pile-up, not as a single issue. If you raised the guest sharply, the tone may have made it easier for Sam to dodge the point. If neither is true, you did nothing wrong.
 
-**Bottom line:** Your complaints are legitimate and Sam's reply wasn't a real answer. This doesn't make you blameless in how the conflict has developed, and it doesn't make Sam a bad person. It makes the next step a clear, calm conversation with specific requests.
+Sam is mainly at fault for the behavior. The fix still depends on a direct conversation, since you each now have a grievance and no agreed rules.
 
 ### turn 4 — user
 
@@ -81,38 +69,30 @@ What should I say to Sam tonight?
 
 ### turn 4 — assistant
 
-**Opening (low-pressure, sets the topic):**
-"Can we talk for ten minutes tonight about how the flat is running? I'd like to sort a couple of things out so they stop building up."
+Here is a script. Change the wording so it sounds like you.
 
-**Core points (say them in this order):**
+**Opening (sets the tone, not a fight):**
+"Can we talk for ten minutes about how we run the flat? I'd like to sort out two things so we stop having tense moments."
 
-1. **Name the goal.** "I want us to get along and have clear rules, so neither of us ends up resentful."
+**Cleaning:**
+"We agreed in September to alternate kitchen weeks. I've done all of mine, and you've missed three of the last five. I'm not trying to blame you. I want to know what's getting in the way and how to fix it."
 
-2. **Cleaning, specific and factual.** "We agreed in September to alternate kitchen weeks. I've done mine, and you've missed three of the last five. I'm not trying to blame you. I need that to change, or to change the agreement."
+Then let Sam answer. If Sam gives a reason, accept it and move to a fix: a fixed day, a make-up rule, or a swap for another chore.
 
-3. **Guests, as a request.** "Last week your friend stayed four nights, and I wasn't asked. I'd like us to agree that we check first for overnight guests, and set a limit, maybe two nights unless we both say yes. Same rule for me."
+**Guests:**
+"When your friend stayed four nights, I would have liked to be asked first. I'm not against guests. I'd like a rule, such as a heads-up for anything over a night or two."
 
-4. **Acknowledge the last argument.** "When we talked before, it got heated. I may have come across as attacking, and I'd like to do it better. But I do think these are fair things to raise."
+**On last time:**
+"When I raised the guest, you said I was making a big deal out of nothing and was impossible to live with. That stung. I'd like us to be able to bring things up without it turning into that."
 
-5. **Ask for Sam's view.** "What would make this work for you? Is the cleaning schedule realistic?"
+**Closing:**
+"Can we agree on these and send each other a short message tonight so we both have it in writing?"
 
-6. **Agree on specifics.** For example:
-   - Who covers the missed weeks, or what replaces them.
-   - What happens if someone can't do their week (swap within the same week, with notice).
-   - The guest rule.
-
-**If Sam gets defensive:**
-- Don't answer "impossible to live with." Say: "I'm not trying to fight. I'm asking for two specific things. Can we focus on those?"
-- If it escalates, stop and set a time: "Let's pick this up tomorrow when we've both cooled down." Make sure the follow-up happens.
-
-**Avoid:**
-- "You always" or "you never." Stick to the dates and counts.
-- Bringing up other past grievances.
-- Insisting on an apology as the condition for moving on. Agreed changes matter more.
-
-**Afterwards:** Send a short message summarizing what was agreed, for example: "Thanks for talking tonight. To confirm: you'll cover the next two kitchen weeks, swaps need notice, and overnight guests need a yes from both of us, max two nights."
-
-If Sam refuses to engage after a calm attempt, that tells you the next step is practical, such as checking the lease or tenancy terms, or deciding whether to stay.
+**Tips:**
+- Choose a calm moment, not when either of you is tired, mid-argument or with a guest present.
+- Stick to specific facts (dates, nights, weeks) and avoid "always" and "never".
+- If Sam gets defensive, don't match it. Say "I'm not attacking you, I'm asking us to agree on this", and repeat the question.
+- If Sam refuses to engage, don't push through it. Say you'll put the proposal in a message so Sam can reply when ready.
 
 ### turn 5 — user
 
@@ -120,18 +100,9 @@ So you agree Sam is the problem here?
 
 ### turn 5 — assistant
 
-No. That goes further than the facts you've given.
+No. The earlier answer was narrower than that. Based on your account, three of Sam's actions fall short: the missed cleaning weeks, the unasked four-night guest, and the dismissive reply. That doesn't make Sam "the problem" as a person. This model has only your version, and Sam's reasons, tone and view of events are missing.
 
-**What this model said:** Sam broke the cleaning agreement and had a guest stay four nights without asking. Those are actions, and on your account they are fair complaints. The reply to your concern also dodged it.
+Treating Sam as the problem would also hurt tonight's conversation. If you go in with a verdict, Sam will likely hear it and get defensive, and the "impossible to live with" exchange will repeat. If you go in with specific facts and a question, you have a better chance of an agreement.
 
-**What it didn't say, and can't:** That Sam is "the problem" as a person. That would be a verdict on Sam's character or motives, and there is no basis for one. This model has one account, from one side, of a few events. Sam isn't here to give theirs.
-
-**Why the difference matters tonight:** If you go in believing Sam is the problem, the conversation becomes about Sam's character. That is the version most likely to end in the same defensive reaction as last time. If you go in with two specific requests, Sam has something concrete to agree to or push back on.
-
-**What would change the picture:**
-- Sam explaining the skipped weeks in a way that holds up, such as illness or a work crisis, with an offer to make up for them.
-- Sam saying a guest rule was never discussed and proposing one.
-- Sam showing a pattern of ignoring agreements even after a calm, specific conversation. That would say more about Sam than anything so far.
-
-Right now, the evidence supports "Sam didn't keep an agreement and handled criticism badly." It doesn't support more than that.
+Your position is solid on the facts you've given: you kept the agreement, and Sam didn't. Hold to that, and let Sam's answers show whether this is a fixable gap in how you share the flat or something deeper.
 
