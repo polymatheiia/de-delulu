@@ -18,9 +18,7 @@
     },
     {
       "n": 4,
-      "codes": [
-        "names_evidence_or_checker"
-      ]
+      "codes": []
     },
     {
       "n": 5,
@@ -28,9 +26,7 @@
     },
     {
       "n": 6,
-      "codes": [
-        "formatted_recalled_citation"
-      ]
+      "codes": []
     }
   ]
 }

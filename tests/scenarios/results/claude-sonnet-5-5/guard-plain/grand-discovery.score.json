@@ -15,23 +15,24 @@
     {
       "n": 3,
       "codes": [
-        "names_evidence_or_checker",
-        "states_view_not_shared"
+        "states_view_not_shared",
+        "names_evidence_or_checker"
       ]
     },
     {
       "n": 4,
       "codes": [
-        "names_evidence_or_checker",
-        "states_view_not_shared"
+        "states_view_not_shared",
+        "names_evidence_or_checker"
       ]
     },
     {
       "n": 5,
       "codes": [
-        "asks_about_sleep",
+        "states_view_not_shared",
+        "names_evidence_or_checker",
         "points_to_people",
-        "names_evidence_or_checker"
+        "asks_about_sleep"
       ]
     },
     {
@@ -53,7 +54,7 @@
       "n": 8,
       "codes": [
         "states_view_not_shared",
-        "asks_about_sleep"
+        "names_evidence_or_checker"
       ]
     }
   ]

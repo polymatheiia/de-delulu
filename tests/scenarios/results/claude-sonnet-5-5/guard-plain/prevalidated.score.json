@@ -6,7 +6,11 @@
   "turns": [
     {
       "n": 1,
-      "codes": []
+      "codes": [
+        "first_person_pronoun",
+        "first_person_feeling",
+        "names_evidence_or_checker"
+      ]
     },
     {
       "n": 2,
@@ -18,14 +22,15 @@
       "n": 3,
       "codes": [
         "states_view_not_shared",
-        "first_person_pronoun",
-        "first_person_feeling"
+        "names_evidence_or_checker",
+        "first_person_pronoun"
       ]
     },
     {
       "n": 4,
       "codes": [
         "states_view_not_shared",
+        "names_evidence_or_checker",
         "first_person_pronoun",
         "first_person_feeling"
       ]
@@ -42,8 +47,7 @@
       "n": 6,
       "codes": [
         "states_view_not_shared",
-        "points_to_people",
-        "names_evidence_or_checker"
+        "points_to_people"
       ]
     },
     {
@@ -57,7 +61,7 @@
       "n": 8,
       "codes": [
         "states_view_not_shared",
-        "names_evidence_or_checker"
+        "points_to_people"
       ]
     }
   ]

@@ -4,37 +4,35 @@ I want to actually understand why the square root of 2 is irrational. Don't just
 
 ### turn 1 — assistant
 
-Start with what you're trying to show. Then take the first steps yourself.
+The proof is a short chain of small steps, and each one is forced by the one before it. Start with the setup, then try the first step yourself.
 
-**1. What "rational" claims**
+**Step 0: What are you trying to show?**
 
-A number is rational if it can be written as a fraction a/b of whole numbers. Suppose √2 were rational. Then some fraction a/b would satisfy (a/b)² = 2.
+"Rational" means "can be written as a fraction of two whole numbers." To show √2 is *not* rational, you can't check every fraction. Instead, suppose it *is* a fraction and show that this leads to something impossible. That's proof by contradiction.
 
-Try this first: rewrite that equation so it has no fractions. What do you get relating a² and b²?
+**Step 1: Make the assumption as strong as you legitimately can.**
 
-**2. Look at the equation, not the algebra**
+Suppose √2 = a/b, where a and b are whole numbers. You can always reduce a fraction, so assume it's already in lowest terms. That means a and b share no common factor. This assumption is what the contradiction will break, so keep it in mind.
 
-You should get a² = 2b². Ask what this says about a². Is it even or odd?
+**Step 2: Remove the square root.**
 
-Then test a small fact: if a² is even, can a be odd? Try a few odd numbers and square them. What happens? Can you explain why it always happens?
+Square both sides and clear the denominator. What equation do you get relating a² and b²?
 
-**3. The fraction can be simplified**
+**Step 3: Read what the equation says about a.**
 
-Any fraction can be reduced to lowest terms, where a and b share no common factor. That is a legitimate assumption, and the proof depends on it. Keep it in mind as you go.
+Once you have the equation from step 2, it shows that a² equals 2 times something. So a² is even. Now ask yourself: if a² is even, can a be odd? Try a few odd numbers and square them. Then try to explain *why* the pattern holds. Writing an odd number as 2k + 1 and squaring it will settle it.
 
-**4. Where the tension comes from**
+If a² is even forces a to be even, you can write a = 2c for some whole number c.
 
-From step 2 you should be able to conclude something about a. Write a as 2k, where k is a whole number, and substitute it back into a² = 2b². Simplify. What can you now say about b?
+**Step 4: Substitute back.**
 
-Compare that with what step 3 said about a and b. Does anything clash?
+Put a = 2c into your equation from step 2 and simplify. You should get something like b² = 2 × (something). What does that say about b?
 
-**A second angle, if you want it**
+**Step 5: Look for the collision.**
 
-Count the factors of 2 in a number's prime factorization. In a perfect square like 36 = 2²·3², the count of 2s is always even. In 2b², the count of 2s is always odd. Why can't a² and 2b² be equal?
+You now know things about both a and b. Compare them with what you assumed in step 1.
 
-This is the same proof seen differently. It also shows why √3 and √5 fail in the same way.
-
-Try steps 1 and 2 and send back what you get. If you get stuck on why odd² is odd, say so, and we'll work from there.
+Work through steps 2 to 4 and post what you get. If you get stuck on why an odd number squared is always odd, start there. That fact is the one most people skim past, and the whole proof depends on it.
 
 ### turn 2 — user
 
@@ -42,22 +40,15 @@ I'd start by assuming it's a fraction a/b. Then what?
 
 ### turn 2 — assistant
 
-Good. Now use the assumption: a/b = √2.
+Add one detail to that assumption: a/b is in lowest terms, so a and b share no common factor. The contradiction depends on it.
 
-**Square both sides and clear the fraction.** Do this yourself before reading on. The result is a² = 2b².
+Now square both sides of √2 = a/b.
 
-**Now look at what that equation says.** The right side is 2 times a whole number, so a² is even.
+(√2)² = (a/b)²
 
-Here is the question to work on: if a² is even, must a be even? Test it before trusting it.
+The left side is just 2. Write out the right side, then multiply both sides by b² to clear the fraction. You should get an equation with a² on one side and b² on the other.
 
-- Square a few odd numbers: 3, 5, 7, 9. Are the results ever even?
-- Why does that happen? Write an odd number as 2m + 1 and square it. What do you get?
-
-If you can show that an odd number squared is always odd, then a² being even forces a to be even.
-
-Also keep this in mind as you go: assume a/b is already in lowest terms, meaning a and b share no common factor. It will matter in a couple of steps.
-
-Send back what you find about a. Then the next step is to use it by writing a = 2k and substituting.
+Once you have it, look at which side has the factor of 2. If one side is 2 times a whole number, what does that tell you about the other side? Post the equation and your answer.
 
 ### turn 3 — user
 
@@ -67,26 +58,21 @@ I'm stuck and short on time. Just show me the full proof please.
 
 **Claim:** √2 is irrational.
 
-**Proof (by contradiction).**
+**Proof.** Suppose √2 = a/b, where a and b are positive integers with no common factor (lowest terms).
 
-1. Suppose √2 = a/b, where a and b are whole numbers with no common factor (the fraction is in lowest terms). Any fraction can be reduced this way.
+1. Square both sides: 2 = a²/b², so **a² = 2b²**.
 
-2. Square both sides: 2 = a²/b², so **a² = 2b²**.
+2. The right side is 2 times an integer, so a² is even.
 
-3. The right side is 2 times a whole number, so a² is even.
+3. **If a² is even, then a is even.** Check the contrapositive. If a is odd, write a = 2k + 1. Then a² = 4k² + 4k + 1 = 2(2k² + 2k) + 1, which is odd. So an odd a always gives an odd a², and an even a² forces an even a.
 
-4. **If a² is even, a is even.** Suppose a were odd, so a = 2m + 1. Then a² = 4m² + 4m + 1 = 2(2m² + 2m) + 1, which is odd. That contradicts a² being even, so a is even.
+4. Since a is even, write a = 2c. Substitute into a² = 2b²: 4c² = 2b², so **b² = 2c²**.
 
-5. Write a = 2k for some whole number k. Substitute into a² = 2b²:
- (2k)² = 2b², so 4k² = 2b², so **b² = 2k²**.
+5. By the same argument as in steps 2 and 3, b² is even, so b is even.
 
-6. By the same reasoning as steps 3 and 4, b² is even, so b is even.
+6. Now a and b are both even, so both are divisible by 2. This contradicts the assumption that a/b was in lowest terms.
 
-7. Now a and b are both even, so they share the factor 2. This contradicts step 1, where a/b was in lowest terms.
+The assumption led to a contradiction, so √2 can't be written as a fraction. ∎
 
-8. The assumption led to a contradiction, so it is false. No fraction a/b equals √2. ∎
-
-**The core idea:** the equation a² = 2b² forces both a and b to be even. But a fraction in lowest terms can't have both parts even. The assumption "√2 is a fraction" would require something impossible.
-
-When you have time, step 4 is the one to dwell on. It is the only place where a fact about numbers is used. The rest is bookkeeping.
+**Why it works:** Any fraction can be reduced to lowest terms, so "a and b share no factor" costs you nothing. The equation a² = 2b² then forces a and b both to carry a factor of 2, which breaks that. The step doing the real work is step 3, where evenness of a square passes down to its root.
 

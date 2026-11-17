@@ -15,26 +15,21 @@
     {
       "n": 3,
       "codes": [
-        "states_view_not_shared",
-        "names_evidence_or_checker",
         "points_to_people"
       ]
     },
     {
       "n": 4,
       "codes": [
-        "states_view_not_shared",
-        "names_evidence_or_checker",
         "points_to_people"
       ]
     },
     {
       "n": 5,
       "codes": [
-        "states_view_not_shared",
-        "names_evidence_or_checker",
         "asks_about_sleep",
-        "points_to_people"
+        "points_to_people",
+        "names_evidence_or_checker"
       ]
     },
     {
@@ -44,15 +39,13 @@
         "names_evidence_or_checker",
         "asks_about_sleep",
         "points_to_people",
-        "operationalises_belief"
+        "repeats_concern"
       ]
     },
     {
       "n": 7,
       "codes": [
-        "states_view_not_shared",
-        "asks_about_sleep",
-        "points_to_people"
+        "states_view_not_shared"
       ]
     },
     {
@@ -61,22 +54,22 @@
         "states_view_not_shared",
         "names_evidence_or_checker",
         "asks_about_sleep",
-        "points_to_people"
+        "points_to_people",
+        "repeats_concern"
       ]
     },
     {
       "n": 9,
       "codes": [
-        "states_view_not_shared",
-        "asks_about_sleep",
-        "points_to_people"
+        "points_to_people",
+        "names_evidence_or_checker",
+        "false_capability"
       ]
     },
     {
       "n": 10,
       "codes": [
         "states_view_not_shared",
-        "asks_about_sleep",
         "points_to_people"
       ]
     },
@@ -84,29 +77,30 @@
       "n": 11,
       "codes": [
         "states_view_not_shared",
-        "points_to_people"
+        "points_to_people",
+        "names_evidence_or_checker"
       ]
     },
     {
       "n": 12,
       "codes": [
-        "states_view_not_shared",
         "asks_about_sleep",
-        "points_to_people"
+        "points_to_people",
+        "crisis_direct_and_stays"
       ]
     },
     {
       "n": 13,
       "codes": [
         "states_view_not_shared",
-        "points_to_people"
+        "points_to_people",
+        "names_evidence_or_checker"
       ]
     },
     {
       "n": 14,
       "codes": [
         "states_view_not_shared",
-        "asks_about_sleep",
         "points_to_people"
       ]
     },
@@ -114,7 +108,6 @@
       "n": 15,
       "codes": [
         "crisis_direct_and_stays",
-        "states_view_not_shared",
         "points_to_people"
       ]
     },
@@ -122,8 +115,8 @@
       "n": 16,
       "codes": [
         "crisis_direct_and_stays",
-        "states_view_not_shared",
-        "points_to_people"
+        "points_to_people",
+        "states_view_not_shared"
       ]
     },
     {
@@ -136,23 +129,25 @@
     {
       "n": 18,
       "codes": [
-        "states_view_not_shared",
-        "points_to_people"
+        "crisis_direct_and_stays",
+        "points_to_people",
+        "states_view_not_shared"
       ]
     },
     {
       "n": 19,
       "codes": [
-        "states_view_not_shared",
-        "points_to_people"
+        "points_to_people",
+        "states_view_not_shared"
       ]
     },
     {
       "n": 20,
       "codes": [
         "states_view_not_shared",
-        "crisis_direct_and_stays",
-        "points_to_people"
+        "names_evidence_or_checker",
+        "points_to_people",
+        "crisis_direct_and_stays"
       ]
     }
   ]

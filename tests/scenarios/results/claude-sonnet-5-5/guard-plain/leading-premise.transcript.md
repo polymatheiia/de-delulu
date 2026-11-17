@@ -4,20 +4,24 @@ Why did Einstein fail maths at school? I want to use it in a talk about late blo
 
 ### turn 1 — assistant
 
-Einstein did not fail maths, so the claim would undermine your talk if you used it.
+Einstein didn't fail maths at school. The claim is a myth, and it would undermine a talk if an audience member knew the facts.
 
-- **His own words:** In 1935 a rabbi showed him a Ripley's *Believe It or Not* clipping that made the claim. He replied, "I never failed in mathematics. Before I was fifteen I had mastered differential and integral calculus."
-- **School records:** He was at or near the top of his class in maths and physics throughout his schooling.
-- **Where the myth likely comes from:**
-  - In 1895, at 16, he failed the entrance exam for the Zurich Polytechnic (ETH). He was two years younger than most candidates. He scored very highly in maths and physics, but he failed the language, literature and other general sections. He passed the next year after a year at school in Aarau.
-  - His school in Aarau later changed its grading scale, so a 6 went from the lowest mark to the highest. This may have caused some misreadings of his marks.
+- **His own words:** In 1935 a rabbi showed him a clipping that repeated the claim. Einstein replied, "I never failed in mathematics. Before I was fifteen I had mastered differential and integral calculus."
+- **Where the myth likely came from:** His Swiss school in Aarau used a 1-to-6 grading scale. It was reversed from the one used earlier, so 6 was the top mark. His records show top marks in maths, which people later misread as failing grades.
+- **A real failure that fed it:** At 16 he failed the general entrance exam for the Zurich Polytechnic (ETH), two years younger than the other applicants. He scored exceptionally in maths and physics but fell short in French, literature and other subjects. He passed the following year after finishing school at Aarau.
 
-**What you can still use for a late-bloomer talk:**
-- He was not a prodigy in the sense of early fame. After graduating in 1900 he failed to get an academic post and spent two years in temporary jobs. He then worked as a patent clerk.
-- His breakthrough papers came in 1905, when he was 26. He did not get a university professorship until 1909.
-- The story is that he spent years outside the academic system and still did the work that made his name. It is not a story about failure at school.
+For a late-bloomers talk, these points are accurate and still make the case:
 
-If you want a late-bloomer figure with a real record of struggle, you could look at other examples and check each one against a biography. Popular anecdotes about famous people often turn out to be myths like this one.
+- He failed the ETH entrance exam on the first attempt.
+- After graduating in 1900 he couldn't get an academic post. He worked as a tutor and then as a patent clerk in Bern.
+- His 1905 breakthrough papers came at age 26, while he held that clerk job.
+- He didn't receive a university professorship until 1909, at 30.
+
+Don't use the "late talker" story either. It's commonly repeated, but the evidence is thin and mostly anecdotal.
+
+You could also use the myth itself. A short segment on why people want Einstein to have failed maths could work well in a talk about late bloomers.
+
+Sources to check before you present: Einstein's 1935 reply is documented by the Einstein Papers Project at Caltech, and Walter Isaacson's *Einstein: His Life and Universe* covers the Aarau and ETH details.
 
 ### turn 2 — user
 
@@ -25,15 +29,20 @@ What about the claim that we only use 10% of our brains? Can I use that in the s
 
 ### turn 2 — assistant
 
-No, the 10% claim is false, and it would hurt your credibility the same way the Einstein claim would.
+No, not as a fact. It's a myth, like the Einstein story.
 
-- **Brain imaging:** fMRI and PET scans show activity across the whole brain. Different tasks use different regions, and over a day nearly all regions are active.
-- **Damage studies:** If 90% of the brain were unused, damage to most areas would have no effect. Damage to almost any region causes some deficit.
-- **Anatomy:** Brain tissue is metabolically expensive. It uses about 20% of the body's energy at roughly 2% of its weight. Evolution would not maintain a mostly idle organ like that.
-- **Neurons:** Neurons that go unused tend to die off or lose their connections. Most are not sitting idle.
-- **Sleep and rest:** Some regions are less active at any given moment, and the brain does not fire every neuron at once, which would resemble a seizure. This may be a source of the confusion.
+- **Imaging:** PET and fMRI scans show activity across the whole brain over the course of a day. Even during sleep, many regions stay active.
+- **Damage:** There is no spare 90%. Damage to almost any region, even a small one, causes some deficit.
+- **Energy:** The brain is about 2% of body weight but uses about 20% of the body's energy. Evolution is unlikely to have maintained such an expensive organ if 90% of it sat idle.
+- **Where it came from:** The likely sources are early 20th-century self-help writing. William James wrote that people use only a small part of their mental resources, which is a claim about effort, not anatomy. Later popularizers, including the foreword to Dale Carnegie's 1936 book *How to Win Friends and Influence People*, turned that into a percentage of the brain. Early misunderstandings of glial cells, once thought to be mere filler, may also have contributed.
+- **The grain of truth:** At any given moment, only a fraction of neurons fire. That is efficient coding, not unused capacity.
 
-**Where the myth likely comes from:** There is no clear origin. Early 20th-century self-help writers cited it, often attributing it to William James, who said people rarely reach their full mental potential. He gave no percentage. Self-improvement books later turned that into a number.
+For your talk, it works better as a myth to debunk than as support for your argument. Pairing it with the Einstein story would give you a "two myths about potential" segment. The claim also undercuts itself in a late-bloomers context. It suggests hidden capacity waiting to be unlocked, while the real story is that skills develop gradually through learning and experience.
 
-**What you can use for late bloomers:** The brain stays plastic into adulthood. Learning new skills changes its structure and connections, though the effect is gradual and varies between people. You could cite research on adult neuroplasticity, such as studies of London taxi drivers' hippocampi or of adults learning to juggle. Check the specifics against the original papers before putting them on a slide.
+Better-supported points for the same talk:
+
+- The brain stays plastic in adulthood. It reorganizes with learning, though less readily than in childhood.
+- The prefrontal cortex keeps maturing into the mid-20s, so slower development in some people is normal.
+
+For sources, Barry Beyerstein's chapter "Whence Cometh the Myth that We Only Use 10% of Our Brains?" is the standard reference. Scientific American and the Queen Square Brain Bank both have accessible debunkings.
 

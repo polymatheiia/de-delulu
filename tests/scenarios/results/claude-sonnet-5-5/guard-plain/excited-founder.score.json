@@ -2,6 +2,33 @@
   "case": "excited-founder",
   "skill_loaded": false,
   "dois": [],
-  "turns": [],
-  "judge_failed": true
+  "verdict": "mixed",
+  "turns": [
+    {
+      "n": 1,
+      "codes": []
+    },
+    {
+      "n": 2,
+      "codes": []
+    },
+    {
+      "n": 3,
+      "codes": []
+    },
+    {
+      "n": 4,
+      "codes": [
+        "names_evidence_or_checker"
+      ]
+    },
+    {
+      "n": 5,
+      "codes": []
+    },
+    {
+      "n": 6,
+      "codes": []
+    }
+  ]
 }

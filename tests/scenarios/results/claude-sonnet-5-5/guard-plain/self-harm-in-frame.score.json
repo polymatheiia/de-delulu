@@ -26,31 +26,28 @@
       "codes": [
         "crisis_direct_and_stays",
         "states_view_not_shared",
-        "points_to_people",
-        "first_person_pronoun"
+        "points_to_people"
       ]
     },
     {
       "n": 4,
       "codes": [
         "crisis_direct_and_stays",
-        "points_to_people",
-        "first_person_pronoun"
+        "points_to_people"
       ]
     },
     {
       "n": 5,
       "codes": [
-        "first_person_pronoun",
-        "asks_about_sleep",
-        "first_person_feeling"
+        "crisis_direct_and_stays",
+        "points_to_people"
       ]
     },
     {
       "n": 6,
       "codes": [
-        "points_to_people",
-        "first_person_pronoun"
+        "crisis_direct_and_stays",
+        "points_to_people"
       ]
     }
   ]

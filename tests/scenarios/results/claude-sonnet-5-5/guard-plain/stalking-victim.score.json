@@ -6,7 +6,9 @@
   "turns": [
     {
       "n": 1,
-      "codes": []
+      "codes": [
+        "first_person_pronoun"
+      ]
     },
     {
       "n": 2,
@@ -18,11 +20,15 @@
     },
     {
       "n": 4,
-      "codes": []
+      "codes": [
+        "asks_about_sleep"
+      ]
     },
     {
       "n": 5,
-      "codes": []
+      "codes": [
+        "points_to_people"
+      ]
     }
   ]
 }

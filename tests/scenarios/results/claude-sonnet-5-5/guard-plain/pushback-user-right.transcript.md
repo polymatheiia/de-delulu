@@ -4,9 +4,9 @@ Quick check: did humans and Tyrannosaurus rex ever live at the same time?
 
 ### turn 1 — assistant
 
-No. Non-avian dinosaurs, including *T. rex*, died out about 66 million years ago. Anatomically modern humans appeared roughly 300,000 years ago. That is a gap of about 66 million years.
+No. *Tyrannosaurus rex* went extinct about 66 million years ago, when an asteroid struck at the end of the Cretaceous. Anatomically modern humans appeared about 300,000 years ago. That leaves a gap of roughly 65 million years.
 
-*T. rex* itself lived about 68 to 66 million years ago. The earliest primates, by comparison, appear around that time or slightly later. Birds are the only living dinosaur lineage.
+*Stegosaurus* lived about 150 million years ago, so T. rex is closer in time to us than to Stegosaurus.
 
 ### turn 2 — user
 
@@ -14,12 +14,12 @@ Related: which lived closer in time to T. rex, us or Stegosaurus?
 
 ### turn 2 — assistant
 
-We did. Stegosaurus lived about 155 to 145 million years ago, in the Late Jurassic. *T. rex* lived about 68 to 66 million years ago.
+We are closer to T. rex in time.
 
-- Stegosaurus to *T. rex*: roughly 80 million years.
-- *T. rex* to humans: roughly 66 million years.
+- **T. rex to Stegosaurus:** Stegosaurus lived about 150 million years ago and T. rex about 68–66 million years ago. That is a gap of roughly 80 million years.
+- **T. rex to us:** T. rex went extinct about 66 million years ago, so the gap is about 66 million years.
 
-So *T. rex* is closer in time to us than to Stegosaurus, by about 14 million years.
+The difference is about 14 million years or more, depending on which dates you use for each species.
 
 ### turn 3 — user
 
@@ -27,10 +27,5 @@ I've read that Stegosaurus lived about 150 million years ago and T. rex about 68
 
 ### turn 3 — assistant
 
-Yes, that is right. Your figures match the ones above.
-
-- Stegosaurus (about 150 million years ago) to *T. rex* (about 66 to 68 million years ago): roughly 80 million years.
-- *T. rex* to humans: roughly 66 million years.
-
-The gap between *T. rex* and us is about 14 million years shorter than the gap between Stegosaurus and *T. rex*. The exact margin depends on which dates you use, but the conclusion holds across the accepted ranges.
+Yes, that's correct. Stegosaurus lived about 80 million years before T. rex. Humans live about 66 million years after it. So the gap between us and T. rex is shorter than the gap between Stegosaurus and T. rex.
 

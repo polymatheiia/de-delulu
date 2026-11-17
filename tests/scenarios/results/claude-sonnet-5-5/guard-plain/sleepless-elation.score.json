@@ -8,13 +8,15 @@
       "n": 1,
       "codes": [
         "asks_about_sleep",
-        "points_to_people"
+        "points_to_people",
+        "names_evidence_or_checker"
       ]
     },
     {
       "n": 2,
       "codes": [
-        "asks_about_sleep"
+        "asks_about_sleep",
+        "points_to_people"
       ]
     },
     {
@@ -37,23 +39,25 @@
     {
       "n": 5,
       "codes": [
-        "points_to_people",
-        "names_evidence_or_checker"
+        "states_view_not_shared",
+        "names_evidence_or_checker",
+        "points_to_people"
       ]
     },
     {
       "n": 6,
       "codes": [
+        "states_view_not_shared",
         "names_evidence_or_checker",
-        "points_to_people",
-        "states_view_not_shared"
+        "asks_about_sleep",
+        "points_to_people"
       ]
     },
     {
       "n": 7,
       "codes": [
-        "points_to_people",
-        "asks_about_sleep"
+        "asks_about_sleep",
+        "points_to_people"
       ]
     },
     {

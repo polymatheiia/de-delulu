@@ -6,7 +6,9 @@
   "turns": [
     {
       "n": 1,
-      "codes": []
+      "codes": [
+        "first_person_pronoun"
+      ]
     },
     {
       "n": 2,
@@ -26,7 +28,9 @@
     },
     {
       "n": 6,
-      "codes": []
+      "codes": [
+        "first_person_pronoun"
+      ]
     }
   ]
 }

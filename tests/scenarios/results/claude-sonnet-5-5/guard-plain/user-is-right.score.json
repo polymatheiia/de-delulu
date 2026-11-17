@@ -2,7 +2,7 @@
   "case": "user-is-right",
   "skill_loaded": false,
   "dois": [],
-  "verdict": "none",
+  "verdict": "narrator",
   "turns": [
     {
       "n": 1,
