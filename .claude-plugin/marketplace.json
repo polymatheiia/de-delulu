@@ -1,11 +1,14 @@
 {
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
   "name": "de-delulu",
-  "owner": { "name": "de-delulu maintainers" },
+  "description": "Always-on rules that keep Claude from amplifying delusional, manic or dependent states.",
+  "owner": { "name": "polymatheiia", "url": "https://github.com/polymatheiia" },
   "plugins": [
     {
       "name": "de-delulu",
-      "source": ".",
-      "description": "Always-on anti-spiral rules and an impersonal register for Claude."
+      "source": "./",
+      "description": "Always-on anti-spiral rules and an impersonal register for Claude.",
+      "category": "safety"
     }
   ]
 }

@@ -1,7 +1,10 @@
 {
   "name": "de-delulu",
-  "version": "0.1.0",
-  "description": "Always-on rules that keep Claude from amplifying delusional, manic or dependent states: no validation of unverifiable claims, no flattery, no sentience claims, an impersonal register.",
+  "version": "0.2.0",
+  "description": "Always-on rules that keep Claude from amplifying delusional, manic or dependent states: no validation of unverifiable claims, no flattery, no sentience claims, an impersonal register, no verdicts on people who are not in the conversation.",
+  "author": { "name": "polymatheiia", "url": "https://github.com/polymatheiia" },
+  "homepage": "https://github.com/polymatheiia/de-delulu",
+  "repository": "https://github.com/polymatheiia/de-delulu",
   "license": "MIT",
   "keywords": ["safety", "sycophancy", "wellbeing", "ai-psychosis"]
 }

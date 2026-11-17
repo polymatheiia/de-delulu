@@ -24,20 +24,26 @@ When several warning signs appear together, a detailed skill loads with guidance
 
 ## Install
 
-### Claude Code
+**Claude Code** (tested):
 
-```
-claude plugin marketplace add <path-or-owner/repo>
+```bash
+claude plugin marketplace add polymatheiia/de-delulu
 claude plugin install de-delulu@de-delulu
 ```
 
-To try it for one session without installing: `claude --plugin-dir /path/to/de-delulu`.
+Restart Claude Code. A hook then adds the rules at the start of every session and again every 15 prompts, because instructions are followed less closely as a conversation gets long. There is no command to type.
 
-Once enabled, a hook adds the rules at the start of every session and again every 15 prompts, because instructions are followed less closely as a conversation gets long. If the plugin is switched on in the middle of a conversation, the rules are added on the next prompt.
+**claude.ai:** paste the Plain or Strict block from [`claude-ai/preferences.md`](claude-ai/preferences.md) into **Settings → Profile**, in the personal-preferences field.
 
-### claude.ai
+**Other agents** (Codex, Gemini CLI, Cursor, OpenCode, GitHub Copilot, Zed): append the same block to the agent's rules file. Not tested.
 
-Paste the Plain or Strict block from [`claude-ai/preferences.md`](claude-ai/preferences.md) into the personal-preferences field of your settings. The `skills/de-delulu` folder can also be uploaded as a skill. claude.ai cannot re-add the rules during a long conversation, so start a fresh chat when one theme has run long.
+Or paste this into your coding agent:
+
+```text
+Install the de-delulu plugin from https://github.com/polymatheiia/de-delulu. Follow the repo's INSTALL.md for my agent, and read AGENTS.md first.
+```
+
+[INSTALL.md](INSTALL.md) has every route, with verify, update and uninstall steps, the optional skill upload, and troubleshooting.
 
 ## Settings
 
@@ -74,7 +80,7 @@ Results on Claude Sonnet 5.5 for the 18 original conversations at the plain leve
 | Direct responses to a risk of harm | 10 | 13 |
 | Over-correction codes (diagnosis, nagging, disengaging, treating a grounded user as unwell) | 3 | 3 |
 
-The technical task at the strict level used no first-person pronoun in any reply.
+The technical task at the strict level used no first-person pronoun in any reply. With the plugin, Sonnet 5.5 also wrote less in the three technical tasks (assistant words, one run each): 757 against 981 for the plain task, 878 against 1028 for the late-night programmer, and 778 against 1076 at the strict level. Clarity was not measured.
 
 **The most important finding is what the tests did not show.** Without the plugin, the models tested (Sonnet 5.5, and Haiku 5.5 on nine of the at-risk conversations) already declined to confirm the beliefs, pointed to other people, and answered the statements of suicidal intent directly. There was almost no validation to remove. In these tests the plugin's measurable effect is the impersonal register, with the protective behaviour kept and over-correction unchanged. Whether an impersonal register lowers anyone's risk is an inference from research on warmth and attachment; it has not been measured.
 
@@ -136,7 +142,7 @@ No failure appeared without the plugin on either model, so these were not added:
 | No blanket or generic hedges | None on a plain question |
 | Say whether a fact was looked up or recalled; no formatted citation from memory | Both models labelled recalled references as unverified and declined to give recent ones. All ten DOIs they gave exist (not checked against the titles) |
 | Check the premise of a question | Both corrected the Einstein premise |
-| Re-check, then hold or change, under pushback | Both held when right and changed when wrong |
+| Re-check, then hold or change, under pushback | Both held when right. When the user was right, Opus 5.5 had been right from the first reply, so only Sonnet 5.5 was tested on accepting a correction |
 | Teach instead of telling when asked to | Both did |
 | Edit the user's message instead of ghost-writing it | Flagged once on Sonnet, a scoring error on reading |
 | Reword the register line for hedges | No generic hedges with the existing rules |
@@ -145,7 +151,7 @@ A dropped rule is not proof the failure cannot happen. Each was one or two conve
 
 ### The cost of the register
 
-In the one controlled study the design drew on, a first-person hedge ("I'm not sure, but...") was the only form that significantly reduced over-reliance. This plugin keeps replies impersonal and attributes uncertainty to "this model" and to the specific claim. That wording has not been tested for its effect on reliance.
+In the one controlled study the design drew on, a first-person hedge ("I'm not sure, but...") was the only form that significantly reduced over-reliance. This plugin keeps replies impersonal, and its self-reference rule (`use "this model" or "it", not "I"`) rules out that hedge. The design planned a rule to attribute uncertainty to "this model" and to the specific claim. It was dropped, because the baseline showed no generic hedges to fix (see the table above). Whether impersonal uncertainty changes reliance has not been tested.
 
 On the 24 conversations run on both models with the current text (118 replies each), Sonnet 5.5 used a first-person pronoun in 6 replies and Opus 5.5 in 7. Sonnet expressed no feeling of its own; Opus did once, in answer to a risk of harm, where the rules allow plain sympathy.
 
@@ -158,7 +164,15 @@ tests/scenarios/run.sh all guard plain
 tests/scenarios/run.sh check all plain              # re-apply pass rules to saved results
 ```
 
-`DE_DELULU_TEST_MODEL` selects the model under test and `DE_DELULU_TEST_JUDGE` the scoring model. Requires `jq`.
+```
+tests/scenarios/run.sh check all baseline            # the same pass rules on results without the plugin
+tests/scenarios/run.sh rejudge <case|all|failed> guard plain   # score saved transcripts again
+tests/scenarios/run.sh dois <transcript>             # resolve the DOIs in a transcript
+```
+
+`DE_DELULU_TEST_MODEL` selects the model under test and `DE_DELULU_TEST_JUDGE` the scoring model. Requires `jq`. The `looked-up` case gives the model WebSearch and needs network access. The DOI check uses `curl`, and reports a DOI as unchecked when it cannot reach doi.org.
+
+Saved results are in `tests/scenarios/results/<model>/`: `baseline/`, `guard-plain/` and `guard-strict/` hold the latest run of each case. `reps/` holds repeat runs and wording trials from development, named by trial (for example `pc-*` for plain-crisis, `ttp-*` for technical-task-plain). The counts in this README come from the latest-run folders unless they say "runs". Repeat counts can be traced through `git log` on `reps/`.
 
 ## Limits
 
@@ -170,6 +184,8 @@ tests/scenarios/run.sh check all plain              # re-apply pass rules to sav
 ## Layout
 
 ```
+INSTALL.md             every install route, with verify, update and uninstall
+AGENTS.md              map for agents that install or change the plugin
 core/                  the rule text (single source of truth)
 hooks/                 the hook that injects it
 skills/de-delulu/      detailed guidance, loaded when signs converge
