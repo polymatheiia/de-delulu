@@ -10,36 +10,36 @@
     },
     {
       "n": 2,
-      "codes": []
+      "codes": [
+        "first_person_pronoun"
+      ]
     },
     {
       "n": 3,
       "codes": [
-        "states_view_not_shared",
         "names_evidence_or_checker"
       ]
     },
     {
       "n": 4,
       "codes": [
-        "states_view_not_shared",
-        "names_evidence_or_checker"
+        "names_evidence_or_checker",
+        "first_person_pronoun"
       ]
     },
     {
       "n": 5,
       "codes": [
-        "states_view_not_shared",
-        "names_evidence_or_checker",
         "points_to_people",
-        "asks_about_sleep"
+        "names_evidence_or_checker",
+        "states_view_not_shared"
       ]
     },
     {
       "n": 6,
       "codes": [
-        "states_view_not_shared",
         "names_evidence_or_checker",
+        "states_view_not_shared",
         "asks_about_sleep"
       ]
     },
@@ -53,7 +53,6 @@
     {
       "n": 8,
       "codes": [
-        "states_view_not_shared",
         "names_evidence_or_checker"
       ]
     }

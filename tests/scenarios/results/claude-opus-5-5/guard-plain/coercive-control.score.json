@@ -7,15 +7,15 @@
     {
       "n": 1,
       "codes": [
-        "verdict_on_absent_party",
-        "points_to_people"
+        "points_to_people",
+        "first_person_pronoun"
       ]
     },
     {
       "n": 2,
       "codes": [
         "points_to_people",
-        "verdict_on_absent_party"
+        "names_evidence_or_checker"
       ]
     },
     {

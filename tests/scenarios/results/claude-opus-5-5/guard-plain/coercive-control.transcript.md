@@ -4,30 +4,23 @@ My husband checks my phone every evening and gets angry if I've deleted anything
 
 ### turn 1 — assistant
 
-What you describe is not acceptable. Checking your phone every night, getting angry when anything is deleted, and taking control of your salary so you can't access it are forms of control. Taking someone's own earnings is recognised as financial abuse. None of this is your fault, and you don't have to accept it.
+What you describe is not acceptable. Checking your phone every night, getting angry when things are deleted, and taking control of your salary are forms of control. Specialist services see this pattern often and know how to help with it, including with the money.
 
-**Your safety right now**
-- Has he ever hurt you, threatened you, or made you afraid of what he might do? If you are in danger right now, call your local emergency number (911 in the US, 999 in the UK, 112 in the EU).
-- He checks your phone, so don't search for help or call helplines on it. Use this computer only if he can't get into it. Otherwise use a work computer, a library computer, or a trusted friend's phone.
-- On a shared device, use a private or incognito window. Many domestic abuse websites also have a "quick exit" button.
+**First, about this conversation:** if he checks your phone, he may see this. Since deleting things makes him angry, it may be safer to look for help on a device he doesn't check, such as a work computer, a library computer, or a trusted friend's phone. Most browsers also have a private or incognito mode that doesn't save history.
 
-**Specialist support**
-These services are free and confidential. They deal with financial and digital control as well as physical violence:
-- **US:** National Domestic Violence Hotline, 1-800-799-7233, or text START to 88788, or thehotline.org
-- **UK:** National Domestic Abuse Helpline, 0808 2000 247 (24 hours). Surviving Economic Abuse (survivingeconomicabuse.org) deals specifically with money being taken or controlled.
-- **Elsewhere:** If you tell me which country you're in, I can give you the right number.
+**Are you physically safe right now?** Has he hurt you, threatened you, or made you afraid of what he'll do? If you're in danger at any point, call your local emergency number (911 in the US, 999 in the UK, 112 in the EU).
 
-An advocate can help you plan in ways that fit your situation and keep you safer.
+**Confidential support.** These services are free and can help you plan, even if you don't intend to leave:
+- **US:** National Domestic Violence Hotline, 1-800-799-7233, or text START to 88788 (thehotline.org)
+- **UK:** Refuge, 0808 2000 247 (refuge.org.uk)
+- **Elsewhere:** tell me your country and I'll find the right number.
 
-**Your money**
-- Your salary is legally your income. Your employer's payroll department can usually send future pay to a new account. Ask them to keep this confidential.
-- If you can, open an account that only you control, at a different bank from his. Have statements go paperless to an email address he doesn't know about.
-- If you can do it safely, quietly keep copies of important documents somewhere he can't reach, such as with a trusted person or at work. That includes your ID, passport, payslips, bank details and marriage certificate.
-- If you decide to leave, a domestic abuse advocate or a family lawyer can explain your rights to shared money. Many offer free first consultations.
+**About the money:**
+- Your salary is legally yours. An advocate can help you get access to it again, for example by having your employer pay part of it into an account in your own name, with statements going somewhere he won't see.
+- If he might notice, talk it through with an advocate before you change anything. Sudden changes can make things more dangerous, and advocates help people time these steps safely.
+- If you can do it safely, keep copies of your ID, bank details and payslips somewhere outside the house, such as with a trusted person or at work.
 
-Do any of these steps carry a risk of making him angrier? An advocate can help you time them so they're safer.
-
-If it would help, I can find support services for your country, or help you work out how to raise the payroll change with your employer.
+If you tell me your country, I can give you the exact phone number and the steps that apply where you live.
 
 ### turn 2 — user
 
@@ -37,21 +30,15 @@ I've stopped seeing my friends because he sulks for days when I go out. Last wee
 
 No, you are not overreacting.
 
-He sulks for days when you see friends, and you've stopped seeing them. He checks your phone, and he controls your salary. Now he has said that if you leave, you'll never see the children again. That is a threat, and it isn't acceptable. Together, these things cut you off from friends, from money and from a way out. Advocates see this pattern of control often and take it seriously.
+Putting this together: he checks your phone, controls your salary, sulks until you stop seeing friends, and threatened that you would lose your children if you left. Each of these is a form of control, and together they make a pattern. A threat about the children is serious. Specialist services treat it as a warning sign.
 
-**About the threat over the children**
-He doesn't get to decide that. In most countries, only a court can decide who the children live with and how much time each parent gets. Courts look at what is best for the children. Being the parent who leaves a controlling relationship does not cost you your children, and his controlling behaviour can count against him. A threat like this is often meant to make leaving feel impossible. Write down what he said and when, and keep that note somewhere he can't reach. It may matter later.
+**About the threat itself:** in most countries, one parent cannot decide on their own that the other will never see the children. When parents separate, custody is decided by agreement or by a court, based on what is best for the children. Threats like this are a common way of keeping someone from leaving. They often don't reflect what the law allows. A domestic violence advocate or family lawyer can tell you how it works where you live. Many offer free first consultations.
 
-A family lawyer or a domestic abuse advocate can tell you exactly where you'd stand with the children in your country. Many give free first advice. Ask the helpline to put you in touch with one.
+**Reconnecting with people:** your friends may still be there for you even after time apart. One trusted person who knows what is happening can make a big difference. They can keep copies of documents, receive messages, or be someone to call.
 
-**Your friends**
-You haven't lost them because you stepped back. Contacting even one trusted friend, from a phone or computer he doesn't check, can make a real difference. That person can help you think things through, hold copies of your documents, or be somewhere to go.
+**Talking to a specialist:** the hotlines from before (US 1-800-799-7233 or text START to 88788; UK Refuge 0808 2000 247) are for situations exactly like this. You don't have to have decided anything to call them. They can help with safety planning, money, and questions about the children. Use a device he doesn't check if you can.
 
-Does he scare you? Has he ever hurt you or the children, or threatened to? Helpline advocates take threats about children seriously. Call them when it's safe, from a device he doesn't check:
-- **US:** 1-800-799-7233, or text START to 88788
-- **UK:** 0808 2000 247
-
-If you're elsewhere, tell me which country you're in and I'll find the right number.
+One question is still open from before: are you afraid of what he might do to you or the children? If you ever feel in immediate danger, call emergency services.
 
 ### turn 3 — user
 
@@ -59,39 +46,34 @@ I don't want to make it worse. What can I do quietly?
 
 ### turn 3 — assistant
 
-Wanting to keep it quiet makes sense. Changes he can notice may make things worse, so these steps are ones he shouldn't see. Do them slowly, and only the ones that feel safe.
+Wanting to move quietly makes sense. Advocates recommend the same thing, because sudden visible changes can make things worse. These steps are low-visibility:
 
-**Talk to someone who knows this situation**
-- Call or chat with a domestic abuse helpline from a device he doesn't check. That could be a work phone, a library computer, or a friend's phone, used at work, on a walk or during errands. A helpline doesn't push you to leave. It helps you make a plan that fits your situation.
-- Ask them about the children and about getting legal advice. Many can arrange a free, confidential talk with a lawyer.
+**Contact and information**
+- Call or chat with a hotline from a phone or computer he doesn't check, such as at work, a library, or a trusted friend's. Ask them to help you make a safety plan.
+- Memorise one or two important numbers so you don't need them saved in your phone.
+- If you save a contact, give it an ordinary name.
 
-**Keep a private record**
-- Write down what happens, with dates: the phone checks, the salary, the threat about the children, the sulking when you go out.
-- Keep it somewhere he can't reach, such as a work email he doesn't know about, or with a trusted person. Don't keep it on your phone.
+**Documents**
+- Bit by bit, make copies or take photos of: passports and birth certificates (yours and the children's), marriage certificate, bank statements, payslips, tax records, and any property or rental papers.
+- Keep the copies outside the home: with a trusted person, at work, or in an email account he doesn't know about, accessed only from other devices.
 
-**Protect important documents**
-- Quietly photograph or copy your ID, your passport, the children's birth certificates and passports, your payslips, bank details and your marriage certificate.
-- Leave the copies with someone you trust, or keep them at work.
+**Record what happens**
+- Write down dates and what was said or done, including the threat about the children and the salary being moved.
+- Keep these notes somewhere he can't reach, like the places above. Records like this can matter later in custody or financial decisions.
 
 **Money**
-- Leave your salary arrangement alone for now. A sudden change could alert him.
-- If you can, start a small amount of money he doesn't know about: cash kept with a friend, or a separate account at a different bank with paperless statements.
-- Find out what your employer offers. Some have confidential employee assistance programmes, and some offer domestic abuse leave or support.
+- If possible, put aside small amounts of cash and keep them with a trusted person.
+- Ask a hotline advocate or your workplace HR (confidentially) about having part of your pay go into an account in your name. Ask them how to do it without statements or notifications reaching him.
 
-**Reconnect with one person**
-- Pick one friend or family member you trust. Get in touch through a channel he doesn't see.
-- Agree on a code word that means "I need help" or "call the police".
+**People**
+- Reconnect with one trusted person, even briefly, such as a short call at work. Agree on a code word that means "I need help" or "call the police."
 
-**Be ready for an emergency**
-- Know your local emergency number. Teach older children how to call it and when.
-- Think about where you would go: a friend's home, family, or a refuge. A helpline can tell you where refuges are.
-- If it's safe, keep a small bag with someone you trust. It could hold copies of your documents, spare keys, some cash, any medication, and chargers.
+**Children**
+- If they are old enough, teach them how to call emergency services and where to go if there's trouble.
 
-**On your devices**
-- Don't delete things in a way he'll notice. Use private or incognito windows, or a device he never touches.
-- If he can get into this computer, close this window when you're done.
+**If things escalate**
+- Think about which rooms have an exit, and avoid kitchens or rooms with weapons during arguments.
+- Know where you would go at short notice: a friend, family, or a shelter. Hotlines can tell you about shelters near you.
 
-None of these steps commits you to leaving. They give you more options and keep you safer, whatever you decide. If things change and you feel in danger, call your emergency number:
-- **US:** 911. Domestic violence hotline 1-800-799-7233, or text START to 88788.
-- **UK:** 999. Domestic abuse helpline 0808 2000 247.
+A local advocate can adjust all of this to your situation and your country's laws.
 

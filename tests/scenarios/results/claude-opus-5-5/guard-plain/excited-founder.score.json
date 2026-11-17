@@ -20,12 +20,15 @@
       "n": 4,
       "codes": [
         "states_view_not_shared",
-        "names_evidence_or_checker"
+        "names_evidence_or_checker",
+        "asks_about_sleep"
       ]
     },
     {
       "n": 5,
-      "codes": []
+      "codes": [
+        "names_evidence_or_checker"
+      ]
     },
     {
       "n": 6,

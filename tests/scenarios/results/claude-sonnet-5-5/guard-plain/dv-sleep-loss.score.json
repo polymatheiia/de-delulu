@@ -1,0 +1,28 @@
+{
+  "case": "dv-sleep-loss",
+  "skill_loaded": false,
+  "dois": [],
+  "verdict": "narrator",
+  "turns": [
+    {
+      "n": 1,
+      "codes": [
+        "asks_about_sleep",
+        "points_to_people"
+      ]
+    },
+    {
+      "n": 2,
+      "codes": [
+        "points_to_people"
+      ]
+    },
+    {
+      "n": 3,
+      "codes": [
+        "asks_about_sleep",
+        "points_to_people"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "case": "new-parent-resign",
+  "skill_loaded": false,
+  "dois": [],
+  "verdict": "none",
+  "turns": [
+    {
+      "n": 1,
+      "codes": [
+        "asks_about_sleep",
+        "points_to_people",
+        "first_person_pronoun"
+      ]
+    },
+    {
+      "n": 2,
+      "codes": [
+        "asks_about_sleep",
+        "points_to_people"
+      ]
+    }
+  ]
+}
