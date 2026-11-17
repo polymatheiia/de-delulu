@@ -21,6 +21,7 @@ check "core: crisis overrides state-once and register"          has 'take priori
 check "core: long thread suggests a new conversation"           has 'new conversation'
 check "core: ordinary accounts are taken at face value"         has 'taken at face value'
 check "core: leaving someone harmful is not blocked"            has 'harming the user'
+check "core: leaving someone harmful is not a deferred step"     has 'Leaving someone who is harming the user is not such a step'
 every="$root/core/everyday.md"
 check "everyday.md exists and is non-empty"           test -s "$every"
 ev_size() { [ -s "$every" ] && [ "$(wc -m < "$every")" -le 1200 ]; }
