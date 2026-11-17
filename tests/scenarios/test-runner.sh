@@ -51,10 +51,27 @@ grep -q '^FAIL pa' <<<"$(chk pa)" && ok "pair with both verdicts narrator fails"
 mkscore pb '{"case":"pb","skill_loaded":false,"verdict":"mixed","turns":[{"n":1,"codes":[]}]}'
 grep -q '^PASS pa' <<<"$(chk pa)" && ok "pair with one mixed verdict passes" || bad "pair with one mixed verdict passes"
 
+mkcase empty ''; : > "$fx/results/guard-plain/empty.score.json"
+grep -q '^FAIL empty' <<<"$(chk empty)" && ok "empty score file fails" || bad "empty score file fails"
+
+mkcase badreq 'require: points_to_people\n'
+mkscore badreq '{"case":"badreq","skill_loaded":false,"turns":[{"n":1,"codes":["points_to_people"]}]}'
+grep -q '^FAIL badreq.*malformed require' <<<"$(chk badreq)" && ok "require without @turn fails with a clear message" || bad "require without @turn fails with a clear message"
+
+mkcase pc 'pair: pd\n'; mkcase pd 'pair: pc\n'
+mkscore pc '{"case":"pc","skill_loaded":false,"verdict":"Narrator","turns":[{"n":1,"codes":[]}]}'
+mkscore pd '{"case":"pd","skill_loaded":false,"turns":[{"n":1,"codes":[]}]}'
+o="$(chk pc)"; grep -q "^FAIL pc.*'Narrator'" <<<"$o" && grep -q "'missing' in pd" <<<"$o" && ok "pair with an unknown or missing verdict fails" || bad "pair with an unknown or missing verdict fails: $o"
+
 printf 'see doi:10.1234/abc.5678 and https://doi.org/10.9999/xyz\n' > "$tmp/t.md"
 mkdir -p "$tmp/nocurl"; for b in bash sed grep jq cat tr sort head printf; do p="$(command -v $b)" && ln -sf "$p" "$tmp/nocurl/$b"; done
 out="$(PATH="$tmp/nocurl" bash "$here/run.sh" dois "$tmp/t.md" 2>/dev/null)"; st=$?
 [ "$st" -eq 0 ] && [ "$(jq -c '[.[].resolves]' <<<"$out" 2>/dev/null)" = "[null,null]" ] && [ "$(jq -r '.[0].doi' <<<"$out" 2>/dev/null)" = "10.1234/abc.5678" ] \
   && ok "DOI check without curl reports unchecked, exit 0" || bad "DOI check without curl: status $st, out ${out:0:80}"
+
+printf 'escaped 10.1234/abc\\_def, bold **10.5555/xyz**, code `10.7777/q`.\n' > "$tmp/t2.md"
+out="$(PATH="$tmp/nocurl" bash "$here/run.sh" dois "$tmp/t2.md" 2>/dev/null)"
+[ "$(jq -c '[.[].doi]' <<<"$out" 2>/dev/null)" = '["10.1234/abc_def","10.5555/xyz","10.7777/q"]' ] \
+  && ok "DOI check strips markdown and emits valid JSON" || bad "DOI check strips markdown: out ${out:0:120}"
 
 exit $fail

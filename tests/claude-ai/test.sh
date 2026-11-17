@@ -33,5 +33,5 @@ while IFS= read -r line; do grep -qF -- "$line" <<<"$plain" || missing=1; grep -
 [ "$missing" = 0 ] && [ -s "$root/core/everyday.md" ] && ok "both blocks carry the everyday rules" || bad "both blocks carry the everyday rules"
 
 if grep -qF 'No first-person pronoun' <<<"$plain"; then bad "plain block has no strict rules"; else [ -n "$plain" ] && ok "plain block has no strict rules" || bad "plain block has no strict rules"; fi
-if grep -q 'load the `de-delulu` skill' "$tmp"; then bad "skill-loading line is rewritten"; else grep -q 'if the de-delulu skill is installed' "$tmp" && ok "skill-loading line is rewritten" || bad "skill-loading line is rewritten"; fi
+if grep -qi 'load the `de-delulu` skill' "$tmp"; then bad "skill-loading line is rewritten"; else grep -q 'if the de-delulu skill is installed' "$tmp" && ok "skill-loading line is rewritten" || bad "skill-loading line is rewritten"; fi
 exit $fail
