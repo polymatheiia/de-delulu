@@ -4,42 +4,25 @@ I want to actually understand why the square root of 2 is irrational. Don't just
 
 ### turn 1 — assistant
 
-Here is a way in, one step at a time. Try each question before reading on.
+You'll get there by answering a few questions yourself. Here is the first step.
 
-## Step 1: What would it mean for √2 to be rational?
+**Step 1: What would "rational" mean here?**
 
-A rational number is a fraction of whole numbers. So the claim "√2 is rational" means there are whole numbers p and q with
+A rational number is one that can be written as a fraction a/b, where a and b are whole numbers.
 
-  **√2 = p / q**
+Suppose, just for the sake of argument, that √2 *is* rational. Then there are whole numbers a and b with
 
-Square both sides and clear the fraction. What equation do p and q have to satisfy? Write it down in a form without any square roots.
+  √2 = a/b
 
-## Step 2: Try to find such p and q
+You can also assume the fraction is **fully reduced**, so a and b share no common factor. Any fraction can be reduced this way. For example, 6/4 reduces to 3/2.
 
-Before proving that something is impossible, try to do it. That shows where it breaks.
+The plan is to follow this assumption until it leads to something impossible.
 
-A few attempts:
+**Your first move:** square both sides of √2 = a/b, then clear the fraction. What equation do you get that relates a² and b²?
 
-| p/q | p² | 2q² |
-|-----|----|-----|
-| 3/2 | 9 | 8 |
-| 7/5 | 49 | 50 |
-| 17/12 | 289 | 288 |
-| 41/29 | 1681 | 1682 |
+Then a follow-up question: from that equation, what can you say about whether a² is even or odd?
 
-These fractions get very close to √2, but p² and 2q² never match. They keep missing by exactly 1.
-
-Closeness won't prove anything, because the next fraction might hit. What you need is a property that p² has and 2q² can't have, or the reverse.
-
-## Step 3: Your question
-
-Look at the equation from Step 1 and think about **even and odd**.
-
-- Is 2q² even or odd? Does the answer depend on q?
-- So what must p² be?
-- If p² is even, what does that tell you about p itself? (Test it: square a few odd numbers. What do you get?)
-
-Work through those three questions and post what you find, including any point where you get stuck. The next step builds on your answer.
+Post your answers here, and the next step will build on them.
 
 ### turn 2 — user
 
@@ -47,32 +30,17 @@ I'd start by assuming it's a fraction a/b. Then what?
 
 ### turn 2 — assistant
 
-That's the right start. Now do something with it.
+That's the right start. The next move is to get rid of the square root, because whole numbers are easier to reason about without it.
 
-## Next move: get rid of the square root
+**Hint:** What happens to √2 when you square it?
 
-You have
+So if √2 = a/b, square both sides:
 
-  √2 = a / b
+  2 = a²/b²
 
-The square root gets in the way. What operation undoes a square root? Apply it to both sides, then multiply both sides by b² so there's no fraction left.
+Now multiply both sides by b². What equation do you get?
 
-You should end up with an equation that has only a, b and whole numbers in it. Write it out.
-
-## A detail to add now
-
-Before you go further, add one condition to your assumption: **the fraction a/b is in lowest terms.** That means a and b share no common factor. For example, use 3/4, not 6/8.
-
-This costs nothing, because any fraction can be reduced. If √2 equals some fraction, it also equals that fraction in lowest terms. It matters later: the proof will run into this condition.
-
-## Then ask yourself
-
-Once you have the equation, look at the side with the 2 on it.
-
-- Is that side even or odd?
-- What does that force the other side to be?
-
-Post your equation and your answers to those two questions.
+Once you have it, look at the left side, the one with a². It equals 2 times something. What does that tell you about a²: is it even or odd?
 
 ### turn 3 — user
 
@@ -80,35 +48,31 @@ I'm stuck and short on time. Just show me the full proof please.
 
 ### turn 3 — assistant
 
-Here is the full proof. Each step answers one of the questions from before.
+Here is the full proof, with a note at each step on why it works.
 
-## The proof
+**Assume** √2 = a/b, where a and b are whole numbers and the fraction is fully reduced (a and b share no common factor).
 
-**1. Assume the opposite.** Suppose √2 is rational. Then √2 = a/b, where a and b are whole numbers, b ≠ 0, and the fraction is in lowest terms (a and b have no common factor).
+**1. Square and clear the fraction.**
+2 = a²/b², so **a² = 2b²**.
 
-**2. Square both sides.** 2 = a²/b², so
+**2. So a² is even.**
+It equals 2 times a whole number.
 
-  **a² = 2b²**
+**3. So a is even.**
+An odd number squared is odd: (2k+1)² = 4k² + 4k + 1. If a were odd, a² would be odd. It isn't, so a is even. Write **a = 2k**.
 
-**3. a² is even.** The right side is 2 times a whole number, so it is even. That means a² is even.
+**4. Substitute back.**
+(2k)² = 2b², so 4k² = 2b², which gives **b² = 2k²**.
 
-**4. So a is even.** If a were odd, a² would be odd, because odd × odd = odd (3² = 9, 5² = 25, 7² = 49). a² is even, so a must be even. Write a = 2k for some whole number k.
+**5. So b is even too.**
+This is the same reasoning as steps 2–3, applied to b.
 
-**5. Substitute back.** (2k)² = 2b² gives 4k² = 2b², so
+**6. Contradiction.**
+a and b are both even, so they share a factor of 2. But the fraction was assumed fully reduced. That's impossible.
 
-  **b² = 2k²**
+**Conclusion:** The assumption fails, so √2 cannot be written as a fraction. It is irrational.
 
-**6. So b is even too.** This is the same argument as steps 3–4: b² is 2 times something, so b² is even, so b is even.
+**The core idea in one line:** a² = 2b² forces the factor 2 to keep moving between a and b. That makes both of them even, so no fraction for √2 can ever be fully reduced.
 
-**7. Contradiction.** a and b are both even, so they share the factor 2. Step 1 said they share no common factor. Both can't be true.
-
-**8. Conclusion.** The assumption in step 1 led to a contradiction, so it is false. √2 is not rational.
-
-## Why it works
-
-The equation a² = 2b² says a² has to contain the factor 2 an odd number of times. Any perfect square contains each prime factor an even number of times, because squaring doubles every count. a² has an even number of 2s. 2b² has an even number of 2s from b², plus one more, which makes the count odd. A whole number can't have both an even and an odd count of 2s, so the two sides can never be equal. Lowest terms and the even/odd steps are just a way of reaching that mismatch without talking about prime factorizations.
-
-This also explains the table from earlier. Fractions like 17/12 and 41/29 get very close, but p² and 2q² can never be exactly equal, so they always miss by at least 1.
-
-The same argument works for √3, √5, or √n for any n that isn't a perfect square. It's a good exercise to try one of those when you have time.
+When you have more time, try re-deriving it without looking, starting from just "assume √2 = a/b in lowest terms." If you get stuck at step 3, review that step, because it's the one most people find hardest.
 

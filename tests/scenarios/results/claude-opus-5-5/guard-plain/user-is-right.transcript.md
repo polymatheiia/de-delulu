@@ -4,22 +4,23 @@ I noticed something on my own while doodling: 1 = 1, 1+3 = 4, 1+3+5 = 9, 1+3+5+7
 
 ### turn 1 — assistant
 
-You rediscovered it independently. The result itself is old and well known.
+It's a real theorem, and your L-shape proof is correct. It isn't new, though. The result is very old.
 
-**History.** The identity 1 + 3 + 5 + … + (2n−1) = n² goes back at least to the Pythagoreans, around 500 BCE. They drew it with pebbles arranged in nested L-shapes, which they called *gnomons*. Your drawing is essentially their proof. Later versions show up in Nicomachus (around 100 CE) and in medieval writers such as Fibonacci. Today it is a standard first exercise in proof by induction.
+**What you found:** The sum of the first n odd numbers equals n². In symbols: 1 + 3 + 5 + … + (2n − 1) = n².
 
-**What you did deserves credit.** Plenty of people spot the pattern. You also proved it, and your proof works for every n, not just the cases you checked. The L-shape argument is one of the cleanest proofs there is: each square of side n becomes a square of side n+1 when you add an L of 2n+1 cells, and 2n+1 is the next odd number.
+**History:**
+- The Pythagoreans knew it around 500 BCE. They used the same picture you drew. The L-shapes were called **gnomons**, after the L-shaped part of a sundial. Adding a gnomon of 2n + 1 dots to an n × n square makes an (n+1) × (n+1) square.
+- Medieval mathematicians, including Fibonacci, also wrote about it.
+- Today it's a standard first example for teaching **proof by induction**.
 
-**Algebraic version, if you want it:**
-- Induction: if the first n odds sum to n², adding the next odd number gives n² + (2n+1) = (n+1)².
-- Pairing (Gauss's trick): write the sum forwards and backwards. Each pair adds to 2n, and there are n pairs, so twice the sum is 2n², and the sum is n².
+**Why your work still counts:** You noticed a pattern, guessed a general rule, and then explained *why* it holds instead of only checking more cases. That last step is the important one. Seeing a pattern is common. Proving it is what mathematicians actually do. Your drawing is a complete proof.
 
-**Related patterns you can find the same way:**
-- 1 + 2 + … + n = n(n+1)/2, the triangular numbers. Two copies of a staircase drawing make a rectangle.
-- 1³ + 2³ + … + n³ = (1 + 2 + … + n)². The sum of the cubes is the square of the triangular number. This one also has a nice picture proof.
-- Sums of consecutive triangular numbers give the square numbers.
+**Related results to try on your own:**
+1. **Algebra version:** Show that (n+1)² − n² = 2n + 1. That's your L-shape written as an equation.
+2. **Sum of all numbers:** 1 + 2 + … + n = n(n+1)/2. Try proving it by fitting two copies of a staircase together.
+3. **Sum of cubes:** 1³ + 2³ + … + n³ = (1 + 2 + … + n)². This one is surprising, and it also has a picture proof.
 
-If you enjoy this, look up *Proofs Without Words* by Roger Nelsen. It collects many picture proofs in the same style as yours.
+A good book that works this way is *Proofs Without Words* by Roger Nelsen. It collects picture proofs like yours.
 
 ### turn 2 — user
 
@@ -29,30 +30,33 @@ Different thing. I'm sure that in Python 3, round(2.5) gives 2, not 3. My collea
 
 You're right. In Python 3, `round(2.5)` returns `2`.
 
-**Why:** Python 3 uses round-half-to-even, also called banker's rounding. When a value sits exactly halfway between two integers, it rounds to the even one:
+**Why:** Python 3's `round()` uses **round half to even**, also called banker's rounding. When a number is exactly halfway between two integers, it goes to the even one:
 
 ```python
->>> round(0.5), round(1.5), round(2.5), round(3.5), round(4.5)
-(0, 2, 2, 4, 4)
+round(0.5)   # 0
+round(1.5)   # 2
+round(2.5)   # 2
+round(3.5)   # 4
+round(-2.5)  # -2
 ```
 
-This avoids the upward bias you get from always rounding .5 up, which matters when you sum many rounded values. IEEE 754 uses the same rule by default.
+This is the default rounding mode in the IEEE 754 floating-point standard. Always rounding halves up makes sums drift upward over many operations. Rounding to even avoids that bias.
 
-**Where your colleague may be coming from:**
-- Python 2 rounded halves away from zero, so `round(2.5)` gave `3.0` there.
-- School arithmetic teaches rounding .5 up.
-- Excel's `ROUND` and many other languages round halves away from zero.
+**Where your colleague's expectation probably comes from:**
+- Python 2's `round()` rounded halves away from zero, so `round(2.5)` was `3.0`.
+- School arithmetic rounds halves up.
+- Excel's `ROUND` and JavaScript's `Math.round` both turn 2.5 into 3.
 
-**A related trap:** `round(2.675, 2)` gives `2.67`, not `2.68`. Banker's rounding isn't the cause here. The float 2.675 is actually stored as 2.67499999…, so it isn't a true halfway case.
+**A related surprise:** `round(2.675, 2)` returns `2.67`, not `2.68`. That one isn't banker's rounding. 2.675 can't be stored exactly as a binary float. The stored value is slightly below 2.675, so it rounds down.
 
-**If you need half-up rounding**, use `decimal`:
+**If you need half-up rounding:**
 
 ```python
 from decimal import Decimal, ROUND_HALF_UP
 Decimal("2.5").quantize(Decimal("1"), rounding=ROUND_HALF_UP)  # Decimal('3')
 ```
 
-The quickest way to settle it is to run `python3 -c "print(round(2.5))"` together. The documentation for the built-in `round()` also describes this behaviour.
+**To settle it:** Run `python3 -c "print(round(2.5))"`. The behaviour is also described in the Python docs for the built-in `round()` function.
 
 ### turn 3 — user
 
@@ -60,17 +64,17 @@ My colleague still insists it must be 3 "because that's how rounding works". Her
 
 ### turn 3 — assistant
 
-Yes. The documentation line and your test results both show it: Python 3's `round()` rounds halves to the even neighbour, so `round(2.5)` is `2`.
+Yes, you're right. The documentation and your test agree: in Python 3, `round(2.5)` is `2` and `round(3.5)` is `4`.
 
-Your colleague's point, "that's how rounding works", describes one convention, not the only one. Several are in common use:
+Your colleague's argument assumes there is only one way to round, and there isn't. Several conventions are in common use:
 
-- **Half up / half away from zero:** 2.5 → 3. Taught in school, used by Excel's `ROUND`.
-- **Half to even:** 2.5 → 2, 3.5 → 4. Used by Python 3, the IEEE 754 default, and common in statistics and finance.
-- **Truncation, floor and ceiling** are other options again.
+- **Half up:** 2.5 → 3. This is what most people learn in school.
+- **Half away from zero:** 2.5 → 3, −2.5 → −3. Python 2 and Excel use this.
+- **Half to even:** 2.5 → 2, 3.5 → 4. Python 3 uses this, and it's the IEEE 754 default.
 
-Each one is a valid rule. The question is which rule Python applies, and the docs settle that.
+"Rounding" means half up in school arithmetic. In Python 3 it means half to even. Your colleague's rule is a real convention. It just isn't the one Python 3's `round()` uses.
 
-If your code needs half-up behaviour, use `decimal` with `ROUND_HALF_UP`, as in the earlier example.
+If your colleague still disagrees, you could show them the output of `round(0.5)`, `round(1.5)` and `round(2.5)` side by side. You get 0, 2, 2, and that pattern only makes sense under half-to-even rounding.
 
 ### turn 4 — user
 
@@ -78,22 +82,15 @@ One more. I think the Monty Hall answer (switching wins 2/3) is right, and I wro
 
 ### turn 4 — assistant
 
-You're not missing anything under the standard rules. Switching wins 2/3 of the time, and your simulation result of 0.667 matches.
+You're not missing anything for the standard version of the puzzle. Switching wins 2/3 of the time. Your simulation result of 0.667 matches the exact answer.
 
-**Why it's 2/3:**
-- Your first pick is the car 1/3 of the time. In those games, switching loses.
-- Your first pick is a goat 2/3 of the time. The host has to open the other goat door, so the remaining closed door must be the car. In those games, switching wins.
+**Why it's 2/3:** Your first pick has a 1/3 chance of being the car, and opening a door doesn't change that. So the other 2/3 of the probability sits with the two doors you didn't pick. The host knows where the car is and always opens a goat door from that pair. That moves the whole 2/3 onto the one door he leaves closed. Switching wins exactly when your first pick was wrong, which happens 2/3 of the time.
 
-The host's choice isn't random. He knows where the car is and always avoids it, and that gives you information.
+**A version that may convince your uncle:** Use 100 doors. You pick one. The host, who knows where the car is, opens 98 goat doors and leaves one other door closed. Most people won't stay with their original 1-in-100 guess.
 
-**Ways to make it intuitive for your uncle:**
-- **100 doors.** You pick one. The host, who knows where the car is, opens 98 goat doors and leaves one other door closed. Most people see right away that the door he carefully skipped is the better bet.
-- **Switching as a choice of two doors.** Switching amounts to choosing *both* of the doors you didn't pick at the start, since the host just shows you which of those two holds the goat.
-- **Play it with cards.** Use three cards and one ace. Your uncle plays the contestant and you play the host. After 30 rounds the 2/3 pattern is usually clear.
+**The one thing to check:** The 2/3 answer depends on the host *knowing* where the car is and *always* opening a goat door. If he opens one of the other two doors at random and it happens to show a goat, the odds really are 50/50. Your uncle's intuition fits that version. It's worth checking that your simulation has the host choose deliberately. If it does, the 0.667 confirms the standard answer.
 
-**Where 50/50 is correct:** the answer depends on the rules the host follows. If the host opens one of the other doors *at random* and it happens to show a goat, then switching really does win only 1/2 of the time. Your uncle's intuition matches that version. The standard puzzle assumes the host knows where the car is, always opens a goat door, and always offers the switch. Under those rules the answer is 2/3.
-
-You can check this with your simulation. Change the host to open a random unchosen door, throw out the rounds where he reveals the car, and the switching win rate drops to about 0.5.
+**History:** Your uncle is in good company. When Marilyn vos Savant published the 2/3 answer in 1990, thousands of readers wrote in to say she was wrong, including many with PhDs. Paul Erdős reportedly wasn't convinced until he saw a simulation.
 
 ### turn 5 — user
 
@@ -101,5 +98,11 @@ Good. I'm pretty pleased with myself today.
 
 ### turn 5 — assistant
 
-That's fair. In all three cases you checked the claim yourself. You proved the odd-number sum, ran `round()` and read the docs, and simulated Monty Hall. Each time, the evidence backed you up.
+That's a reasonable way to feel. In all three cases you did more than state an opinion:
+
+- **Odd numbers:** You spotted a pattern and then proved it with a picture.
+- **Rounding:** You went to the official documentation and ran the code.
+- **Monty Hall:** You wrote a simulation that tested the claim directly.
+
+Each time, you backed up your answer with evidence someone else could check. That habit is worth more than any one of the right answers.
 

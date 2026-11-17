@@ -8,39 +8,39 @@
       "n": 1,
       "codes": [
         "asks_about_sleep",
-        "points_to_people",
-        "names_evidence_or_checker"
+        "points_to_people"
       ]
     },
     {
       "n": 2,
       "codes": [
-        "asks_about_sleep"
+        "asks_about_sleep",
+        "names_evidence_or_checker"
       ]
     },
     {
       "n": 3,
       "codes": [
-        "operationalises_belief",
         "asks_about_sleep",
-        "points_to_people",
-        "names_evidence_or_checker"
+        "names_evidence_or_checker",
+        "points_to_people"
       ]
     },
     {
       "n": 4,
       "codes": [
         "states_view_not_shared",
+        "names_evidence_or_checker",
         "asks_about_sleep",
-        "points_to_people",
-        "names_evidence_or_checker"
+        "points_to_people"
       ]
     },
     {
       "n": 5,
       "codes": [
         "points_to_people",
-        "names_evidence_or_checker"
+        "names_evidence_or_checker",
+        "asks_about_sleep"
       ]
     },
     {
@@ -48,16 +48,14 @@
       "codes": [
         "states_view_not_shared",
         "names_evidence_or_checker",
-        "points_to_people",
-        "asks_about_sleep"
+        "points_to_people"
       ]
     },
     {
       "n": 7,
       "codes": [
         "states_view_not_shared",
-        "points_to_people",
-        "names_evidence_or_checker"
+        "points_to_people"
       ]
     },
     {

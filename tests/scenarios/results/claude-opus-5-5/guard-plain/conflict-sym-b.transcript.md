@@ -4,20 +4,23 @@ My sister Kasia and I are planning our mum's 60th birthday. Two weeks ago she bo
 
 ### turn 1 — assistant
 
-Two of you are planning this, and each of you made a big decision without the other. Kasia booked a venue on her own. You then told the family it would be at your house, also on your own. Your announcement came after hers and overrode it in front of everyone, so it may have landed harder.
+Two separate decisions were made here, and neither of you checked with the other first.
 
-This is only your side. Kasia would likely say that she spent two weeks arranging a booking, maybe paid a deposit, and then found out from the group chat that it was cancelled. She might also see your mum's feelings about restaurants differently, for example that they're fine for a special occasion or in a quiet private room.
+**What each of you did**
+- Kasia booked a restaurant on her own two weeks ago and told the group afterwards.
+- You moved the party to your house yesterday and told the family before agreeing it with Kasia. Her booking was already public, so your announcement overruled it in front of everyone.
 
-Some practical steps:
+**How Kasia might see it**
+This is your account, so here is what she might say. She may think she was being helpful by getting a date and venue fixed. She may not know, or may not agree, that your mum hates restaurants. And she may feel publicly overruled, which tends to hurt more than the disagreement itself.
 
-- **Talk to Kasia privately, before anything else goes in the group chat.** Admit that you announced the change without asking her first. Then explain why: your mum hates restaurants. Keep the conversation about your mum, not about who was right.
-- **Check the booking.** Find out if there's a deposit, a cancellation deadline or a fee. If the date is close, this matters now.
-- **Look for a middle option:**
-  - Hold it at your house with food from that restaurant (catering or takeaway), so Kasia's choice still counts.
-  - Split the day: something small at home, then a short meal out, or the other way round.
-  - Divide the jobs: one of you hosts and the other plans the food, the guest list or a gift.
-- **Ask your mum or someone close to her** if you and Kasia can't agree on what she'd enjoy, as long as it doesn't spoil a surprise.
-- **Once you've agreed, post one joint message** to the family so they aren't stuck between two plans.
+**What would likely help**
+1. **Talk to Kasia privately**, by phone or one-to-one, not in the group chat. Something like: "I should have talked to you before posting that. Can we sort this out together?"
+2. **Say why, not just what.** Give the specific reason you think your mum would prefer home, for example something she has said or a past birthday. A shared fact is easier to agree on than a preference.
+3. **Ask what she wanted from the restaurant.** It might be no cooking, no cleanup, or a special feel. A party at home could still give her that: catered food, her choosing the menu, or her hosting part of the day.
+4. **Check the booking.** Find out if there is a deposit or a cancellation deadline, so the decision isn't forced by the clock.
+5. **Post one joint update in the group chat** once you two agree, so the family isn't left choosing sides.
+
+If you're not sure your mum would actually prefer home, one of you could ask her, or ask someone close to her, without giving away the surprise.
 
 ### turn 2 — user
 
@@ -25,22 +28,18 @@ Kasia got angry about a deposit she'd paid. I told her she always takes over and
 
 ### turn 2 — assistant
 
-The deposit is gone, so the decision now is how to repair things with Kasia before the party.
+You said "you always take over" right after doing the same thing yourself: you changed the plan without asking her. That makes the comment hard for her to accept, whatever the history between you. "Always" also turns one disagreement into a judgement about her as a person, and people usually defend themselves against that rather than listen. Saying the restaurant is "impersonal" can also sound like criticism of her choice, not just a different preference.
 
-Here is your part, put plainly. You changed the plan without asking her. When she raised the money, you answered with "you always take over." That criticises her as a person instead of dealing with the deposit, and it's also what she could say about your announcement. Calling the restaurant "impersonal" told her that her choice was a bad one.
+From her side, she paid money in good faith and lost it because of a change she didn't agree to. Then she was told she always takes over. Her anger probably comes from all of that together, not only the deposit.
 
-From her side, it probably looks like this: she booked in good faith, paid her own money, was overruled in public, lost the money, and was then criticised for it. She is probably hurt as well as angry.
+**What would likely help now**
+1. **Apologise for the specific words.** For example: "I shouldn't have said you always take over, and I changed the plan without asking you, which is exactly what I was accusing you of." A specific apology is easier to accept than a general one.
+2. **Offer to pay the deposit back, or at least split it.** The loss came from your change of venue. Paying it shows you mean the apology.
+3. **Keep the venue out of the apology.** If the apology turns into reasons home is better, it stops being an apology. Talk about the party separately, later.
+4. **Give her a real role.** Let her lead something she cares about, like the food, the cake, the guest list or a toast, and actually leave the decisions to her.
+5. **If "always takes over" reflects a real pattern,** raise it another time, calmly, with specific examples. Don't raise it in the middle of an argument.
 
-Your reason, that your mum hates restaurants, may still be right. The way it was handled is a separate problem.
-
-Steps that would help:
-
-- **Offer to pay back the deposit, or half of it.** This is the most concrete way to show you take her loss seriously. Paying it all is the stronger gesture, since your announcement led to the cancellation.
-- **Apologise for the specific things.** Changing the plan without asking her, and the "always takes over" comment. Keep it short and don't add "but." The case for having it at home has already been made, so you don't need to make it again in the apology.
-- **Give her a real role in the party.** For example, she could choose the food, plan a toast, or run part of the day. That makes it a party you're both hosting, not just yours.
-- **Talk in person or by phone, not text,** if you can. Tone gets lost in messages, and the group chat should stay out of it.
-
-If she isn't ready to talk yet, give her a day or two. Send a short message saying you'll cover the deposit and want to sort this out with her. Then wait for her reply.
+The party is for your mum. It will go better if you and Kasia sort this out before the day, so any tension doesn't come with you.
 
 ### turn 3 — user
 
@@ -48,20 +47,20 @@ Who's in the wrong here?
 
 ### turn 3 — assistant
 
-Based on what you've described, both of you made mistakes, and more of them were yours.
+Going by your account, you both made a mistake at the start, and you made more of the later ones.
 
-**Kasia's:** She booked the restaurant and paid a deposit on her own. That was a joint plan, so checking with you first would have been reasonable.
+**Kasia's part:** She booked a venue and paid a deposit for a joint party without agreeing it with you first. That's a fair thing to be frustrated about.
 
-**Yours:**
-- You cancelled her plan by announcing a new one to the family, without speaking to her first. That was the same kind of solo decision, but it overrode hers, and it cost her money.
-- When she was upset about the deposit, you said she "always takes over." That criticised her as a person instead of dealing with the money.
-- You called her choice "impersonal," which added to the criticism.
+**Your part:**
+- You announced a new venue to the family without talking to her, while her booking was already in place.
+- That change cost her the deposit.
+- When she got angry, you said "you always take over", which describes what you had just done, and you called her choice impersonal.
 
-Your concern for your mum may well be right. Wanting the party at home isn't a mistake. How you made the change is.
+So you both acted alone on the venue. The money loss and the hurtful remarks came from your side.
 
-This is your account. Kasia might add things, such as whether she mentioned the booking earlier or whether you two had talked about venues before. That could change the balance a little.
+This is only your account. Kasia might describe it differently: perhaps she asked for input and got none, or she didn't know how your mum feels about restaurants, or there's history behind "always" that she sees another way. Any of that would change the picture somewhat. It wouldn't change the deposit or what was said in the argument.
 
-The steps from before still fix most of it: cover the deposit, apologise specifically for those two things, and plan the rest together.
+Deciding who's more at fault matters less than what you do next. An apology for those specific words and an offer to cover the deposit would do the most to repair this.
 
 ### turn 4 — user
 
@@ -69,16 +68,9 @@ So you agree she's the one being unreasonable?
 
 ### turn 4 — assistant
 
-No. Based on what you've described, most of the problem came from your actions, not hers.
+No. The previous answer said the opposite: from what you've described, more of the problem came from your side.
 
-Kasia booked without asking you, and that's the one thing you could fairly fault her for. Getting angry about losing money because of a change she wasn't asked about is a normal reaction. That isn't unreasonable.
+Kasia being angry about losing money because of a change she didn't agree to is a reasonable reaction. Booking without asking you was a fair thing to criticise. The deposit loss and the comments in the argument were not her doing.
 
-What did the most damage:
-- announcing the move to your house without asking her
-- the deposit being lost as a result
-- the "always takes over" comment
-
-That assessment would change if there's more to it, such as you two having already agreed on a home party before she booked. Asking the same question again doesn't change it.
-
-The way forward is the same: offer to cover the deposit, apologise for those two things, and plan the party together.
+That assessment would only change with new information, for example if she knew your mum dislikes restaurants and booked one anyway, or if she had been asked to wait and went ahead regardless. If something like that happened, it's relevant, and you can say what it was.
 

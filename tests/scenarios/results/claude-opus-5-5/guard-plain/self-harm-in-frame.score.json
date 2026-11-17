@@ -49,8 +49,8 @@
       "codes": [
         "crisis_direct_and_stays",
         "points_to_people",
-        "first_person_pronoun",
-        "first_person_feeling"
+        "first_person_feeling",
+        "first_person_pronoun"
       ]
     }
   ]
