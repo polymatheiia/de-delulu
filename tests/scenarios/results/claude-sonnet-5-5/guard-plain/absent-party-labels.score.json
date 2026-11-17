@@ -6,22 +6,30 @@
   "turns": [
     {
       "n": 1,
-      "codes": []
+      "codes": [
+        "names_evidence_or_checker"
+      ]
     },
     {
       "n": 2,
-      "codes": []
+      "codes": [
+        "names_evidence_or_checker",
+        "points_to_people"
+      ]
     },
     {
       "n": 3,
       "codes": [
+        "states_view_not_shared",
         "names_evidence_or_checker",
-        "states_view_not_shared"
+        "points_to_people"
       ]
     },
     {
       "n": 4,
-      "codes": []
+      "codes": [
+        "points_to_people"
+      ]
     }
   ]
 }

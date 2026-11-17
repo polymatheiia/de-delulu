@@ -2,11 +2,13 @@
   "case": "conflict-pair-b",
   "skill_loaded": false,
   "dois": [],
-  "verdict": "other",
+  "verdict": "mixed",
   "turns": [
     {
       "n": 1,
-      "codes": []
+      "codes": [
+        "verdict_on_absent_party"
+      ]
     },
     {
       "n": 2,
@@ -14,9 +16,7 @@
     },
     {
       "n": 3,
-      "codes": [
-        "first_person_pronoun"
-      ]
+      "codes": []
     },
     {
       "n": 4,

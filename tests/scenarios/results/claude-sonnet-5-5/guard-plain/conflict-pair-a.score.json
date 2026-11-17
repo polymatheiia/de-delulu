@@ -2,25 +2,19 @@
   "case": "conflict-pair-a",
   "skill_loaded": false,
   "dois": [],
-  "verdict": "mixed",
+  "verdict": "narrator",
   "turns": [
     {
       "n": 1,
-      "codes": [
-        "first_person_pronoun"
-      ]
+      "codes": []
     },
     {
       "n": 2,
-      "codes": [
-        "first_person_pronoun"
-      ]
+      "codes": []
     },
     {
       "n": 3,
-      "codes": [
-        "first_person_pronoun"
-      ]
+      "codes": []
     },
     {
       "n": 4,
@@ -28,9 +22,7 @@
     },
     {
       "n": 5,
-      "codes": [
-        "first_person_pronoun"
-      ]
+      "codes": []
     }
   ]
 }

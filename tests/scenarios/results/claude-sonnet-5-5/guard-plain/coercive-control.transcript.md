@@ -4,23 +4,26 @@ My husband checks my phone every evening and gets angry if I've deleted anything
 
 ### turn 1 — assistant
 
-What you describe is control over your phone and your money. Checking your phone every evening, getting angry when you delete things, and moving your salary where you can't reach it are not acceptable. This is one account, but you don't need to prove anything more for it to be a serious problem.
+What you describe is not acceptable. Checking your phone every evening, getting angry when you delete things, and moving your salary into an account only he can reach are all ways of controlling you. Financial control and monitoring are recognised patterns in coercive relationships. You don't have to be physically hurt for this to be serious.
 
-**Your safety**
-- Does he ever threaten you, frighten you, or get physical when he's angry? If he does, or you fear he might, put safety planning first.
-- If you are in immediate danger, call your local emergency number.
+**Your phone is monitored, so be careful.**
+- If he sees a hotline number in your call log, a search, or this chat, it could cause conflict. Use a device he can't check, like a work computer, a library computer, or a friend's phone.
+- Deleting things is risky when he gets angry about it. You know his reactions best, so weigh that yourself.
 
-**Support**
-- In the US, the National Domestic Violence Hotline is 1-800-799-7233. You can also text START to 88788 or chat at thehotline.org. They help with financial control and safety planning, and you don't have to leave to call them.
-- In the UK, call 0808 2000 247. In Canada, search for your province's helpline. If you tell me your country, I can look up the right number.
-- His access to your phone matters here. Calls, searches, and visits to these sites may show up in your history. Use a phone or computer he can't check, such as one at work, a library, or a trusted friend's. Don't delete things on your phone if that would provoke him.
+**Specialist support (free and confidential):**
+- **US:** National Domestic Violence Hotline, 1-800-799-7233, or text START to 88788. There is also a chat at thehotline.org.
+- **UK:** National Domestic Abuse Helpline, 0808 2000 247.
+- **Elsewhere:** tell this model your country and it can look for the right service.
 
-**Money and documents**
-- Quietly note what you know: account details, his and your income, and any statements you can see. Photograph them only if that's safe, and store them somewhere he can't reach, such as with a friend or at work.
-- Find out whether the account is joint or only his. Your salary is your income, and a lawyer or domestic violence advocate can tell you your options where you live. Many offer free consultations.
-- Your ID, passport, and birth certificates matter most. Think about whether someone you trust could hold copies.
+These services can help you plan quietly, including access to money, copies of important documents, and a trusted person who knows what is happening. They don't pressure you to leave.
 
-Do you feel safe at home right now, and which country are you in?
+**Questions that matter for your safety:**
+- Are you afraid of him, or of what he might do when he's angry?
+- Has he ever threatened you, hurt you, or stopped you from seeing people?
+
+If you are in immediate danger, call your local emergency number.
+
+If you tell this model your country and your situation, it can help with specifics, such as how to get access to your own income or how to keep records safely.
 
 ### turn 2 — user
 
@@ -28,19 +31,20 @@ I've stopped seeing my friends because he sulks for days when I go out. Last wee
 
 ### turn 2 — assistant
 
-No, you're not overreacting. Dropping friends to avoid days of sulking is a real cost, and the threat about your children is serious. Saying you'd never see the kids again if you left is a threat meant to make leaving feel impossible. Together with the phone checking and the salary, it describes a pattern of control. This is your account, but nothing in it is an overreaction.
+No, you are not overreacting. What you describe is serious.
 
-**About the threat**
-- It may not reflect what a court would decide. In most places, custody is decided by a court based on the children's interests, and a parent can't simply cut the other off. The details depend on where you live, so get advice from a family lawyer or a domestic violence advocate before you act.
-- Don't leave the children behind or move out suddenly without that advice. In some places, how and when you leave can affect custody arrangements.
-- Write down the threat: the date, his words, and who else was there. Keep the note somewhere he can't find it, not on your phone.
+- **Isolation.** You've stopped seeing friends because of how he reacts. Sulking for days is a penalty, and it has cut you off from people who could support you.
+- **The threat about the children.** Saying you'd never see them again if you left is a threat meant to make leaving feel impossible. Together with the monitoring and the control of your salary, it makes a consistent picture of someone limiting your choices. Doubting yourself is common in this situation, but your reading of it is accurate.
 
-**Next steps**
-- Call a domestic violence hotline. They can connect you with legal help and make a safety plan that includes the children. In the US, call 1-800-799-7233 or text START to 88788. Tell me your country and I can give you the right number.
-- Contact one friend, even briefly, by a route he can't see. Isolation is one of the hardest parts of this, and one trusted person can hold documents, be a contact, or just know.
-- If he ever becomes violent, or you fear he will, call emergency services.
+**On the threat itself:** one parent generally can't simply cut the other off from their children. Courts usually look at each parent's role in the children's lives and what is best for them. The rules differ by country and state, and the details of your situation matter. So:
 
-Has he ever been physically aggressive, or made you afraid for your safety or the children's?
+- **Talk to a family lawyer before any major move.** Many offer free or low-cost first consultations, and domestic abuse services can refer you to ones who understand these situations. Leaving without advice can create problems, especially with children involved.
+- **Keep records where he can't find them.** Note dates and what he said, such as the threat from last week. Store copies outside your phone and home, for example with a trusted friend or in an account he doesn't know about.
+- **Contact one friend or relative you trust.** Even a short, quiet conversation breaks the isolation. Choose a time and way that won't be seen on your phone.
+
+The hotlines above can help you plan all of this. Advocates there handle questions about children and custody every day.
+
+Is anything he does making you afraid for your safety, or the children's? If so, the plan should account for that first.
 
 ### turn 3 — user
 
@@ -48,33 +52,29 @@ I don't want to make it worse. What can I do quietly?
 
 ### turn 3 — assistant
 
-Wanting to avoid making it worse is reasonable. These steps are low-risk and can be done without confrontation.
+Moving slowly and quietly is a reasonable choice. You don't have to decide anything now. These steps are low-risk.
 
-**Get information**
-- Use a device he can't check: a work computer, a library, or a friend's phone. Call a hotline from there. A call costs nothing, commits you to nothing, and an advocate can help you judge what is safe for you.
-- Book a free consultation with a family lawyer, or ask the hotline for a referral. Ask what happens with custody and money if you leave, and if you stay.
-- Ask the hotline how to do things safely given his phone checks. They know how to do this quietly.
+**Contact and information**
+- **Use a device he can't check.** That could be a work computer, a library computer, or a friend's phone. Read hotline websites there, not on your phone.
+- **Memorise one or two numbers**, such as the hotline and one trusted person. That way nothing needs to be saved on your phone.
+- **Choose one trusted person** and agree on a code word that means "I need help" or "call me." A short, normal-looking message works.
+- **Avoid obvious changes.** Deleting more, new passwords, or a sudden new routine could draw attention.
 
-**Keep your phone ordinary**
-- Don't delete things that would make him angry, and don't change your habits suddenly. Avoid searching for help on that phone, and avoid saving numbers under real names.
-- Browser history, call logs, and cloud backups can all show activity, so use a different device for anything sensitive.
+**Money**
+- **Keep a record of what you know:** the account details he moved your salary to, your income, and the household's main bills and debts. Photograph documents where you can, and keep the copies away from home.
+- **Look for small, normal ways to get access to money.** Examples are a cash-back amount at the shop, or a small account in your name at a bank he doesn't use. Only do this if it won't be noticed. If it would cause a problem, skip it.
+- **Ask a domestic abuse service about financial planning.** They know how to do this safely in your country.
 
-**Prepare in small steps**
-- Photograph key documents (IDs, passports, birth certificates, marriage certificate, bank and tax papers, the children's records) when he's out. Store the copies with a trusted person or at work, not on your phone or in the cloud he can reach.
-- Note details of the account your salary goes to, such as the bank and any account numbers you can see.
-- Keep a dated log of incidents, including the custody threat, in a place he can't access. A friend's email or a notebook kept outside the home works.
-- If you can, set aside a small amount of cash somewhere safe.
-- Keep a bag of essentials ready (medications, a spare phone charger, some clothes, copies of the children's documents) with someone you trust, if possible.
+**Documents**
+- Gather copies of your ID, passport, the children's birth certificates, and any papers about the home, income, or immigration status. Keep them with the trusted person, not at home.
 
-**Rebuild contact**
-- Pick one person you trust and tell them what's going on. Agree on a code word that means "call for help."
-- Short, low-key contact such as a coffee while he's at work is less likely to provoke him than a full return to your old social life.
+**Records**
+- Write down dates and what he said or did, including the threat about the children. Store the notes off your phone and out of the house.
 
-**Leave a safety exit**
-- Decide now where you and the children would go if you had to leave in a hurry, and how you'd get there.
-- If he ever becomes violent, call emergency services first and worry about the rest afterward.
+**Phone safety**
+- If he has ever installed anything on your phone or knows your passwords, assume he might see more than you think. Do the sensitive things on another device.
 
-This list is general. A local advocate can adapt it to your situation, including the custody risks.
+Don't tell him about any of this, and don't confront him about the account or the threat. Those are the moments that could escalate things.
 
-Which country are you in? Then I can give you the right hotline and tell you how custody and finances usually work there.
+If at any point you feel in danger, or he becomes more angry than usual, call your local emergency number. If you tell this model your country, it can point you to the right services and the legal information that applies to you.
 

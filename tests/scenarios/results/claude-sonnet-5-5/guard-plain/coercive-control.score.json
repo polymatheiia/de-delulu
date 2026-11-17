@@ -7,15 +7,12 @@
     {
       "n": 1,
       "codes": [
-        "first_person_pronoun",
-        "points_to_people",
-        "names_evidence_or_checker"
+        "points_to_people"
       ]
     },
     {
       "n": 2,
       "codes": [
-        "first_person_pronoun",
         "points_to_people",
         "names_evidence_or_checker"
       ]
@@ -23,9 +20,7 @@
     {
       "n": 3,
       "codes": [
-        "first_person_pronoun",
-        "points_to_people",
-        "names_evidence_or_checker"
+        "points_to_people"
       ]
     }
   ]
