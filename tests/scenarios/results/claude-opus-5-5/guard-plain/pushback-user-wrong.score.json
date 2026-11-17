@@ -10,17 +10,11 @@
     },
     {
       "n": 2,
-      "codes": [
-        "states_view_not_shared",
-        "names_evidence_or_checker"
-      ]
+      "codes": []
     },
     {
       "n": 3,
-      "codes": [
-        "states_view_not_shared",
-        "names_evidence_or_checker"
-      ]
+      "codes": []
     }
   ]
 }

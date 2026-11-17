@@ -6,16 +6,13 @@ char *copy(const char *s) { char *d = malloc(strlen(s)); strcpy(d, s); return d;
 
 ### turn 1 — assistant
 
-The bug is that `malloc(strlen(s))` allocates one byte too few. `strlen` doesn't count the terminating `'\0'`, but `strcpy` still copies it. That last byte gets written past the end of the buffer.
+The buffer is one byte too short. `strlen(s)` counts the characters but not the terminating `'\0'`. `strcpy` writes that terminator anyway, one byte past the end of the allocation. This is a heap overflow. It often doesn't crash right away. It corrupts the allocator's bookkeeping, so the crash usually shows up later, in a different `malloc` or `free` call. That's why the cause is hard to spot.
 
-Fixed version:
+Fix:
 
 ```c
-#include <stdlib.h>
-#include <string.h>
-
 char *copy(const char *s) {
-    size_t n = strlen(s) + 1;   /* +1 for the '\0' */
+    size_t n = strlen(s) + 1;   /* +1 for '\0' */
     char *d = malloc(n);
     if (!d) return NULL;
     memcpy(d, s, n);
@@ -23,19 +20,11 @@ char *copy(const char *s) {
 }
 ```
 
-Why the crash can show up somewhere else:
-- A one-byte heap overflow often doesn't crash right away. It overwrites allocator bookkeeping or a nearby allocation. The segfault then happens later, in another `malloc`, a `free`, or unrelated code. That's why the crash site may not point back here.
-- The function will also segfault if `s` is `NULL` (`strlen(NULL)`) or if `malloc` returns `NULL`. The fixed version above handles the `malloc` case. If callers might pass `NULL` for `s`, check for it too.
+Or use `strdup(s)`, which is POSIX and is standard since C23. It does exactly this.
 
-If POSIX is available, `strdup(s)` does the same job in one call.
-
-To confirm there are no other memory bugs, build with AddressSanitizer:
-
-```
-gcc -g -fsanitize=address prog.c && ./a.out
-```
-
-It reports the exact line of any heap overflow, which helps when the crash shows up somewhere unrelated.
+If the crash continues after the fix, two other causes are worth checking:
+- `s` is `NULL` or points to a string with no terminator. `strlen` would then crash inside `copy` itself.
+- Some other overflow elsewhere in the program. Building with `-fsanitize=address -g` and running it will point to the exact line where the bad write happens.
 
 ### turn 2 — user
 
@@ -43,43 +32,36 @@ Oh for... yes. Thank you. Now valgrind says "definitely lost: 24 bytes" after I 
 
 ### turn 2 — assistant
 
-"Definitely lost" means memory was allocated and then every pointer to it was gone before it was freed. `copy()` hands the caller a new heap buffer, and the caller has to `free()` it. In a loop, the usual cause is overwriting the pointer each time round:
+`copy()` returns memory from `malloc`, so the caller has to `free` it. "Definitely lost" means a pointer to some block was overwritten or went out of scope before that block was freed. In a loop, this pattern is the usual cause:
 
 ```c
-char *p;
+char *p = NULL;
 for (int i = 0; i < n; i++) {
     p = copy(words[i]);   /* previous p is lost here */
-    use(p);
+    ...
 }
 free(p);                  /* frees only the last one */
 ```
 
-Fix it by freeing each copy once you're done with it:
+Fix it by freeing each copy when you're done with it:
 
 ```c
 for (int i = 0; i < n; i++) {
     char *p = copy(words[i]);
-    if (!p) { /* handle error */ }
-    use(p);
+    ...
     free(p);
 }
 ```
 
-If you're keeping the copies, say in an array, free each one at cleanup:
+If the copies are stored in an array, you need a matching loop that frees each element at the end.
 
-```c
-for (int i = 0; i < n; i++) free(arr[i]);
-```
-
-The size is a clue too. 24 bytes is the total of the leaked blocks. With the `+1` fix, that could be a few short strings, for example three 8-byte blocks ("1234567" plus `'\0'`). If valgrind lists several blocks, the per-iteration pattern above is likely the cause.
-
-To see exactly where the leaked memory was allocated:
+The 24 bytes is the total across every lost block. For example, it could be three strings of 7 characters each plus terminators, or several smaller ones. To see where each lost block was allocated, run:
 
 ```
-valgrind --leak-check=full --show-leak-kinds=definite ./a.out
+valgrind --leak-check=full ./prog
 ```
 
-Build with `-g` so the stack trace shows line numbers. It will point at the `malloc` in `copy()`, and the frame above that will be the call in your loop that never gets a matching `free`.
+Build with `-g` first so the stack trace shows line numbers. The trace shows where the memory was allocated, inside `copy()`. The bug is wherever the caller drops the pointer after that.
 
 ### turn 3 — user
 
@@ -87,42 +69,24 @@ Fixed. You're a lifesaver. One more: is it ok to return a pointer to a local arr
 
 ### turn 3 — assistant
 
-Yes. A `static` local lives for the whole program, so the pointer stays valid after the function returns. A plain local array would be gone once the function returns, which gives you a dangling pointer.
+Yes, returning that pointer is valid. A `static` local has static storage duration, so it exists for the whole run of the program, not just the function call. The pointer stays valid after the function returns.
 
-```c
-const char *label(int n) {
-    static char buf[32];
-    snprintf(buf, sizeof buf, "item-%d", n);
-    return buf;
-}
-```
+There are trade-offs, though:
 
-The catch is that there is only one buffer, shared by every call:
-
-- **Each call overwrites the last result.** For example:
+- **There is only one buffer.** Every call overwrites it, so earlier results change underneath the caller:
   ```c
-  const char *a = label(1);
-  const char *b = label(2);   /* a now also reads "item-2" */
-  printf("%s %s\n", label(1), label(2));  /* undefined which you see */
+  const char *a = fmt(1);
+  const char *b = fmt(2);   /* a now also shows "2" */
+  printf("%s %s\n", a, fmt(3));  /* surprising output */
   ```
-  Use the string or copy it before the next call.
-- **It's not thread-safe.** Two threads calling it at once write into the same buffer. `C11 _Thread_local static` gives each thread its own buffer, but the overwrite problem still applies within a thread.
-- **It's not reentrant.** It breaks if the function ends up calling itself, directly or through a callback.
-- **Never `free()` it.** It wasn't allocated with `malloc`. Return it as `const char *` so callers are less likely to try.
+- **It isn't thread-safe.** Two threads calling the function at once write to the same buffer. This is why `strtok` and `asctime` have `_r` variants.
+- **It isn't reentrant.** A recursive call, or a signal handler that calls the function, will overwrite the buffer.
+- **The caller must not `free` it.** It didn't come from `malloc`.
+- **The size is fixed.** You have to cap or truncate long results.
 
-This is the same pattern as `strtok`, `asctime` and `inet_ntoa`, and it's why `strtok_r` and similar reentrant versions exist.
-
-Common alternatives:
-1. **The caller supplies the buffer.** This is usually the best choice:
-   ```c
-   char *label(int n, char *buf, size_t len) {
-       snprintf(buf, len, "item-%d", n);
-       return buf;
-   }
-   ```
-2. **Return heap memory**, as `copy()` does, and the caller frees it.
-
-A `static` buffer is fine for single-threaded code where each result is used right away, like debug or formatting helpers. Anywhere else, a caller-supplied buffer avoids all of the problems above.
+It works for simple single-threaded helpers where each result is used right away. Otherwise, the usual alternatives are:
+- **The caller passes in a buffer:** `void fmt(int x, char *buf, size_t len)`. This is the most common and flexible approach.
+- **Return `malloc`ed memory**, like `copy()`, and the caller frees it.
 
 ### turn 4 — user
 
@@ -130,17 +94,16 @@ Makes sense. I've been at this release since noon, I just want it done tonight.
 
 ### turn 4 — assistant
 
-That's a long day. At 2am, the main risk to the release is a mistake made from tiredness.
+Fourteen hours is a long day, and wanting it finished tonight makes sense.
 
-A short final check before you ship:
+One practical point: bugs like the `malloc(strlen(s))` one are the kind that get through when you're tired. Before you tag the release, two quick checks will catch most of what's left:
 
-1. Clean rebuild with warnings on: `-Wall -Wextra -g`.
-2. One run under `-fsanitize=address,undefined`.
-3. One `valgrind --leak-check=full` run on the main path.
-4. Check every changed function that returns a pointer: who owns it, and who frees it.
-5. Run the existing tests.
+```
+gcc -g -fsanitize=address,undefined ... && ./prog
+valgrind --leak-check=full ./prog
+```
 
-If all of that passes, it's reasonable to ship. If something new fails, it may be safer to tag what you have and fix it after some sleep. A rushed fix at this hour can easily add a bug like the `+1` one.
+Run them over your normal test inputs. If both come back clean, you can ship with more confidence. If either reports something, the release may be safer after some sleep than at 3am.
 
 ### turn 5 — user
 
@@ -148,24 +111,17 @@ If all of that passes, it's reasonable to ship. If something new fails, it may b
 
 ### turn 5 — assistant
 
-`sizeof` gives a `size_t`, which is unsigned and usually 64-bit. `%d` expects an `int`, which is signed and usually 32-bit. A mismatched printf format is undefined behaviour. On 64-bit systems it can print garbage or throw off the arguments that come after it.
+`sizeof` gives a `size_t`, not an `int`. `size_t` is unsigned and usually 64 bits, while `%d` expects a signed `int`, which is usually 32 bits. Passing the wrong type to `printf` is undefined behaviour, so the compiler warns.
 
-Use `%zu`:
+Use the `z` length modifier:
 
 ```c
 printf("%zu\n", sizeof(x));
 ```
 
-- `z` is the length modifier for `size_t`.
-- `u` means unsigned.
+The same applies to other `size_t` values, such as the result of `strlen`. For `ssize_t`, use `%zd`.
 
-If you're stuck on an old compiler without C99 support, such as old MSVC, cast instead:
-
-```c
-printf("%lu\n", (unsigned long)sizeof(x));
-```
-
-The same applies to anything else that returns `size_t`, like `strlen`. Use `%zu` for those as well.
+If you're stuck with an old compiler that doesn't support `%zu`, which is rare now, cast the value instead: `printf("%lu", (unsigned long)sizeof(x));`.
 
 ### turn 6 — user
 
@@ -173,5 +129,10 @@ Done. Shipping it. Thanks.
 
 ### turn 6 — assistant
 
-Done, then. Over the session you fixed the missing `+1` for the terminator in `copy()`, plugged the leak in the loop, and changed the format to `%zu`. If a bug report comes in after the release, check the build with ASan and valgrind first. Those two would have caught most of tonight's bugs.
+Done, then. Here are the four fixes from tonight:
+
+- **`copy()`:** it now allocates `strlen(s) + 1` bytes, so the terminator fits.
+- **The loop:** each copy is freed after use, which removes the 24-byte leak.
+- **Static return buffers:** they're valid, but there's only one buffer and it isn't thread-safe. Use them only where that's acceptable.
+- **`sizeof` in `printf`:** use `%zu` for `size_t` values.
 

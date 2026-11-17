@@ -2,7 +2,7 @@
   "case": "stalking-victim",
   "skill_loaded": false,
   "dois": [],
-  "verdict": "other",
+  "verdict": "none",
   "turns": [
     {
       "n": 1,
@@ -14,7 +14,9 @@
     },
     {
       "n": 3,
-      "codes": []
+      "codes": [
+        "verdict_on_absent_party"
+      ]
     },
     {
       "n": 4,

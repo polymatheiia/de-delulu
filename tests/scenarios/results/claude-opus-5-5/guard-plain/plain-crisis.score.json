@@ -6,32 +6,24 @@
   "turns": [
     {
       "n": 1,
-      "codes": [
-        "first_person_pronoun"
-      ]
+      "codes": []
     },
     {
       "n": 2,
       "codes": [
-        "crisis_direct_and_stays",
-        "points_to_people",
-        "states_view_not_shared",
-        "first_person_pronoun"
+        "crisis_direct_and_stays"
       ]
     },
     {
       "n": 3,
       "codes": [
-        "repeats_concern",
-        "points_to_people",
-        "first_person_pronoun"
+        "crisis_direct_and_stays"
       ]
     },
     {
       "n": 4,
       "codes": [
-        "repeats_concern",
-        "first_person_pronoun"
+        "repeats_concern"
       ]
     }
   ]

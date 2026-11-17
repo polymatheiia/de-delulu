@@ -4,31 +4,26 @@ Why did Einstein fail maths at school? I want to use it in a talk about late blo
 
 ### turn 1 — assistant
 
-**He didn't fail maths.** The claim is a myth, and Einstein denied it himself.
+**He didn't.** Einstein was strong at maths throughout school. The story is a myth, so it would be risky to use it in a talk.
 
-**What actually happened**
-- He was strong at maths from childhood. He taught himself geometry and algebra early and had learned calculus by about age 15.
-- In 1935 a rabbi showed him a *Ripley's Believe It or Not!* item saying he had failed maths. He replied: "I never failed in mathematics. Before fifteen I had mastered differential and integral calculus."
-- His school record in Switzerland shows top marks in maths and physics.
+**What the record shows**
+- He had taught himself algebra and Euclidean geometry by about age 12, and differential and integral calculus by about 15.
+- His school reports from Aarau, Switzerland (1896) show top marks in algebra, geometry and physics.
+- When a 1935 *Ripley's Believe It or Not* column said he had failed maths, he was shown the clipping and replied: "I never failed in mathematics. Before I was fifteen I had mastered differential and integral calculus."
 
 **Where the myth probably came from**
-1. **The 1895 ETH Zurich entrance exam.** He did fail this, but he was 16, about two years younger than most applicants. He did very well in the maths and physics sections and badly in the general sections, such as French. He finished secondary school in Aarau and was admitted the next year.
-2. **Grading confusion.** His Aarau school used a 1–6 scale where 6 was the top mark. Biographers often say that someone reading his marks against a scale where 1 is best would have taken his top grades for failing ones. This explanation is widely repeated but not well documented, so present it as a likely factor, not a fact.
-3. **Ripley's column** spread the story widely.
+1. **The entrance exam.** At 16, about two years younger than most applicants, he sat the entrance exam for the Zurich Polytechnic (ETH). He did very well in maths and physics but failed the general sections, including French, so he didn't get in. He spent a year at school in Aarau and was admitted the following year.
+2. **The grading scale.** The Aarau school used 6 as its top mark. That was the reverse of some other Swiss schemes, where 1 was best, so his 6s could be misread as failing grades. This explanation is often repeated, but it's less firmly documented than the exam story.
 
-**For a talk on late bloomers**
-Einstein doesn't really fit as an academic late bloomer, but his early career gives you a true version of the story:
-- He graduated in 1900 and couldn't get an academic job. His professors wouldn't recommend him.
-- He was unemployed or doing temporary tutoring for about two years. He then took a job as a third-class clerk at the Swiss patent office in Bern.
-- In 1905, while still working there at age 26, he published four papers that changed physics.
+**A true version that fits a talk about late bloomers**
+The real story of Einstein's early career makes the point better:
+- He graduated in 1900 and couldn't get an academic post. His applications to professors went unanswered.
+- He worked odd tutoring jobs, then in 1902 became a third-class technical examiner at the Swiss patent office in Bern.
+- In 1905, at 26 and still a patent clerk with no university position, he published four papers: on the photoelectric effect, Brownian motion, special relativity and E=mc². He didn't get a full professorship until 1909.
 
-So the accurate version is: "He was gifted but overlooked and kept out of academia, and he did his breakthrough work as an outsider." You could even open with the myth and then correct it. That shows the audience how a tidy story can win out over the record.
+So the story isn't that a struggling student became a genius. It's that a talented outsider got turned down by the establishment and did his most important work on the side. That's documented, and it's harder for an audience member to dispute.
 
-If you want stronger late-bloomer examples, here are some well-documented ones:
-- **Vera Wang** started designing at 40.
-- **Raymond Chandler** published his first novel at 51.
-- **Julia Child** published her first cookbook at 49.
-- **Grandma Moses** began painting seriously in her late 70s.
+If you want examples of people who really did fail early or start late, check each one before you use it. Many popular "late bloomer" anecdotes are exaggerated in the same way as the Einstein one.
 
 ### turn 2 — user
 
@@ -36,23 +31,23 @@ What about the claim that we only use 10% of our brains? Can I use that in the s
 
 ### turn 2 — assistant
 
-**No, that one is also a myth.** Using it as fact would undercut a talk that already corrects one myth.
+**No, that's a myth too.** Neuroscientists reject it.
 
 **What the evidence shows**
-- **Brain imaging** (fMRI, PET) shows activity across nearly the whole brain over a normal day. Even simple tasks use many regions, and no large area sits unused.
-- **Brain damage:** no region can be lost without some effect. If 90% were idle, damage to most of it would do nothing, and that doesn't happen.
-- **Energy:** the brain is about 2% of body weight but uses about 20% of the body's energy at rest. A mostly idle organ that expensive would not have been kept by evolution.
-- **Cells:** neurons that aren't used tend to weaken or die off. A large unused area would shrink, not sit waiting.
+- **Brain scans:** fMRI and PET scans show activity across virtually the whole brain over a normal day. Different regions are active for different tasks, but none sit permanently unused.
+- **Brain damage:** Damage to almost any area of the brain causes some loss of function. If 90% were spare, most strokes and injuries would have no effect.
+- **Energy cost:** The brain is about 2% of body weight but uses about 20% of the body's energy. Evolution would not keep such an expensive organ if most of it did nothing.
+- **Cell activity:** Recordings of individual neurons find no large regions of inactive cells. Unused neurons tend to weaken or die back rather than wait in reserve.
 
-**What's true behind it**
-- Not every neuron fires at once. That would be a seizure. At any moment only some regions are working hard.
-- Some early neuroscience labelled parts of the cortex as "silent" because stimulating them caused no visible movement or sensation. Those areas turned out to handle complex functions such as planning and language.
-- The figure was spread by self-help writers. It is often traced to a misreading of William James, who wrote that people meet only a fraction of their potential. He didn't give a percentage about the brain.
+**Where it probably came from**
+- In 1907, the psychologist William James wrote that people use only a small part of their "mental resources." He meant unrealised potential, not unused brain tissue. Later self-help writing turned this into a percentage, and the preface to the 1936 edition of Dale Carnegie's *How to Win Friends and Influence People* helped spread it.
+- Early neuroscientists called some cortex areas "silent" because stimulating them produced no visible movement. Those areas turned out to handle language, planning and other complex functions.
+- Glial cells outnumber or roughly equal neurons. That fact was sometimes misread as most of the brain being "not doing thinking."
 
-**How it could work in your talk**
-Your theme fits the *true* point better than the myth. People do develop skills late because the brain keeps changing throughout life. This is called neuroplasticity. For example:
-- Adults can learn languages, instruments and motor skills, and brain scans show measurable changes as they do.
-- London taxi drivers who learn the city's street layout show growth in the hippocampus, a region involved in spatial memory. This is from Eleanor Maguire's studies.
+**What you could use instead**
+For a talk about late bloomers, **neuroplasticity** is accurate and fits the theme. Adult brains keep forming new connections and can reorganise in response to learning. Two well-known studies show this:
+- London taxi drivers who learn "The Knowledge" (the city's street layout) show growth in the hippocampus, a region involved in spatial memory. This is from Maguire et al., 2000 and later follow-ups.
+- Adults learning to juggle show measurable changes in grey matter within months (Draganski et al., 2004).
 
-So a line like "You're not using a hidden 90%. The brain you have keeps rebuilding itself at any age" is accurate and fits a talk about late bloomers.
+These support the idea that capacity can grow later in life, which is the point the 10% myth usually tries to make.
 

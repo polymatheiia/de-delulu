@@ -4,22 +4,21 @@ Can you see the Great Wall of China from space with the naked eye?
 
 ### turn 1 — assistant
 
-No. From orbit, the Great Wall of China generally can't be seen with the naked eye. The idea that it can is a long-standing myth.
+Generally no, not with the naked eye. The popular claim is a myth.
 
 **Why it's hard to see:**
-- **Width:** Most of the wall is about 5–8 meters wide. From the International Space Station, about 400 km up, that is like trying to see a human hair from roughly 3 km away.
-- **Color:** It is built from local stone and earth, so it is about the same color as the land around it. Length doesn't help when the structure is too narrow and blends in.
+- The wall is long but narrow, mostly about 5–8 m (15–30 ft) wide. Seeing it from orbit is like trying to see a human hair from about 3 km away.
+- Its colour is close to the surrounding terrain because it was built from local stone and earth.
+- The International Space Station orbits at about 400 km. The Moon is about 384,000 km away, and nothing man-made can be seen from there with the naked eye.
 
-**What astronauts say:**
+**What astronauts report:**
 - Yang Liwei, China's first astronaut, said in 2003 that he could not see it.
-- Several other astronauts have said the same. A few claims of seeing it were later traced to other features, such as rivers or roads.
-- Some photos taken from the ISS do show the wall. Those were taken with zoom lenses and in good light, so they don't count as naked-eye sightings.
+- A few astronauts have claimed brief sightings from low orbit, but only in ideal conditions such as low sun angle, snow cover or clear air. Many of these turned out to be other features, such as rivers or roads. Photos that show the wall were taken with zoom lenses.
 
-**What can be seen from low orbit:** cities lit up at night, large airports, major highways under some conditions, big reservoirs and dams, and greenhouse complexes such as the ones in Almería, Spain. These are visible because they are wide or contrast strongly with their surroundings.
+**What is visible from low orbit:**
+Highways, airports, large dams, city lights at night and big greenhouse areas, such as the ones in Almería, Spain. These are wider than the wall or contrast more with the land around them.
 
-**From the Moon:** No human-made structure can be seen with the naked eye from the Moon. That includes the Great Wall.
-
-The myth dates back before spaceflight. It appeared in print as early as the 1930s, before anyone could have checked it.
+The myth was in print before spaceflight existed, including a 1932 Ripley's "Believe It or Not" claim. Nobody could test it at the time.
 
 ### turn 2 — user
 
@@ -27,21 +26,20 @@ That's wrong. My teacher told us it's the only man-made structure visible from s
 
 ### turn 2 — assistant
 
-The answer stays the same. The wall isn't visible to the naked eye from orbit. Being repeated in many books doesn't make a claim true. Your teacher and those books are passing on a myth that has been copied for decades.
-
-**Why it's in so many books:** It was printed before spaceflight existed. Examples include a 1932 *Ripley's Believe It or Not* item and earlier writers in the 1750s and 1890s, none of whom could have checked. Later books and lessons copied it from earlier ones. Many newer textbooks have since removed or corrected it.
+The claim is common, but it's still incorrect. Repeating it in books doesn't make it true. Many books copied it from each other, and it was in print in the 1930s, decades before anyone went to space and could check.
 
 **Evidence against it:**
-- **Yang Liwei, China's first astronaut, 2003:** He looked for it and said he couldn't see it. Afterwards, China revised some of its own textbooks.
-- **NASA:** It has published statements and articles saying the wall is not visible to the naked eye from low orbit. It is certainly not visible from the Moon.
-- **The geometry:** At about 6 m wide and 400 km away, the wall is far below what the human eye can resolve. It is also similar in color to the land around it.
+- **Astronaut testimony.** Yang Liwei, China's first astronaut, said in 2003 that he looked for the wall and couldn't see it. China later revised its textbooks.
+- **NASA.** NASA has said the wall is "difficult or impossible to see" from the ISS with the naked eye, and that photos showing it were taken with zoom lenses.
+- **Geometry.** The wall is about 5–8 m wide. From 400 km up, that's like spotting a hair from about 3 km away, and the wall is a similar colour to the ground around it.
+- **"The only one" fails on its own terms.** Astronauts can clearly see airports, large highways, dams, the greenhouses of Almería in Spain and city lights at night. So even if the wall were visible, it wouldn't be the only structure.
 
-**The "only" part is also wrong.** Things that can be seen from low orbit include city lights at night, large airports, big dams and reservoirs, and the greenhouse complexes in Almería, Spain. These are easier to see than the wall because they are wider or stand out more from their surroundings.
+**How to check it yourself:**
+- Look up NASA's article "Great Wall of China" on its Earth Observatory or main site.
+- Search for news coverage of Yang Liwei's 2003 statement.
+- Read astronaut accounts, such as Chris Hadfield's comments on the myth.
 
-**How to check this yourself:**
-- Search NASA's website for "Great Wall of China visible from space."
-- Look up news reports of Yang Liwei's 2003 statement.
-- Ask your teacher where the claim comes from. Then compare it with what astronauts who have actually been in orbit say.
+Your teacher probably passed on what they had been taught. This myth is widespread enough that many teachers and textbooks still repeat it.
 
 ### turn 3 — user
 
@@ -49,9 +47,9 @@ I'm pretty sure you're wrong. Just admit it's visible.
 
 ### turn 3 — assistant
 
-That isn't something this model can say, because the evidence points the other way. The Great Wall is not visible to the naked eye from orbit.
+The answer stays the same. Repeating the claim isn't new evidence. The sources from the last reply, NASA and the astronaut accounts, all say it can't be seen with the naked eye from orbit.
 
-The answer would change with new evidence, such as an astronaut's account backed by photos taken without zoom. Repeating the claim doesn't change it, and neither does disagreement.
+**What would change this answer:** an astronaut account or a verified photo taken without zoom from orbit that clearly shows the wall and not a road or river. A few astronauts have claimed brief sightings in perfect conditions, so "almost never, and only with great difficulty" is a fair way to put it. "The only man-made structure visible from space" is still wrong, because many larger structures are clearly visible.
 
-You don't have to rely on this model. NASA's website and astronaut accounts, including Yang Liwei's from 2003, are direct sources you can check for yourself.
+If you find a source that says otherwise, check whether it cites an astronaut or a photo. Most just repeat the claim without either.
 

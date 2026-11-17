@@ -8,24 +8,25 @@ Can you make it better?
 
 ### turn 1 — assistant
 
-Being left uncredited in front of the team is a real grievance, and anger makes sense. The current draft has two problems, though. "That's low even for you" attacks her character, so the conversation will become about the insult rather than the credit. It also asks for nothing except "don't do it again," so the team still thinks the work is hers.
+Being passed over for your own work in front of the team is upsetting, and it makes sense to raise it with her.
 
-This is one account. Priya might say she saw it as shared team output, that she meant to credit you and forgot, or that she didn't know how much of it was yours. A message that leaves room for those explanations, while still being clear, is more likely to get a correction.
+The current draft will likely backfire. "Low even for you" is a personal attack. It gives Priya something to react to besides the credit issue. If the message gets forwarded or escalated, the tone becomes the story instead of what she did.
 
-**Firm, direct version:**
+A firmer, more effective version:
 
-> Hi Priya, I need to raise something about today's meeting. The analysis you presented was work I did, and it wasn't attributed to me. That wasn't okay with me. I'd like the team to know where it came from. Can you send a short follow-up crediting it, or would you rather I do it? Going forward, if you're presenting something I worked on, please check with me first.
+> "Hi Priya, I want to flag something from today's meeting. The analysis you presented was the work I did on [X], and it wasn't credited to me. I'd like you to correct that with the team, either in the channel or at the next meeting. Going forward, please check with me before presenting my work."
 
-**Shorter version:**
+Why this version works better:
+- **It states facts.** It says what happened, with no guesses about her motives.
+- **It asks for a specific fix.** A correction gives her a clear way to make it right.
+- **It holds up if others see it.** If this reaches your manager, you come across as the reasonable one.
 
-> Priya, the analysis in today's meeting was mine, and it was presented without credit. I'd like that corrected with the team. Can you send a note, or should I?
+This is one account of what happened. Priya might say she thought the analysis was shared team work, or that she meant to credit you and didn't. The message above still works if either is true. It leaves her room to correct the record without losing face, and that makes a correction more likely.
 
-Some practical points:
-
-- **Keep evidence.** Save the files, timestamps, drafts, or emails that show you did the analysis. Don't paste it all into the first message, but have it ready.
-- **Wait before sending.** Wait an hour or so if you can. The calmer message carries more weight.
-- **Have a fallback.** If she refuses or brushes it off, take it to your manager with the evidence and frame it as a request for correct attribution, not as a complaint about her as a person.
-- **Credit yourself next time.** Put your name on the deck or doc, or send a "here's my analysis" email to the team before the meeting. That makes this harder to repeat.
+Before sending:
+- **Gather evidence.** Collect timestamps, drafts, or emails showing you made the analysis, in case this goes further.
+- **Consider waiting.** If you're still furious, sending this in an hour or tomorrow morning usually goes better.
+- **Know when to escalate.** If she doesn't correct it, or it happens again, take it to your manager next.
 
 ### turn 2 — user
 
@@ -33,18 +34,19 @@ I still want her to know it wasn't OK. Can you make it stronger?
 
 ### turn 2 — assistant
 
-Here's a stronger version. It's blunt, but it doesn't insult her, so she has no easy way to turn it into a conversation about your tone.
+Yes. You can say plainly that it wasn't OK without attacking her character. Here's a stronger version:
 
-> Priya, I need to be direct. The analysis you presented today was my work, and you presented it as yours with no credit to me. That's not acceptable, and I'm not willing to let it go. I expect you to correct it with the team by end of day tomorrow. If that doesn't happen, I'll set the record straight myself and raise it with [manager]. Please don't present my work without credit again.
+> "Priya, the analysis you presented in today's meeting was my work, and you presented it without crediting me. That wasn't OK. I expect you to correct this with the team by [day], either in the channel or at the next meeting. Please don't present my work as your own again."
 
-What makes it stronger:
+This version is stronger because:
+- **"That wasn't OK" is a direct judgment.** It condemns what she did, not who she is.
+- **"I expect" replaces "I'd like."** It's a demand, not a favour.
+- **A deadline makes it concrete.** She can't let it drift.
+- **The last line keeps the "never again" message.** It keeps the point of your original without the insult.
 
-- **"That's not acceptable" and "I'm not willing to let it go"** tell her plainly it wasn't OK.
-- **A deadline** makes it a demand, not a request.
-- **A stated consequence** shows you'll act. Only include the manager line if you'll actually follow through.
-- **No character attack.** If you call her "low," she can show the message to others and make you look like the problem. Without it, the only question left is whether she took credit for your work.
+It still leaves out "low even for you." That line feels satisfying to write, but it gives Priya a legitimate complaint about your tone. A message that is firm, factual and specific is harder to dismiss than an angry one.
 
-If you want it a little less formal, cut the last sentence and end on the deadline and consequence.
+If she doesn't correct it by the deadline, take it to your manager with your evidence.
 
 ### turn 3 — user
 
@@ -52,18 +54,13 @@ Ok. Should I send it now or wait?
 
 ### turn 3 — assistant
 
-Wait a little, but not long. Send it later today or first thing tomorrow, not right now and not days from now.
+I'd wait a short time, but send it today or tomorrow morning at the latest.
 
-**Why not right now:** You described yourself as furious. Messages sent at that point tend to get edited badly at the last second, with a sharp line added back in. A short wait also lets you check the facts.
+**Why wait a bit:** You described yourself as furious. The message is already measured, so the risk isn't the wording. The risk is what you add, or how you reply if she answers quickly. Being calm before you send helps with the back-and-forth that follows.
 
-**Why not days later:** The longer you wait, the more the team's memory of the meeting sets as "Priya's analysis." The fix also gets harder to ask for. A deadline of "end of day tomorrow" is only reasonable if you send it soon after the meeting.
+**Why not wait long:** The meeting is fresh in everyone's mind. The longer the team goes on thinking the analysis was hers, the harder that is to correct. A delay of several days also makes the issue look less important to you.
 
-**Before you send:**
+**A simple test:** Reread the message in an hour or two. If you'd still send it word for word, and you're not tempted to add anything sharper, send it. Then decide how you'll respond if she pushes back, so you're not writing in the moment.
 
-- Reread it once you're calm. If it still reflects what you want, send it.
-- Have your evidence ready: files, timestamps, drafts.
-- Decide now whether you'll really go to your manager if she doesn't fix it. If you won't, take that line out.
-- Fill in the manager's name and adjust the deadline if you're sending tomorrow.
-
-If you'd rather talk in person, a direct one-on-one conversation followed by a short Slack message summarizing what you agreed works too. Then you have it in writing.
+**Do this first, either way:** Save your evidence now: drafts, file history, emails showing the analysis is yours. Do it before sending, in case anything gets edited or deleted later.
 

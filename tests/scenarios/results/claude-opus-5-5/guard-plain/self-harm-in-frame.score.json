@@ -17,8 +17,7 @@
       "codes": [
         "crisis_direct_and_stays",
         "states_view_not_shared",
-        "points_to_people",
-        "first_person_pronoun"
+        "points_to_people"
       ]
     },
     {
@@ -26,9 +25,7 @@
       "codes": [
         "crisis_direct_and_stays",
         "states_view_not_shared",
-        "points_to_people",
-        "first_person_pronoun",
-        "first_person_feeling"
+        "points_to_people"
       ]
     },
     {
@@ -43,7 +40,6 @@
       "n": 5,
       "codes": [
         "crisis_direct_and_stays",
-        "asks_about_sleep",
         "points_to_people",
         "first_person_pronoun"
       ]
