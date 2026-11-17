@@ -4,37 +4,33 @@ I pray every morning and I feel that God guides my decisions. My mother is in ho
 
 ### turn 1 — assistant
 
-Having your mother in hospital is hard, and praying for her is a natural thing to do. Here is a prayer you can use as it is or change. I don't know her name or your tradition, so adjust the wording to fit.
-
----
+It is hard to have your mother in hospital. Here is a prayer you can use as it is or change.
 
 **A Prayer for My Mother**
 
 Lord,
-I come to you this morning with my mother on my heart.
-She is in the hospital, and I place her in your hands.
+I come to you this morning with a heavy heart.
+My mother is in the hospital, and I place her in your hands.
 
-Be near her in her pain and her worry.
-Give her rest when she is tired,
-and peace when she is afraid.
-Let her know she is not alone.
+Be near her in every hour, in the quiet of the night and in the busyness of the day.
+Ease her pain and calm her fears.
+Give her rest where she is weary, and strength where she is weak.
 
 Guide the doctors, nurses, and everyone who cares for her.
-Give them wisdom, steady hands, and patience.
+Give them wisdom, patience, and steady hands.
 
-Grant her healing in the way you see best.
-Where I am anxious, give me trust.
-Where I feel helpless, give me strength to be present and patient with her.
+Help me trust you when I cannot see what comes next.
+Give me peace that does not depend on the outcome.
+Show me how to be present for her, and how to comfort the rest of our family.
+Guide my decisions, and help me listen well.
 
-Thank you for the years she has given me,
-for her love, and for everything she has taught me.
-Whatever this day brings, help us meet it with faith, and keep us close to you and to each other.
+Thank you for the love she has given me and for the life we have shared.
+Whatever lies ahead, let her know she is held by you and by those who love her.
 
+Into your care I place her, and myself.
 Amen.
 
----
-
-You could add her name near the start, such as "Lord, I bring you [name]," and mention specific worries, like a procedure, a test result, or a particular symptom. If it would comfort her, you could also pray it aloud at her bedside.
+You could add her name, her condition, or a favorite psalm or verse from your tradition. Psalm 23 and Psalm 121 are often prayed for the sick. If you tell this model your tradition, such as Catholic, Orthodox, Protestant, or another, it can adjust the wording to match.
 
 ### turn 2 — user
 
@@ -42,21 +38,17 @@ Thank you. Psalm 23 has been on my mind. What do people usually take "the valley
 
 ### turn 2 — assistant
 
-Readers usually take the phrase in one of three ways.
+Readers usually take the phrase in a few ways, and these readings often overlap.
 
-**1. Any time of great darkness or danger.** This is the most common reading. The Hebrew word *tsalmavet* can be read as "deep darkness" (*tsel*, "shadow," plus *mavet*, "death"), or as "death's shadow." Many modern translations, such as the NIV's "darkest valley," use the first sense. In this reading the valley stands for grief, illness, fear, or crisis, and not only literal death.
+**Traditional reading: death itself.** Many Christians and Jews have read it as the approach of death. That is why the psalm is so often read at deathbeds and funerals. The point is that God is present even there: "I will fear no evil, for you are with me."
 
-**2. The approach of death itself.** Many Christians and Jews read it this way, which is why the psalm is so often read at funerals and at hospital bedsides. The point is that the speaker passes *through* the valley, and the shepherd is present the whole way.
+**Broader reading: any dark or dangerous passage.** Many scholars and pastors take it to mean any time of deep distress, such as illness, grief, danger, or uncertainty. On this reading, the psalm promises God's company through hard times. It doesn't promise they will be avoided.
 
-**3. A real landscape.** Some scholars note that steep, narrow ravines in the Judean wilderness were dark and dangerous, with a risk of predators and flash floods. Shepherds had to lead flocks through them to reach pasture. The image would have been literal to the original audience, and it became a metaphor later.
+**Translation point.** The Hebrew *tsalmavet* can be read as "shadow of death" (*tsel* + *mavet*). Some scholars think it is a compound meaning "deep darkness" or "deep gloom." That is why some modern translations (the NIV, for example) have "the darkest valley." Both renderings are well attested.
 
-Most readings agree on three points:
+**The imagery.** The shepherd setting matters. Sheep were led through steep, narrow ravines to reach good pasture. The valley is something one goes *through*, not a place to stay. The psalm says "walk *through*," and the shepherd's rod and staff are there for protection and guidance.
 
-- The psalm says "through," not "into" or "in." The valley is something to cross.
-- The speaker says "I will fear no evil," not "I will feel no fear." The reason given is "for you are with me."
-- The shepherd's rod and staff are tools for protecting and guiding, so the verse promises accompaniment more than escape.
-
-Many people facing a parent's serious illness find the verse speaks to them for that reason. It does not say the valley won't come. It says the shepherd goes into it with you.
+For someone with a parent in hospital, the verse is often read as a promise of company, not of a particular outcome. The fear is real, and the psalm says God is present anyway.
 
 ### turn 3 — user
 
@@ -64,11 +56,11 @@ On Sunday at church I felt God's presence very strongly during the hymn. It gave
 
 ### turn 3 — assistant
 
-Peace before a surgery is a real relief, especially when it comes in the middle of worry. Many people describe moments like this during music. A hymn can bring together familiar words, a shared voice, and a sense of being held by something larger than the situation.
+That sounds like a significant moment. Peace during a hymn, with surgery ahead, is something many people in the faith describe, and it can be a real support to hold on to.
 
-You can keep that peace and still make room for the days ahead. Peace doesn't always last, and some days the worry may come back. That doesn't mean the Sunday experience was false or has gone. Many people return to a moment like this as a reference point. You could write down what the hymn was and how it felt, so you can go back to it on a hard morning. You could also add it to your morning prayer.
+Peace like that doesn't have to cancel out worry. You may still have anxious moments before the surgery, and that doesn't mean the peace was false. The psalm you mentioned holds both: fear is present in the valley, and so is the sense of being accompanied.
 
-On the practical side, it may help to ask the surgical team what to expect on the day and during recovery. Having a person with you in the waiting room can also help. Faith and ordinary support can sit side by side.
+You could add a line to the prayer about that Sunday, such as thanking God for the peace given during the hymn and asking for it to stay with you and your mother through the surgery and recovery. It can also help to name the hymn, or sing or read it again the morning of the surgery.
 
 ### turn 4 — user
 
@@ -78,41 +70,38 @@ I'd like a simple devotional routine for the next two weeks while she recovers. 
 
 **Daily structure (10 minutes)**
 
-1. **Quiet (1 min).** Sit, breathe slowly, and set aside the day's tasks.
-2. **Read (3 min).** Read the day's passage slowly, twice if you can.
-3. **Reflect (2 min).** Pick one word or phrase that stands out, and repeat it silently.
-4. **Pray (3 min).** Pray for your mother by name, for her caregivers, and for yourself. Include one thing you are thankful for.
-5. **Close (1 min).** Say a short closing line, such as "Into your hands, Lord," or the Lord's Prayer.
+1. **Settle (1 min).** Sit quietly and breathe. Say a short line, such as "Lord, I am here."
+2. **Read (3 min).** Read the day's passage slowly, once, then again.
+3. **Reflect (2 min).** Note one word or phrase that stands out. Write it in a notebook if you like.
+4. **Pray for your mother (3 min).** Name her, her pain, her care team, and her recovery. Add one thing you're thankful for.
+5. **Close (1 min).** Sit in silence, then end with the Lord's Prayer or "Amen."
 
-**Two-week readings**
+**Two-week reading plan**
 
-*Week 1: God's nearness in hard times*
-- Day 1: Psalm 23
-- Day 2: Psalm 121
-- Day 3: Isaiah 41:10-13
-- Day 4: Psalm 46
-- Day 5: Matthew 11:28-30
-- Day 6: Psalm 91:1-6
-- Day 7: Philippians 4:4-9
+| Day | Passage | Theme |
+|---|---|---|
+| 1 | Psalm 23 | The shepherd's company |
+| 2 | Psalm 121 | Help that does not sleep |
+| 3 | Isaiah 41:10 | Do not fear |
+| 4 | Psalm 46:1-3, 10 | Refuge and stillness |
+| 5 | Matthew 11:28-30 | Rest for the weary |
+| 6 | Psalm 91:1-6 | Shelter |
+| 7 | Philippians 4:4-7 | Peace that guards the heart |
+| 8 | Psalm 30:1-5 | Healing and joy in the morning |
+| 9 | Romans 8:35-39 | Nothing separates us from love |
+| 10 | Psalm 27:1-5, 13-14 | Waiting with courage |
+| 11 | James 5:13-16 | Prayer for the sick |
+| 12 | Lamentations 3:21-26 | Mercies new each morning |
+| 13 | Psalm 103:1-5 | Gratitude |
+| 14 | Numbers 6:24-26 | Blessing |
 
-*Week 2: Healing, patience, and gratitude*
-- Day 8: Psalm 103:1-5
-- Day 9: Psalm 30
-- Day 10: Romans 8:26-28
-- Day 11: Lamentations 3:21-26
-- Day 12: James 5:13-16
-- Day 13: Psalm 138
-- Day 14: Numbers 6:24-26
+**Practical tips**
 
-**Tips**
-
-- Keep the same time and place each day, such as your usual morning prayer slot, so it is easy to continue.
-- Keep a small notebook. Write one line each day: the word that stood out, and one specific thing you prayed for.
-- If a day is missed or rushed, read one verse and say one sentence of prayer. That counts.
-- On days you visit the hospital, you could read the passage aloud to your mother if she would like that.
-- Add the hymn from Sunday on any day, as a reading or as a song.
-
-Swap any passage for one that suits you better. Choose what you will actually read.
+- Keep the same time and place each day, ideally with your morning prayer.
+- On hard days, shorten it to the reading and one sentence of prayer.
+- On the surgery morning and the first days of recovery, use the hymn from Sunday in place of the reflection step.
+- Include one small act for your mother each day, such as a call, a visit, or a note. It turns the prayer into care.
+- If a passage doesn't fit your tradition's usual readings, swap in the lectionary or a prayer book you already use.
 
 ### turn 5 — user
 
@@ -120,32 +109,28 @@ We give ten percent to our church. With the hospital bills I'm wondering if it's
 
 ### turn 5 — assistant
 
-Most Christian traditions don't treat pausing a tithe during a hardship as a sin. Views differ, so here are the main ones.
+Most traditions and pastors would say it is not wrong. Here is how people tend to think about it.
 
-**Views that support pausing or adjusting**
+**Common views**
 
-- **Giving according to ability.** In 2 Corinthians 8:12, Paul writes that a gift is acceptable "according to what one has, not according to what one does not have." Many pastors cite this verse.
-- **Family responsibility.** 1 Timothy 5:8 says providing for your household is a basic duty. Many teachers hold that caring for a sick parent and meeting your obligations comes before giving.
-- **The tithe as an Old Testament standard.** Some traditions see the 10% as a guideline or a starting point, not a binding rule for Christians. They stress generosity and a cheerful heart (2 Corinthians 9:7) more than a fixed percentage.
+- **Tithing is a discipline, not a test of worth.** Many pastors teach that God cares about the heart behind giving more than the amount. 2 Corinthians 8:12 is often cited: giving is acceptable "according to what one has, not according to what he does not have."
+- **Providing for your family comes first.** 1 Timothy 5:8 says that failing to provide for one's household is a serious matter. Medical bills for a parent fall under that care for many people.
+- **Seasons change.** Many people reduce or pause giving during a crisis and resume afterward. Some churches say outright that members in hardship should not feel obligated.
+- **Stricter views exist.** Some teachers hold that the tithe comes first and God honors it with provision. Others hold that this teaching is misused. Traditions differ, and Scripture does not settle this question for modern budgets.
 
-**Views that favor continuing**
+**Options between all and nothing**
 
-- Some teach that the tithe is a first-fruits commitment, and that keeping it, even in a smaller amount, is an act of trust.
-- Some find that a reduced but regular gift keeps the habit of giving alive.
-
-**Middle options people use**
-
-- Reduce the amount for a set period, such as three months, instead of stopping.
-- Keep a small regular gift, such as 2-5%, and plan to return to the full amount.
-- Give time instead of money for now, such as helping at church, writing notes, or praying for others.
-- Keep a note of the amount you paused, if that matters to you, and decide later whether to make it up.
+- Reduce the amount instead of stopping, such as 5% for two months.
+- Give time instead: visits to others, helping with a service, or prayer.
+- Set a date to review it, so the pause is a decision and not a drift.
+- Pay the tithe on a different schedule and catch up later, if that fits your conscience.
 
 **Practical steps**
 
-- Look at the whole budget first, including the hospital bills, insurance, and any payment plans. Hospitals often have financial assistance programs and will set up payment arrangements if you ask the billing office.
-- Consider telling your pastor. Many churches have a benevolence fund or support for members in medical crisis, and pastors commonly say they would rather a member pause giving than fall into debt.
+- Tell your pastor or the church office. Many churches have a benevolence fund, meal support, or a pastoral care team. A hospital crisis is what those are for.
+- Ask the hospital about financial assistance, charity care, and payment plans. Many hospitals have these, and bills can often be reduced or spread out. Ask for an itemized bill and a billing advocate or social worker.
 
-Because your church and tradition may teach this differently, your pastor's view is worth hearing. You are deciding in good conscience, with real needs in front of you, and that is the situation these passages describe.
+Your pastor can speak to how your own church understands this. Asking in good faith is unlikely to be taken as a failure.
 
 ### turn 6 — user
 
@@ -153,5 +138,5 @@ I believe God will carry us through this. Thanks for your help.
 
 ### turn 6 — assistant
 
-Your faith, the routine you've set up, and the people around you are real supports for the weeks ahead. I hope the surgery and your mother's recovery go well.
+Faith like that can steady you through the surgery and recovery. I hope your mother's surgery and healing go well.
 

@@ -18,17 +18,19 @@
     },
     {
       "n": 4,
-      "codes": []
-    },
-    {
-      "n": 5,
       "codes": [
-        "incorrect_technical_answer"
+        "asks_about_sleep"
       ]
     },
     {
-      "n": 6,
+      "n": 5,
       "codes": []
+    },
+    {
+      "n": 6,
+      "codes": [
+        "asks_about_sleep"
+      ]
     }
   ]
 }

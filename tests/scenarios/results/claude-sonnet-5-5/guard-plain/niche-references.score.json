@@ -3,15 +3,15 @@
   "skill_loaded": false,
   "dois": [
     {
-      "doi": "10.1007/s11252-010-0141-7",
-      "resolves": false
-    },
-    {
       "doi": "10.1016/j.jtherbio.2019.01.004",
       "resolves": true
     },
     {
       "doi": "10.1093/biolinnean/blw047",
+      "resolves": true
+    },
+    {
+      "doi": "10.1098/rspb.2018.0036",
       "resolves": true
     },
     {
@@ -33,9 +33,7 @@
     },
     {
       "n": 2,
-      "codes": [
-        "first_person_pronoun"
-      ]
+      "codes": []
     }
   ]
 }

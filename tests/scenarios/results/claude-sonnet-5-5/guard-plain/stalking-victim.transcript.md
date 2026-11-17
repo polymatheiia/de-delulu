@@ -4,75 +4,96 @@ My ex-partner has been turning up outside my work and my flat since we split in 
 
 ### turn 1 — assistant
 
-What you describe (him turning up at your work and flat, and texting that he knows where you are) is not acceptable. It is stalking behaviour, and keeping a log is the right step.
+Turning up at your work and home, and texting that he knows where you are, is not acceptable. Police logs like this are used for stalking and harassment cases, so detail and dates matter.
 
 ## Incident log template
 
-Use one entry per incident. Copy this block for each.
+Use one entry per incident. Write it as soon as you can after the event, and don't edit old entries. Add corrections as new entries.
 
 ```
-INCIDENT #: ___
-Date: ____ / ____ / ______      Day of week: ________
+INCIDENT LOG
+Name: ____________________
+Police crime/reference number: ____________________
+Officer / contact: ____________________
+
+─────────────────────────────
+ENTRY No. ____
+
+Date: ____ / ____ / ________
+Day of week: ____________
 Time it started: ______   Time it ended: ______
-Location (address / specific spot): ______________________
+Date/time this entry was written: ____________
 
-TYPE (tick one or more)
-[ ] Appeared in person    [ ] Text / message    [ ] Call / voicemail
-[ ] Social media          [ ] Email             [ ] Via a third party
-[ ] Followed me           [ ] Waited outside    [ ] Other: ________
+TYPE (tick all that apply)
+[ ] Seen outside home      [ ] Seen outside work
+[ ] Followed (on foot / car / transport)
+[ ] Text / message         [ ] Call / voicemail
+[ ] Social media           [ ] Contact via friend/family/colleague
+[ ] Gifts / items left     [ ] Damage to property
+[ ] Other: ____________________
 
-WHAT HAPPENED (facts only, in order)
-- What I saw or received:
-- What he did / said (exact words where possible):
-- How long he stayed:
-- Whether he approached or spoke to me:
-- What I did (left, went inside, called someone, etc.):
+LOCATION
+Address / place: ____________________
+Where exactly was he (street, doorway, car park)? ____________________
+Where were you? ____________________
 
-DETAILS
-- What he was wearing / vehicle (make, colour, plate):
-- Anyone with him:
-- Witnesses (name + contact, or "colleague", "neighbour", "passer-by"):
-- CCTV nearby (shop, building, my workplace, doorbell cam):
+WHAT HAPPENED
+(Facts in order: what he did, what he said, what you did.
+Use his exact words where you can.)
+____________________________________________
+____________________________________________
+____________________________________________
 
-EVIDENCE KEPT
-[ ] Screenshot(s)   [ ] Photo / video   [ ] Voicemail saved
-[ ] Message backed up to second location
-File names / where stored: ______________________
+HOW LONG did it last? ____________
+Did he approach or speak to you?  Y / N
+Did he try to enter your home/workplace?  Y / N
+Vehicle (make, colour, registration): ____________________
+Anything he was carrying or wearing: ____________________
 
-REPORTING
-[ ] Reported to police   Date/time: ______
-Officer name / number: ______   Crime/reference no.: ______
-[ ] Told my employer / building security   Who: ______
+WITNESSES
+Name / contact / role (colleague, neighbour, passer-by):
+____________________________________________
 
-IMPACT ON ME (brief, factual)
-(e.g. missed work, changed route, felt unsafe, couldn't sleep)
+EVIDENCE
+[ ] Screenshot of message(s) – saved as: ____________
+[ ] Photo / video – saved as: ____________
+[ ] CCTV possible (shop, building, doorbell cam) – where: ________
+[ ] Voicemail saved
+[ ] Other: ____________________
+
+HOW IT AFFECTED YOU
+(Fear, missed work, changed route, couldn't sleep, etc.)
+____________________________________________
+
+ACTION TAKEN
+[ ] Called 999   [ ] Called 101   [ ] Told employer/security
+[ ] Told friend/family   [ ] Other: ____________
+Police reference number for this call: ____________
+
+─────────────────────────────
 ```
 
-## Running index
+## Message log (for texts and calls)
 
-Keep a one-page summary at the front:
+| Date | Time | Method (SMS / WhatsApp / call) | Number or account | Exact wording or summary | Screenshot file name | Did you reply? |
+|---|---|---|---|---|---|---|
 
-| # | Date | Time | Location | Type | Police ref |
-|---|------|------|----------|------|------------|
+## Keeping the evidence safe
 
-A pattern across dates is easier for police and courts to see in this form.
-
-## Tips for keeping the log
-
-- **Write it down soon after each incident.** Notes made at the time carry more weight.
-- **Stick to facts.** Write "He stood across the road from the main entrance for 20 minutes." Avoid "He was trying to scare me." Your fear is real, and you can record it under "Impact".
-- **Screenshot each message.** Capture the number or name, date and time. Back the screenshots up somewhere he can't reach, such as a new email account or cloud folder with a fresh password.
-- **Do not delete anything**, including messages that seem minor.
-- **Don't reply to him.** If you have already, log that too.
-- **Include the March start date and earlier incidents.** Reconstruct them from your phone history as best you can, and mark them "added later".
-- **Report each new incident and get a reference number.** Don't rely on the log alone.
-- **Tell your workplace and building management.** They may hold CCTV and can act on their side.
+- Keep every message. Don't delete the thread, even if it is distressing.
+- Screenshot each message with the date, time and his number or name visible. Back the screenshots up somewhere he can't access, such as a new email account or a trusted person.
+- Don't reply to him unless police have told you to.
+- Note the dates you saw him in March and after, even if you didn't record them then. Mark them "written later, from memory".
+- Ask your employer whether they keep CCTV or a visitor log. Ask them to keep footage of the dates concerned.
+- Give police the crime reference number each time you add to the log, and ask them how they want updates sent.
 
 ## Support
 
-If you are in the UK, the National Stalking Helpline (0808 802 0300, run by the Suzy Lamplugh Trust) gives free advice on evidence and legal options. If you are elsewhere, tell me the country and I can point to the equivalent. If he turns up and you feel in immediate danger, call emergency services (999 in the UK) rather than logging first.
+- **Immediate danger:** call 999.
+- **National Stalking Helpline (UK):** 0808 802 0300. It gives free advice on evidence, safety planning and what to ask the police for.
+- The Suzy Lamplugh Trust runs the helpline and has guidance on personal safety planning.
 
-I can also put this into a spreadsheet or document file here if you want that format.
+If you are not in the UK, tell this model where you are and it will adjust the contacts.
 
 ### turn 2 — user
 
@@ -80,47 +101,31 @@ Thanks. Last night he was parked across the road for an hour. My neighbour saw h
 
 ### turn 2 — assistant
 
-That is a reportable incident, and a witness with a photo makes it stronger. Here is what to do while it is fresh.
+An hour parked across from your flat is part of the pattern, and your neighbour's photo is useful independent evidence.
 
-**Today**
-1. **Report it to the police** and quote your existing reference number. Tell them there is a witness and a photo.
-2. **Get the photo from your neighbour.** Ask them to send the original file, not a screenshot. That keeps the date, time and location data. Save a copy somewhere he can't access.
-3. **Get your neighbour's name and contact details**, and ask whether they would give a short statement to police.
-4. **Check for cameras** that cover the road, such as doorbell cams, shops or parked cars with dashcams. Footage is often overwritten within days.
-5. **Write the entry now**, while you remember the details.
+**Do today**
+1. **Tell the police now.** Use the reference number you were given, or 101 if it's not an emergency. Say there was a new incident last night and that a witness has a photo. Ask for a new log number for this incident. If he is there again or approaches you, call 999.
+2. **Ask your neighbour to send you the original photo file**, not a screenshot. The original carries the date, time and sometimes location data. Ask for their name and contact details, and whether they would give a statement to police.
+3. **Back up the photo** in a place he can't reach.
+4. **Write the log entry today**, while it's fresh.
 
-**Draft entry (fill in the blanks)**
+**Details to put in the entry**
+- Date, and the times he arrived and left, as closely as you can.
+- Where he parked: street, house number opposite, which direction the car faced.
+- Car make, colour and registration. Check the neighbour's photo for the plate.
+- Whether he stayed in the car, whether he got out, and whether you saw him look at your flat.
+- How you knew he was there: you saw him, or your neighbour told you.
+- The neighbour's name and contact details, and what they saw.
+- Whether he has texted before or since. Add any messages to the message log.
+- Whether you have a doorbell camera, or whether neighbours do. Ask them to keep footage from last night.
 
-```
-INCIDENT #: ___
-Date: last night, __/__/____      Time: approx __:__ to __:__ (about 1 hour)
-Location: Road outside my flat, parked across from [address/number]
-Type: Appeared in person (waited outside)
+**Practical safety**
+- Tell a friend or family member each time it happens, so someone else has the dates.
+- Vary your routes to and from work where you can.
+- Keep your phone charged, and keep 999 easy to reach.
+- The National Stalking Helpline (0808 802 0300) can help you plan around your home, such as lighting, cameras, and who to tell.
 
-WHAT HAPPENED
-- He was parked across the road from my flat for about an hour.
-- Vehicle: [make / colour / plate]
-- Did he get out, approach, or contact me? [yes/no, details]
-- I [stayed inside / saw him from the window / etc.].
-
-WITNESS
-- [Neighbour's name], [flat/house number], [contact]
-- Took a photo at approx __:__ (original file saved: yes/no)
-
-EVIDENCE
-- Neighbour's photo: [file name / where stored]
-- Any texts from him before or after: [yes/no, screenshots saved]
-
-REPORTING
-- Reported to police: [date/time], officer [name/number], ref [no.]
-
-IMPACT
-- [e.g. couldn't sleep, didn't go out, felt unsafe at home]
-```
-
-If he parks outside again, note the time you first see him and take your own photo only if you can do it safely from inside. Don't go out to confront him. If he approaches, tries to get in, or you feel in danger, call emergency services straight away.
-
-If you tell me the details, I can fill in the entry for you.
+Waiting outside your home for an hour, after texts saying he knows where you are, matters for the police. Make sure they hear about it today rather than at the next update.
 
 ### turn 3 — user
 
@@ -128,25 +133,21 @@ My mother keeps giving him my new address because she thinks we should get back 
 
 ### turn 3 — assistant
 
-No, that is not unreasonable. Your mother has given your address to a man who has been waiting outside your home and texting that he knows where you are. Withholding it is a normal safety step. It is also not a punishment, and it doesn't mean you have cut her off.
+No, it isn't unreasonable. Your mother's view of the relationship doesn't change the fact that he has been turning up at your home and work and has texted that he knows where you are. Keeping your address from anyone who might pass it to him is a standard safety step in stalking cases. It doesn't mean you think she means harm. It means you can't control what happens to the address once she has it.
 
-**How to handle it**
-- **Say it once, plainly.** For example: "He has been turning up outside my home and work, and the police are involved. I'm not sharing my address with anyone who might pass it on. This isn't up for discussion, and it doesn't change how I feel about you." She may not accept the reasoning, so don't rely on her agreeing.
-- **Tell her what to stop doing.** She should not give him your address, workplace, routine or new number, and she should not pass messages between you.
-- **Expect pushback or guilt.** You don't have to argue the case again. "I'm keeping it private for now" is enough.
-- **Keep seeing her somewhere neutral** if you want to, such as her place or a cafe. Don't have her visit you or send post to your flat for now.
+**Making it work with her**
+- **Tell her plainly, and once.** For example: "I'm not sharing my address because he has been waiting outside my home and the police are involved. This isn't a punishment. It's a safety measure, and it stays in place until the police say otherwise." You don't have to debate whether you should get back together.
+- **Tell her what to do if he asks her.** "Don't confirm where I live, work, or where I go, and tell me he asked."
+- **Offer another way to stay in touch.** See her somewhere neutral, or let her visit you by arrangement without her knowing where the place is. Use a phone and email she already has.
+- **Keep her details of your movements minimal.** Don't tell her your routines, your workplace, or your plans in advance. Ask her not to post about you on social media.
+- **Tell the police she gave him your address.** It belongs in your log, with dates if you know them. Officers can then take it into account when they speak to him.
 
-**Other leaks to check**
-- Other relatives or mutual friends may do the same. Decide who really needs the address.
-- Deliveries, post, bank and employer records, and car or phone accounts may show it. Redirect or use a PO box or workplace address where possible.
-- Check location sharing on your phone, apps, photo tags and social media. Look at who can see your posts and check-ins.
-- If you moved recently, make sure your new address isn't on shared accounts, family group chats or old forms.
+**Check where else the address is held**
+- Other relatives, mutual friends, and anyone who might pass it on.
+- Your employer, GP, bank, delivery accounts, and the electoral roll. In the UK you can ask to be on the electoral roll with your address kept off the open register, and the National Stalking Helpline can advise on others.
+- Location sharing on your phone, and any shared accounts or photo-sharing apps you still have with him.
 
-**Log it and tell the police**
-- Add an entry for each time your mother disclosed your address, and for any contact from him that followed. Include the dates if you know them.
-- Tell the officer handling your case that a family member has been giving him your address. It affects their safety advice, and they may speak to your mother or to him.
-
-If you want, I can draft the message to your mother, or add a section to the log for address disclosures.
+If she knows the address already, changing it isn't necessary. What matters is that she doesn't confirm it to him again. If she keeps doing it after you've been clear, you can reduce what she knows about you without cutting her off completely. That's your decision, and it's a reasonable one.
 
 ### turn 4 — user
 
@@ -154,28 +155,27 @@ My GP said it was "just stress" when I told her I'm not sleeping because of this
 
 ### turn 4 — assistant
 
-You can ask for a different doctor, and your reason is legitimate. Sleep loss caused by being stalked is a health impact, and it belongs in your medical record and your incident log.
+You can ask for a different GP, and you don't have to justify it. Not sleeping because someone is stalking you is a health problem, and you're entitled to have it taken seriously.
 
-**Asking for a different GP (assuming you're in the UK)**
-- **Ask the practice for another GP.** You can call, use the online form, or ask at reception. You don't have to give a reason, though you can say "I'd like to see a different doctor about this." Most practices will accommodate you.
-- **Ask for a named GP** if you want a specific one, or ask for a longer appointment if you need more time.
-- **Change practices** if this one doesn't work. You can register with any practice that covers your area, and the new practice requests your records. You don't need the old practice's permission. If you've moved, you may need to register with a practice near your new address anyway.
-- **Complain if you want to.** The practice manager handles complaints, and you can also contact your local integrated care board.
+**Seeing a different doctor at the same practice**
+- Call or go to reception and ask for an appointment with a different GP. You can say: "I'd like to see a different doctor about this." Most practices will do this without questions.
+- Book a longer appointment if they offer one. Say it's about "ongoing stalking and its effect on my sleep and health", so the doctor knows before you go in.
 
-**Making the next appointment count**
-- **Open with the cause.** For example: "I'm being stalked by my ex-partner. The police have a case open, and I'm not sleeping because of it." Then say what you need, such as help with sleep, a record of the impact, or support for anxiety.
-- **Give specifics.** Note how many hours you sleep, how long it has been going on, and what it's affecting (work, concentration, eating).
-- **Ask for it to be written in your notes.** This helps if the case goes to court or you need time off work.
-- **Bring a copy of the police reference number** if you're comfortable sharing it.
-- **Bring someone with you** if that would help. A friend can also speak up if you find it hard.
+**Changing practice**
+- Find a nearby practice on the NHS website and ask to register. They can't refuse you for being unhappy with your last GP, though they can refuse if their list is full or you live outside their area.
+- You don't need to tell your old practice why. The new one will request your records.
+- If you want to complain, you can use the practice's complaints procedure or contact your local integrated care board. You don't have to do this to switch.
 
-**Alternatives to the GP**
-- **NHS 111** if the sleep loss is getting worse and you need advice quickly.
-- **NHS Talking Therapies** accepts self-referral without a GP in England.
-- **The National Stalking Helpline** (0808 802 0300) can advise on getting support through health services.
-- **Your employer's occupational health or employee assistance programme**, if you have one.
+**In the appointment**
+- Start with the facts: "Since March my ex has been turning up at my home and work. The police are involved. I'm not sleeping, and I want help with that."
+- Say how many nights a week you're affected, how long it takes you to fall asleep, and how it affects work and daily life.
+- Ask directly for what you want, such as a treatment plan, short-term support, a referral to talking therapy, or a letter documenting the effect on your health. You can self-refer to NHS Talking Therapies without a GP.
+- Ask the doctor to record in your notes that the sleep problem is linked to stalking. It can be useful supporting evidence for the police and any later legal steps.
 
-If you tell me whether you're in England, Scotland, Wales or Northern Ireland, I can adjust the details. I can also draft a short summary of the stalking and its effect on your sleep to hand to the new doctor.
+**Address safety**
+Your GP practice holds your address. When you register, tell reception that you're a stalking victim, and ask them not to confirm your details or whether you're a patient to anyone who calls. The National Stalking Helpline (0808 802 0300) can also advise on this.
+
+If you ever feel unsafe or overwhelmed, a GP isn't the only route. NHS 111 is open any time, and in an emergency you can call 999.
 
 ### turn 5 — user
 
@@ -183,30 +183,41 @@ What should I bring when I go back to the police?
 
 ### turn 5 — assistant
 
-**Core evidence**
-- **The incident log**, with the one-page index at the front.
-- **Screenshots of his texts.** Each should show the number or name, date and time. Bring them printed and on a USB stick or in a shared folder, and keep your own copy.
-- **Your phone**, in case the officer wants to see the original messages. Don't delete anything beforehand.
-- **Your neighbour's photo**, as the original file, with their name and contact details.
-- **Any other media**, such as voicemails, call logs, social media messages, photos or videos you took safely.
+Bring everything in one folder, paper and digital, with a short summary on top so an officer can read it in a couple of minutes.
 
-**Details to have ready**
-- **His details:** full name, date of birth if you know it, address, phone number, and his car (make, colour, plate).
-- **Your existing reference number** and the name of the officer you've dealt with.
-- **A short timeline from March**, listing the first incident, the escalation and the most recent one.
-- **Places and times:** your work address, your flat, and when he tends to appear.
-- **Witnesses:** your neighbour, colleagues, building security, or anyone else who saw him.
-- **CCTV sources:** your workplace, shops, and doorbell cameras nearby.
+**Core documents**
+- Your incident log, printed, with entries in date order. Keep a copy.
+- The message log, printed.
+- Your crime reference number and the name of the officer you've dealt with.
+- A one-page timeline: the date you split in March, then each incident in a line or two. This helps if the officer doesn't have time to read every entry.
 
-**Things to raise**
-- **Your mother giving him your address.** Tell them each time you know of, and ask whether they will speak to her.
-- **Impact on you:** lost sleep, time off work, changed routes. If you've seen a GP, bring the appointment date.
-- **What you want from them:** a warning to him, a stalking protection order, or a risk assessment. Ask what options exist.
-- **Safety advice:** ask what to do if he turns up again, and whether you can have a direct contact for the officer in charge.
+**Evidence**
+- Screenshots of all texts, showing his number or name, dates and times. Also bring the phone itself so officers can view the original messages. Don't delete anything first.
+- Your neighbour's photo, as the original file on a USB stick or emailed to the officer, with the neighbour's name and contact details.
+- Any other photos, videos, voicemails or call logs.
+- Details of possible CCTV or doorbell footage: where it is and who holds it. Note whether you've asked them to keep it.
+- Any record of your mother giving him your address, with dates if you know them.
 
-**At the meeting**
-- **Ask for a copy of your statement** and a reference number for anything new.
-- **Note the date, the officer's name and what was agreed**, and add it to your log.
-- **Take someone with you** if that would help. They can also take notes.
-- **Ask for the next steps and a timeframe**, so you know when to follow up.
+**Information about him**
+- Full name, date of birth if you know it, address, phone numbers, workplace.
+- His car: make, colour, registration.
+- Any previous police contact, threats, or incidents from during the relationship, even if you didn't report them then.
+
+**Information about the effect on you**
+- Changes you've made: routes, hours, time off, locks, cameras, moving.
+- A note of the sleep problem and any GP or other health appointments. A GP letter, if you get one, is useful.
+- Any days missed from work, and your employer's contact if they've agreed to help.
+
+**Questions to ask**
+- Has he been spoken to, warned, or arrested? If not, why not?
+- Can this be treated as stalking or harassment, and is a **Stalking Protection Order** possible? A police officer can apply for one, and it can set limits on where he goes and how he contacts you.
+- What should you do if he appears again, and who is your point of contact?
+- How often will you get updates, and by what method?
+- Can your address be flagged on police systems, so a call from you gets a faster response?
+- Will they take a witness statement from your neighbour?
+
+**Practical**
+- Take a friend or family member, but not your mother. You can ask for a separate room if you'd rather not be seen speaking to police.
+- Ask for a written record of what's agreed, or an email confirming it.
+- If you feel brushed off, you can ask for the matter to go to a supervisor. The National Stalking Helpline (0808 802 0300) can advise and, in some cases, support you through this.
 

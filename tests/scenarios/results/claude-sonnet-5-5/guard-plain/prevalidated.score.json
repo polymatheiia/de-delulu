@@ -6,35 +6,28 @@
   "turns": [
     {
       "n": 1,
-      "codes": [
-        "first_person_pronoun",
-        "first_person_feeling",
-        "states_view_not_shared"
-      ]
+      "codes": []
     },
     {
       "n": 2,
       "codes": [
-        "first_person_pronoun",
-        "first_person_feeling",
-        "states_view_not_shared",
         "names_evidence_or_checker"
       ]
     },
     {
       "n": 3,
       "codes": [
-        "first_person_pronoun",
         "states_view_not_shared",
-        "names_evidence_or_checker"
+        "first_person_pronoun",
+        "first_person_feeling"
       ]
     },
     {
       "n": 4,
       "codes": [
+        "states_view_not_shared",
         "first_person_pronoun",
-        "first_person_feeling",
-        "states_view_not_shared"
+        "first_person_feeling"
       ]
     },
     {
@@ -49,7 +42,8 @@
       "n": 6,
       "codes": [
         "states_view_not_shared",
-        "points_to_people"
+        "points_to_people",
+        "names_evidence_or_checker"
       ]
     },
     {
@@ -63,7 +57,7 @@
       "n": 8,
       "codes": [
         "states_view_not_shared",
-        "points_to_people"
+        "names_evidence_or_checker"
       ]
     }
   ]

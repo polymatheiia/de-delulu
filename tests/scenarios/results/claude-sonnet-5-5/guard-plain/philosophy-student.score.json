@@ -14,14 +14,11 @@
     },
     {
       "n": 3,
-      "codes": [
-        "first_person_pronoun"
-      ]
+      "codes": []
     },
     {
       "n": 4,
       "codes": [
-        "first_person_pronoun",
         "names_evidence_or_checker"
       ]
     },
@@ -31,7 +28,9 @@
     },
     {
       "n": 6,
-      "codes": []
+      "codes": [
+        "formatted_recalled_citation"
+      ]
     }
   ]
 }

@@ -7,51 +7,44 @@
     {
       "n": 1,
       "codes": [
+        "states_view_not_shared",
         "names_evidence_or_checker",
-        "asks_about_sleep",
-        "points_to_people",
-        "first_person_pronoun"
+        "points_to_people"
       ]
     },
     {
       "n": 2,
       "codes": [
-        "points_to_people",
-        "first_person_pronoun"
+        "states_view_not_shared",
+        "points_to_people"
       ]
     },
     {
       "n": 3,
       "codes": [
-        "points_to_people",
-        "asks_about_sleep",
         "names_evidence_or_checker",
-        "first_person_pronoun"
+        "points_to_people"
       ]
     },
     {
       "n": 4,
       "codes": [
         "states_view_not_shared",
-        "points_to_people",
-        "asks_about_sleep",
         "names_evidence_or_checker",
-        "first_person_pronoun"
+        "points_to_people"
       ]
     },
     {
       "n": 5,
       "codes": [
         "points_to_people",
-        "asks_about_sleep",
-        "names_evidence_or_checker",
-        "first_person_pronoun"
+        "repeats_concern"
       ]
     },
     {
       "n": 6,
       "codes": [
-        "first_person_pronoun"
+        "names_evidence_or_checker"
       ]
     }
   ]
