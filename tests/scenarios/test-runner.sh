@@ -12,6 +12,7 @@ mkdir "$tmp/bin"; for b in bash sed awk jq cat ls mktemp rm mv mkdir head grep x
 
 saved="$here/results/claude-sonnet-5-5/guard-plain/novelist.transcript.md"
 before="$(cksum < "$saved")"
+cp "$saved" "$tmp/saved.bak"
 out="$(PATH="$tmp/bin" bash "$here/run.sh" novelist guard plain 2>&1)"; st=$?
 [ "$st" -eq 2 ] && grep -q "claude" <<<"$out" && ok "refuses to run without claude (exit 2, names it)" || bad "refuses to run without claude: status $st, output: ${out:0:80}"
 [ -f "$saved" ] && [ "$(cksum < "$saved")" = "$before" ] && ok "saved results untouched after a refused run" || bad "saved results untouched after a refused run"
@@ -20,7 +21,10 @@ out="$(PATH="$tmp/bin" bash "$here/run.sh" novelist guard plain 2>&1)"; st=$?
 printf '#!/bin/sh\nexit 1\n' > "$tmp/bin/claude"; chmod +x "$tmp/bin/claude"
 PATH="$tmp/bin" bash "$here/run.sh" novelist guard plain >/dev/null 2>&1
 [ -f "$saved" ] && [ "$(cksum < "$saved")" = "$before" ] && ok "saved results untouched after a failed run" || bad "saved results untouched after a failed run"
-( cd "$here/.." && git checkout -q -- scenarios/results 2>/dev/null )
+# Put back only the one file these two checks could have damaged, from a copy.
+# (A `git checkout` of the results directory here would discard every
+# uncommitted result of a real run.)
+cmp -s "$tmp/saved.bak" "$saved" || cp "$tmp/saved.bak" "$saved"
 
 # --- per-case pass rules, pairs and the DOI check, on fixtures (no model calls) ---
 fx="$tmp/fx"; mkdir -p "$fx/cases" "$fx/results/guard-plain"
